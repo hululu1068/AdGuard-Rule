@@ -2,7 +2,8 @@
 <h1>AdGuard Rule</h1>
   <p>
     一个简易的Java程序，用于合并与更新 AdGuard 过滤规则
-  </p>
+</p>
+</div>
 
 
 <h2 id="a">📔 说明</h2>
@@ -112,4 +113,4 @@ application:
 - 提交所有修改并等待 `Github Action` 执行，执行完成后相应规则生成在配置中指定的目录下
 
 
-- 👉 感谢@fordes123
+- 👉 特别感谢@fordes123
