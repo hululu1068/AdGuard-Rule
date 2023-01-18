@@ -3,7 +3,7 @@ on:
   push:
     paths-ignore:
       - 'README.md'
-      - 'README_en.md'
+      - '*.md'
     branches: [ main ]
   schedule:
     - cron: 0 */12 * * *
