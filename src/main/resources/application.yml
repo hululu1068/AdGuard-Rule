@@ -1,8 +1,8 @@
 spring:
   application:
-    name: adg-rule
+    名字: adg-rule
   profiles:
-    active: prod  #切换至 dev 即可输出调试信息
+    已激活: prod  #切换至 dev 即可输出调试信息
 
 logging:
   file:
@@ -52,7 +52,7 @@ application:
       - 'https://raw.githubusercontents.com/timlu85/AdGuard-Home_Youtube-Adfilter/master/Youtube-Adfilter-Web.txt' #name: Youtube-Adfilter-Web
       - 'https://raw.githubusercontents.com/91ajames/ublock-filters-ulist-youtube/main/blocklist.txt' #name: ublock-filters-ulist-youtube
       #KoolProxy规则
-      - 'https://raw.iqiq.io/ilxp/koolproxy/master/rules/koolproxy.txt' #name:静态规则
+      #- 'https://raw.iqiq.io/ilxp/koolproxy/master/rules/koolproxy.txt' #name:静态白名单规则
       - 'https://raw.iqiq.io/ilxp/koolproxy/master/rules/daily.txt' #name:每日规则
       #- 'https://raw.iqiq.io/ilxp/koolproxy/master/rules/adg.txt' #name:AdGuard规则
       #- 'https://raw.iqiq.io/ilxp/koolproxy/master/rules/adgk.txt' #name:Banben规则
