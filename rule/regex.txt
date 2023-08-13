@@ -1,4 +1,4 @@
-# Update time: 2023-08-12 20:17:41
+# Update time: 2023-08-13 08:50:16
 # Repo URL: AdGuard、AdGuardHome广告过滤规则合并/去重
 
 ###################################   合并/去重自以下规则   ####################################
@@ -47,7 +47,6 @@
 
 # 每12小时同步一次、如有误杀、请手动解除
 
-||report.*.qq.com^
 ||adx.
 ||adx-
 ||adsfs.
@@ -115,20 +114,6 @@ advertisers.js|
 ||advertise.
 ||ap*.pl520.com^
 ||tracker*.qcloud.com^
-||icast.
-||gg.
-||union.
-||cnzz.
-||beacon.
-||adpic.
-||sax.sina.
-||biz5.
-||xmindchina.
-||admaster.
-||googleadservices.
-||saxs.sina.
-||adsame.
-||onetrust.
 ||pixel*.production-public.tubi.io^
 ||host*.nti.nl^
 ||adserver*.euroweeklynews.com^
@@ -356,6 +341,7 @@ analytics-*.aasaam.com
 ||ad*.bilgin.pro^
 ||app-analytics-*.snapchat.com^
 ||api*.amplitude.com^
+||report.*.qq.com^
 ||px*.mediahills.ru^
 ||matomo.*.vn^
 ||static*.365inews.com^
@@ -415,6 +401,20 @@ analytics-*.aasaam.com
 ||union*.365inews.com^
 ||vns86.oss-*.aliyuncs.com^
 ||v*.sitecounter.site^
+||onetrust.
+||icast.
+||gg.
+||union.
+||cnzz.
+||beacon.
+||adpic.
+||sax.sina.
+||biz5.
+||xmindchina.
+||admaster.
+||googleadservices.
+||saxs.sina.
+||adsame.
 ||da.hornbach.*^
 ||appsflyer*.*^
 ||brucelead*.com^
