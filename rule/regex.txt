@@ -1,4 +1,4 @@
-# Update time: 2023-12-28 20:20:02
+# Update time: 2023-12-29 08:42:01
 # Repo URL: AdGuard、AdGuardHome广告过滤规则合并/去重
 
 ###################################   合并/去重自以下规则   ####################################
@@ -57,7 +57,6 @@
 ||cnzz.
 ||adsfile.
 ||adserver.
-||adservice.
 ||adpic.
 ||sax.sina.
 ||biz5.
@@ -91,6 +90,7 @@ MRelateFeedAd
 ||adcolony.
 ||advertising.
 ||showad*
+||adservice.
 ||pagead.
 ||djjca.
 ||imageadv.
@@ -149,6 +149,7 @@ advertisers.js|
             function do_onload() {
             }
         <noscript>
+||apple.com-*.live^
 ||sax*.sina.
 ||bdcpro*.techweb.com.cn^
 ||dm*.ppzuowen.com^
@@ -202,12 +203,9 @@ analytics-*.aasaam.com
 ||gtmdev.jabra.
 ||tracking.olx.
 ||teleriumads-*.netdna-ssl.com^
-||rgfftupf.
 ||adservice.google.
-||counter*.stat.ovh^
 ||collector-*.pxchk.net^
 ||host*.carl-ras.dk^
-||ads.livetv*.me^
 ||allsportsflix.
 ||iphone-caviar.ru*entranceId
 ||w*statistics.info^
@@ -334,7 +332,6 @@ analytics-*.aasaam.com
 ||ads-dmp-collect.*.karrotmarket.com^
 ||mf*.advantage.as^
 ||button.blogs.yandex.
-||fxhpaoxqyajvmdg.
 ||flurry.agentportal-*.yahoodns.net^
 ||host*.rigbyandpeller.com^
 ||analytics.*.sky.com^
@@ -549,7 +546,6 @@ analytics-*.aasaam.com
 ||gg*.51cto.com^
 ||analyzer*.fc2.com^
 ||tracker*.qcloud.com^
-||apple.com-*.live^
 ||imgpfx.arenavision.
 ||allsportsflix.*^
 ||player-feedback*.glomex.*^
@@ -574,13 +570,17 @@ rgmechanicsgames.com*VPN.exe
 ||ads*.depositfiles.org^
 ||fapnado.*.php|
 ||itechpost.com*adbk
+||rgfftupf.
 @@||cdn*.porn300.com^
 ||gamenguide.com*adbk
+||counter*.stat.ovh^
 ||util-*.simply-hentai.com^
 ||ads*.dfiles.ru^
 ||centent.streamp1ay.
+||ads.livetv*.me^
 ||142.91.159.
 ||cas.*.criteo.com^
 ||spryptvqguhpwt^
+||fxhpaoxqyajvmdg.
 ||cintent.streanplay.
 Banner468x60
