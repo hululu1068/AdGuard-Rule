@@ -1,52 +1,58 @@
-# Update time: 2024-01-12 16:59:54
-# Repo URL: AdGuard、AdGuardHome广告过滤规则合并/去重
-
-###################################   合并/去重自以下规则   ####################################
-# - 'https://cdn.jsdelivr.net/gh/hoshsadiq/adblock-nocoin-list/hosts.txt'  #adblock-nocoin-list
-# - 'https://cdn.jsdelivr.net/gh/durablenapkin/scamblocklist/adguard.txt' #Scam Blocklist
-# - 'https://someonewhocares.org/hosts/zero/hosts' #Dan Pollock's List
-# - 'https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext' #Peter Lowe's List
-# - 'https://abp.oisd.nl/basic/' #OISD Blocklist Basic
-# - 'https://cdn.jsdelivr.net/gh/crazy-max/WindowsSpyBlocker/data/hosts/spy.txt' #WindowsSpyBlocker
-# - 'https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts' #大圣净化
-# - 'https://code.gitlink.org.cn/hacamer/AdRules/raw/branch/main/adguard-full.txt' #AdRules AdGuard Full List
-# - 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt' #adguard base
-# 自用添加↓
-# - 'https://anti-ad.net/easylist.txt' #name: anti-AD
-# - 'https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/combined_disguised_trackers.txt' #name: AdGuard CNAME 伪装跟踪器列表
-# - 'https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt' #name: AdGuard DNS filter
-# - 'https://raw.githubusercontent.com/Crystal-RainSlide/AdditionalFiltersCN/master/CN.txt' #name: AdditionalFiltersCN
-# - 'https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt' #name: ADgk 移动广告规则
-# - 'https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt' #name: 乘风 广告过滤规则
-# - 'https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt' #name: 乘风 视频过滤规则
-# - 'https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad.txt' #name: HalfLife_合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
-# - 'https://adaway.org/hosts.txt' #name: AdAway 官方的去广告 Host 规则
-# - 'https://easylist-downloads.adblockplus.org/antiadblockfilters.txt' #name: 去除禁止广告拦截提示规则
-# - 'https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts.txt' #name: Yhosts规则
-# - 'https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt' #name: 杏稍AdRules DNS List
-# - 'https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/AdGuard/Advertising/Advertising.txt' #name: AdGuard_blackmatrix7合并
-# - 'https://raw.githubusercontent.com/zsakvo/AdGuard-Custom-Rule/master/rule/zhihu.txt' #name: 知乎 普通版
-# - 'https://github.com/217heidai/adblockfilters' #name: 217heidai/adblockfilters去重合并(比较大)
-# - 'https://raw.githubusercontents.com/timlu85/AdGuard-Home_Youtube-Adfilter/master/Youtube-Adfilter-Web.txt' #name: Youtube-Adfilter-Web
-# - 'https://raw.githubusercontents.com/91ajames/ublock-filters-ulist-youtube/main/blocklist.txt' #name: ublock-filters-ulist-youtube
-# KoolProxy规则
-# - 'https://raw.iqiq.io/ilxp/koolproxy/master/rules/koolproxy.txt' #name:静态规则
-# - 'https://raw.iqiq.io/ilxp/koolproxy/master/rules/daily.txt' #name:每日规则
-# - 'https://raw.iqiq.io/ilxp/koolproxy/master/rules/steven.txt' #name:StevenBlack规则
-# uBlock内置规则
-# - 'https://cdn.jsdelivr.net/gh/uBlockOrigin/uAssetsCDN@main/filters/filters.txt' #name: uBlock filters
-# - 'https://ublockorigin.pages.dev/filters/badware.txt' #name: uBlock filters – Badware risks
-# - 'https://gitcdn.link/cdn/uBlockOrigin/uAssetsCDN/main/filters/privacy.txt' #name: uBlock filters – Privacy
-# - 'https://ublockorigin.github.io/uAssets/filters/quick-fixes.txt' #name: uBlock filters – Quick fixes
-# - 'https://cdn.statically.io/gh/uBlockOrigin/uAssetsCDN/main/filters/resource-abuse.txt' #name: uBlock filters – Resource abuse
-# - 'https://gitcdn.link/cdn/uBlockOrigin/uAssetsCDN/main/filters/unbreak.txt' #name: uBlock filters – Unbreak
-# - 'https://filters.adtidy.org/extension/ublock/filters/11.txt' #name: AdGuard Mobile Ads移动设备
-# 本地规则
-# - 'mylist.txt'
-###############################################################################################
-
-# 每12小时同步一次、如有误杀、请手动解除
-
+# Update time: 2024-01-12 17:08:32
+# 
+google.*##div.g:has(div[data-hveid] a[href*="coco01.net"])
+google.*##div.g:has(div[data-hveid] a[href*="kknews.cc"])
+google.*##div.g:has(div[data-hveid] a[href*="bangqu.com"])
+google.*##div.g:has(div[data-hveid] a[href*="366service.com"])
+google.*##div.g:has(div[data-hveid] a[href*="buzzhand.com"])
+google.*##div.g:has(div[data-hveid] a[href*="manongdao.com"])
+google.*##div.g:has(div[data-hveid] a[href*="iso2.cx"])
+google.*##div.g:has(div[data-hveid] a[href*="ptt01.tv"])
+google.*##div.g:has(div[data-hveid] a[href*="renaultpassonxperience.co"])
+google.*##div.g:has(div[data-hveid] a[href*="itdaan.com"])
+google.*##div.g:has(div[data-hveid] a[href*="stackoom.com"])
+google.*##div.g:has(div[data-hveid] a[href*="hklocalpress.com"])
+google.*##div.g:has(div[data-hveid] a[href*="fbiavip.com"])
+google.*##div.g:has(div[data-hveid] a[href*="iter01.com"])
+google.*##div.g:has(div[data-hveid] a[href*="pressyourmum.com"])
+google.*##div.g:has(div[data-hveid] a[href*="itread01.com"])
+google.*##div.g:has(div[data-hveid] a[href*="presslocalhk.com"])
+google.*##div.g:has(div[data-hveid] a[href*="jishuwen.com"])
+google.*##div.g:has(div[data-hveid] a[href*="cocoachina.com"])
+google.*##div.g:has(div[data-hveid] a[href*="twblogs.net"])
+google.*##div.g:has(div[data-hveid] a[href*="buzzhand.org"])
+google.*##div.g:has(div[data-hveid] a[href*="twgreatdaily.live"])
+google.*##div.g:has(div[data-hveid] a[href*="codenong.com"])
+google.*##div.g:has(div[data-hveid] a[href*="it-swarm.dev"])
+google.*##div.g:has(div[data-hveid] a[href*="apple01.cc"])
+google.*##div.g:has(div[data-hveid] a[href*="codebug.vip"])
+google.*##div.g:has(div[data-hveid] a[href*="jb51.net"])
+google.*##div.g:has(div[data-hveid] a[href*="coco01.cc"])
+google.*##div.g:has(div[data-hveid] a[href*="peekme.cc"])
+google.*##div.g:has(div[data-hveid] a[href*="twgreatdaily.fun"])
+google.*##div.g:has(div[data-hveid] a[href*="apple01.co"])
+google.*##div.g:has(div[data-hveid] a[href*="apple01.net"])
+google.*##div.g:has(div[data-hveid] a[href*="buzzworld.tech"])
+google.*##div.g:has(div[data-hveid] a[href*="coco01.today"])
+google.*##div.g:has(div[data-hveid] a[href*="buzzhand.net"])
+google.*##div.g:has(div[data-hveid] a[href*="ptt01.cc"])
+google.*##div.g:has(div[data-hveid] a[href*="teepr.com"])
+google.*##div.g:has(div[data-hveid] a[href*="iso2.cc"])
+google.*##div.g:has(div[data-hveid] a[href*="twgreatdaily.life"])
+google.*##div.g:has(div[data-hveid] a[href*="7box.vip"])
+google.*##div.g:has(div[data-hveid] a[href*="thinbug.com"])
+google.*##div.g:has(div[data-hveid] a[href*="coco01.me"])
+google.*##div.g:has(div[data-hveid] a[href*="kutu66.com"])
+google.*##div.g:has(div[data-hveid] a[href*="moptt.tw"])
+google.*##div.g:has(div[data-hveid] a[href*="uwenku.com"])
+google.*##div.g:has(div[data-hveid] a[href*="cocomy.net"])
+google.*##div.g:has(div[data-hveid] a[href*="jeepxie.net"])
+google.*##div.g:has(div[data-hveid] a[href*="twgreatdaily.com"])
+google.*##div.g:has(div[data-hveid] a[href*="read01.com"])
+google.*##div.g:has(div[data-hveid] a[href*="yuutoday.com"])
+google.*##div.g:has(div[data-hveid] a[href*="softwarebrother.com"])
+google.*##div.g:has(div[data-hveid] a[href*="codertw.com"])
+google.*##div.g:has(div[data-hveid] a[href*="coder.work"])
 ||related.5054399.com/webgame.js^
 ||tubia.com^$domain=miniclip.com
 ||cdn.nkstatic.com/ads/
@@ -170,298 +176,6 @@ $removeparam=/mc_eid/i
 ||ettoday.net^$removeparam=/redirect/i
 $removeparam=/mc_id/i
 @@||wikipedia.org$removeparam=/Campaign/i
-google.*##div.g:has(div[data-hveid] a[href*="coco01.net"])
-google.*##div.g:has(div[data-hveid] a[href*="kknews.cc"])
-google.*##div.g:has(div[data-hveid] a[href*="bangqu.com"])
-google.*##div.g:has(div[data-hveid] a[href*="366service.com"])
-google.*##div.g:has(div[data-hveid] a[href*="buzzhand.com"])
-google.*##div.g:has(div[data-hveid] a[href*="manongdao.com"])
-google.*##div.g:has(div[data-hveid] a[href*="iso2.cx"])
-google.*##div.g:has(div[data-hveid] a[href*="ptt01.tv"])
-google.*##div.g:has(div[data-hveid] a[href*="renaultpassonxperience.co"])
-google.*##div.g:has(div[data-hveid] a[href*="itdaan.com"])
-google.*##div.g:has(div[data-hveid] a[href*="stackoom.com"])
-google.*##div.g:has(div[data-hveid] a[href*="hklocalpress.com"])
-google.*##div.g:has(div[data-hveid] a[href*="fbiavip.com"])
-google.*##div.g:has(div[data-hveid] a[href*="iter01.com"])
-google.*##div.g:has(div[data-hveid] a[href*="pressyourmum.com"])
-google.*##div.g:has(div[data-hveid] a[href*="itread01.com"])
-google.*##div.g:has(div[data-hveid] a[href*="presslocalhk.com"])
-google.*##div.g:has(div[data-hveid] a[href*="jishuwen.com"])
-google.*##div.g:has(div[data-hveid] a[href*="cocoachina.com"])
-google.*##div.g:has(div[data-hveid] a[href*="twblogs.net"])
-google.*##div.g:has(div[data-hveid] a[href*="buzzhand.org"])
-google.*##div.g:has(div[data-hveid] a[href*="twgreatdaily.live"])
-google.*##div.g:has(div[data-hveid] a[href*="codenong.com"])
-google.*##div.g:has(div[data-hveid] a[href*="it-swarm.dev"])
-google.*##div.g:has(div[data-hveid] a[href*="apple01.cc"])
-google.*##div.g:has(div[data-hveid] a[href*="codebug.vip"])
-google.*##div.g:has(div[data-hveid] a[href*="jb51.net"])
-google.*##div.g:has(div[data-hveid] a[href*="coco01.cc"])
-google.*##div.g:has(div[data-hveid] a[href*="peekme.cc"])
-google.*##div.g:has(div[data-hveid] a[href*="twgreatdaily.fun"])
-google.*##div.g:has(div[data-hveid] a[href*="apple01.co"])
-google.*##div.g:has(div[data-hveid] a[href*="apple01.net"])
-google.*##div.g:has(div[data-hveid] a[href*="buzzworld.tech"])
-google.*##div.g:has(div[data-hveid] a[href*="coco01.today"])
-google.*##div.g:has(div[data-hveid] a[href*="buzzhand.net"])
-google.*##div.g:has(div[data-hveid] a[href*="ptt01.cc"])
-google.*##div.g:has(div[data-hveid] a[href*="teepr.com"])
-google.*##div.g:has(div[data-hveid] a[href*="iso2.cc"])
-google.*##div.g:has(div[data-hveid] a[href*="twgreatdaily.life"])
-google.*##div.g:has(div[data-hveid] a[href*="7box.vip"])
-google.*##div.g:has(div[data-hveid] a[href*="thinbug.com"])
-google.*##div.g:has(div[data-hveid] a[href*="coco01.me"])
-google.*##div.g:has(div[data-hveid] a[href*="kutu66.com"])
-google.*##div.g:has(div[data-hveid] a[href*="moptt.tw"])
-google.*##div.g:has(div[data-hveid] a[href*="uwenku.com"])
-google.*##div.g:has(div[data-hveid] a[href*="cocomy.net"])
-google.*##div.g:has(div[data-hveid] a[href*="jeepxie.net"])
-google.*##div.g:has(div[data-hveid] a[href*="twgreatdaily.com"])
-google.*##div.g:has(div[data-hveid] a[href*="read01.com"])
-google.*##div.g:has(div[data-hveid] a[href*="yuutoday.com"])
-google.*##div.g:has(div[data-hveid] a[href*="softwarebrother.com"])
-google.*##div.g:has(div[data-hveid] a[href*="codertw.com"])
-google.*##div.g:has(div[data-hveid] a[href*="coder.work"])
-www.bjnews.com.cn###v4_wxin
-www.iplaysoft.com###elevator_social > .float-left:nth-of-type(2):style(width: 100% !important)
-gitee.com##.qrcode.weixin
-*/jweixin-*.js^$script
-www.iplaysoft.com###elevator_social:style(width: 230px !important;)
-www.iplaysoft.com##.elevator > li:has(#elevator_social)
-||assets.gitee.com/assets/qrcode-weixin-*$image
-www.iplaysoft.com###elevator_social > .float-left:nth-of-type(1)
-www.myzaker.com##.btn_zaker_mp
-||www.secrss.com/wx_qrcode.jpg
-www.iplaysoft.com##.popWxgzh:not(.ipsicon)
-www.secrss.com##.qrcode
-fandom.com##body.wikia-bar-visible:style(padding-bottom: 0 !important)
-www.makeuseof.com##.adsninja-ad-zone
-outlook.live.com###MainModule > div:only-child > div:only-child > div[data-app-section="NavigationPane"] > div:only-child > div:only-child > .ms-FocusZone.customScrollBar.disableTextSelection + div:last-child:has(> button img[src$="/leftNavUpsellIcons/premium-diamond-01.svg"])
-genius.com##marquee-ad
-www.newgrounds.com##.header-deck
-symbolab.com##+js(set, SOLUTIONS.subscribed, true)
-xhamster.com##.clipstore-bottom, .clipstore-results
-www.wikihow.com##+js(set, mw.config.values.wgProMembership, 1)
-||cdn2.kongcdn.com/compiled-assets/metriks_*
-symbolab.com##.symp
-||ifixit-assets.??.ifixit.com/Assets/Admin/Shared-Campaigns-campaign_banners-*
-||vice-web-statics-cdn.vice.com/vendor/ad-lib/*
-www.pixiv.net##.premium-lead-premium-campaign
-||frog.wix.com^
-uptodown.com##.gad
-||graph.facebook.com^$third-party
-sourceforge.net###dlp-voip-quote
-||yandex.com/clck/*
-##a[href^="https://www.digitalocean.com/?refcode=*"]
-||freestyler.ws/php/sharrre.php
-||getadblock.com/js/log.js
-sourceforge.net##.stackcommerce-widget
-twitter.com##.Footer-adsModule
-||wikia.nocookie.net/*/*adengine3*
-fandom.com##.top-ads-container, .mcf-card-sponsored-content
-||connect.facebook.com^$third-party,domain=~facebook.net|~fb.com
-kotaku.com##.js_newsletter-form-inline
-||fonts.gstatic.com/s/notoseriftc/*
-ipinfo.io##.card-promotion
-www.textnow.com###bannerContainer
-fandom.com###mixed-content-footer
-outlook.live.com###MainModule > div:only-child > div:only-child > div:last-child:has(> div:only-child > div > #owaadbar0)
-www.mediafire.com##.header:style(position: static !important;margin: 12px auto 0 !important)
-www.songfacts.com##.songfacts-song-inline-ads
-userstyles.org##.us-stylecard--long:has(.fallbackDiv)
-||fbcdn-profile-a.akamaihd.net^$third-party,domain=~facebook.com
-gizmodo.com##.ad-container, #commerce-inset-wrapper
-||cloudfront.net/js/profitwell.js^
-||www.vultr.com/dist/img/brand/banner_*.png
-forum.xda-developers.com###honor-launch-banner
-dictionary.cambridge.org##.am-default
-konggames.com##+js(set, window._gaq._createAsyncTracker, noopFunc)
-www.gamesfree.ca##.mobile-games-carrousel
-symbolab.com#@#.tooltipster-show
-||facebook.com/whitepages/wpminiprofile.php$third-party
-||symbolab.com/detailedLog$xhr
-www.textnow.com##.toast-mask
-www.pixiv.net##+js(rc, with-ad)
-symbolab.com##.googleLeftSkyScrapper
-www.pixiv.net###column-misc > .ad + .item:style(margin-top: 0 !important)
-bandcamp.com###app-promo
-||www.getapp.com^$3p
-||yandex.com/ick/r
-symbolab.com###googleAdSenseHomepage
-www.bing.com###b_opalpers
-||rusenov.com^$xhr
-disqus.com##.unread .notification-icon:style(color: #656c7a !important)
-www.microsoft.com##.switchOfficeHeroFirst
-||coolbuddy.com/HtmlAds.ashx
-userstyles.org##.overlay_background
-www.tutorialspoint.com##hr:has(+ #google-top-ads)
-||cdn.xsolla.net/network/xtracking-*.js
-slate.com##.taboola-widget
-||www.youtube.com/youtubei/*/log_event$xhr
-symbolab.com##.googleAdsense
-sourceforge.net###nels, #project-nel, .nel, .nel-block
-||twitter.com/i/promoted_content/log.json
-||static.addtoany.com^$third-party
-www.howtogeek.com##.entry-content > div[data-nosnippet]
-9gag.com##.nav-menu .new::after
-||facebook.com^$subdocument
-||facebook.com/widgets/$third-party
-||yastatic.net/web4/_/*.gif$image
-techcrunch.com##.content-wrap .content:style(width:auto !important)
-userstyles.org###top_android_button
-||api.facebook.com^$third-party
-||fonts.gstatic.com/s/notoserifsc/*
-www.notebookcheck.net##div[id^="div-gpt-ad"], #footer > div[id*="-ad-"]
-css-tricks.com##.fem-ad
-||f-log-editor.grammarly.io^
-||badges.instagram.com^
-||fonts.gstatic.com/s/notoserifhk/*
-||log.getadblock.com^
-||platformbot.xyz^
-||onerm.olsvc.com/api/*/promo$xmlhttprequest
-||www.kongregate.com/*/metrics.json
-www.xmedia-recode.de##a[href="viren_pruf.php"]
-||disqus.com/count.js$script
-www.plazmaburst2.com##[class^="gads"]
-www.codeproject.com##div[data-type="ad"], a[href^="https://useastadprovider.azurewebsites.net/api/AdRedirector"]
-www.microsoft.com##.m-hero
-wikihow.com##+js(rc, hasad)
-@@||www.fosshub.com/media/js/adblock.js$first-party
-||marketplace.visualstudio.com/_apis/customerintelligence/*
-symbolab.com##.googleAdsenseMiddle
-win7gadgets.com##.ads_subtitle, .gads
-www.siftheadsgames.com##+js(nobab)
-||vk.com/js/api/share.js
-||yadi.sk/monitoring.txt/*
-||fonts.googleapis.com/css?family=Noto+Sans+JP$stylesheet
-www.fosshub.com##.ad
-||deviantart.com/_adslot/
-||pixel.ipinfo.io^
-||acdn.adnxs.com/ast/static/*/ast.js$script
-userstyles.org##img.fallbackImg
-www.pixiv.net###js-mount-point-header iframe + a[href^="/premium/lead/"]
-*$3p,script,domain=store.rg-adguard.net
-||fonts.gstatic.com/s/notosanskr/*
-www.npr.org###main-sidebar:has(> #ad-standard-wrap:only-child)
-||fonts.googleapis.com/css?family=Noto+Sans+TC$stylesheet
-sourceforge.net##.sterling, .banner-sterling
-apkpure.com##.aegon-link
-||fonts.googleapis.com/css?family=Noto+Serif+HK$stylesheet
-www.agame.com##.advert
-xhamster.com##.index-videos .thumb-list .wio-xright-rectangle ~ .thumb-list__item:style(margin-right: 0 !important)
-www.textnow.com##.rotation-manager-slot
-||fonts.gstatic.com/s/notosansjp/*
-compass-style.org##.advertisement
-userstyles.org##.android_button_button
-techcrunch.com##.sidebar
-disk.yandex.com##.ns-view-dialogWelcome
-||wikia.nocookie.net/*/*analytics*
-www.wired.com##.newsletter-subscribe-form
-||facebook.com/restserver.php?*.getStats&$third-party
-outlook.live.com###MainModule #notificationBarText + div:last-child > div[data-app-section="MessageList"] > .customScrollBar > div[draggable="false"]:only-child > div[role="region"]:only-child > div[role="listbox"]:only-child .customScrollBar > div:only-child > div:first-child:matches-css(position: absolute):has(> div[data-animatable="true"] .fbAdCallToAction)
-||www.g2.com^$3p
-||api-read.facebook.com/restserver.php?api_key=$third-party
-||wikia.nocookie.net/*/search_tracking_js*
-developer.mozilla.org##.top-level-entry-container .top-level-entry-dot ~ .top-level-entry::after
-||fonts.gstatic.com/s/notosanssc/*
-www.experts-exchange.com##.interceptContainer
-||sharethis.com^$third-party
-www.urbandictionary.com##.mug-ad
-www.mediafire.com###adwrapper
-old.reddit.com##.ad-container
-www.textnow.com##.notification-priming-modal
-||fonts.gstatic.com/s/notoserifjp/*
-||cloudfront.net/audience.js
-www.wikihow.com###contribute_footer_wrap
-crystalmark.info###top-container-widget
-||fonts.googleapis.com/css?family=Noto+Serif+SC$stylesheet
-||fonts.googleapis.com/css?family=Noto+Serif+TC$stylesheet
-||assets.pinterest.com/js/pinit.js
-tvtropes.org##.ad, .proper-ad-unit
-www.mediafire.com##.DLExtraInfo-wrap:style(position: static !important;margin: 0 auto)
-||widget.uservoice.com^$script,3p
-||static.parastorage.com/services/wix-perf-measure/*
-||duckduckgo.com/daily/
-||marketplace.visualstudio.com/_apis/ClientTrace/*
-google.com##.gb_g.gb_aa
-www.agame.com##.show-sidebar .label-wrapper .mainContent, .show-sidebar .label-wrapper .bottomContent:style(margin-right: 0 !important)
-||fonts.googleapis.com/css?family=Noto+Serif+JP$stylesheet
-tvtropes.org##.fad, .sb-fad-unit
-||widget.pushbullet.com/dynamic.js
-apkpure.com##.ad-box-auto
-xhamster.com##.with-dot::before
-userscloud.com##.innerTB > center
-||wikia.nocookie.net/*/*tracking*
-||fonts.googleapis.com/css?family=Noto+Sans+HK$stylesheet
-techcrunch.com##.close-button:style(right: auto !important; margin-right: 0 !important)
-||facebook.com/connect/$third-party
-||log.quora.com^
-||badge.facebook.com^$third-party
-slate.com##.top-ad
-www.gamesfree.ca###adContainer
-www.youtube.com##ytd-mealbar-promo-renderer
-konggames.com##+js(acis, window.NREUM)
-||ipinfo.io/rt$xhr
-||fonts.gstatic.com/s/notosanshk/*
-userstyle.org###stylish-code:style(font-family: monospace !important)
-yadi.sk##.app-promo-banner
-sourceforge.net###newsletter-floating
-||duckduckgo.com/weekly/
-www.experts-exchange.com##.answer > .content.interceptContentScroll:style(display: block !important)
-||o.aolcdn.com/ads/*$important
-userstyles.org##.fallbackDiv
-||www.vultr.com/media/banner_*.png
-||connect.facebook.net^$third-party,domain=~facebook.com|~fb.com
-www.gamesfree.ca##.lol-carrousel-wrapper
-||platform.twitter.com/widgets.js
-||api.callstats.io^$3p
-*/wp-content/plugins/better-content-protector/*
-translate.google.*##div[jsname]:has( > div[jsname] > [role="button"][aria-label="iOS"])
-||www.sololearn.com/Scripts/fngprnt.js
-www.softpedia.com##.flashsale
-y8.com##.ads
-xhamster.com##div[class^="wih-"]
-||gamesfree.ca/js/ads.js$script,important
-||cdn.skype.com/*/telemetry$script
-www.sfgate.com##.adModule
-www.textnow.com##img[src="assets/images/icon/EnableCalling.png"]
-@@|https://readthedocs.org/api/*/sustainability/
-||cdn.jsdelivr.net/npm/stackdriver-errors-js*$script,domain=ipinfo.io
-||twitter.com/i/users/prompts
-stackexchange.com,stackoverflow.com##.js-freemium-cta
-www.ifixit.com##.campaign-banner-generic
-||getadblockpremium.com/js/log.js
-www.boundhub.com##noindex
-userstyles.org##.us-stylecard--short:has(.fallbackDiv)
-fandom.com##.featured-video__wrapper
-twitter.com##.import-prompt
-www.agame.com##.label-page-sidebar
-uptodown.com##.banner-download
-userstyles.org##.walking
-||duckduckgo.com/monthly/
-www.tutorialspoint.com###load, #load + .clear, #google-top-ads + br
-||freestyler.ws/style/tracking
-userstyles.org##.android_button_banner
-||fonts.googleapis.com/css?family=Noto+Sans+SC$stylesheet
-||unity3d.com/*/ga.js
-9gag.com##.get-the-app-banner
-||fonts.googleapis.com/css?family=Noto+Sans+KR$stylesheet
-www.ghacks.net##.ghacks_ad_code
-||fonts.gstatic.com/s/notosanstc/*
-fandom.com###WikiaBar
-||assets.readthedocs.org/static/javascript/readthedocs-analytics.js
-www.mediafire.com##.center:style(position: static !important;margin: 0 auto)
-||server.cpmstar.com^$important
-||ping.getadblock.com^
-css-tricks.com###all-ads
-fandom.com##.wds-global-footer__column:has(.wds-is-fandom-stores)
-outlook.live.com###MainModule + div:last-child:has(> div:only-child > div > #owaadbar1)
-||f.convertkit.com^$3p
-itch.io##.app_banner
-apkpure.com###ad-aegon-side
-||bandcamp.com/stat_record
-||facebook.com/plugins/$third-party
 news.ltn.com.tw#%#//scriptlet('set-local-storage-item', 'taboola global:local-storage-keys', 'emptyObj')
 @@||obs-tw.line-apps.com/talk
 ||www.mirrormedia.mg^$cookie=/AviviD.+/
@@ -733,6 +447,233 @@ udn.com##.udn-idle
 news.gamebase.com.tw##div[class="rightMiddleAD"]
 storm.mg#%#//scriptlet('abort-current-inline-script', 'show_new7_popup')
 edh.tw##iframe[id="_popIn_log"]
+fandom.com##body.wikia-bar-visible:style(padding-bottom: 0 !important)
+www.makeuseof.com##.adsninja-ad-zone
+outlook.live.com###MainModule > div:only-child > div:only-child > div[data-app-section="NavigationPane"] > div:only-child > div:only-child > .ms-FocusZone.customScrollBar.disableTextSelection + div:last-child:has(> button img[src$="/leftNavUpsellIcons/premium-diamond-01.svg"])
+genius.com##marquee-ad
+www.newgrounds.com##.header-deck
+symbolab.com##+js(set, SOLUTIONS.subscribed, true)
+xhamster.com##.clipstore-bottom, .clipstore-results
+www.wikihow.com##+js(set, mw.config.values.wgProMembership, 1)
+||cdn2.kongcdn.com/compiled-assets/metriks_*
+symbolab.com##.symp
+||ifixit-assets.??.ifixit.com/Assets/Admin/Shared-Campaigns-campaign_banners-*
+||vice-web-statics-cdn.vice.com/vendor/ad-lib/*
+www.pixiv.net##.premium-lead-premium-campaign
+||frog.wix.com^
+uptodown.com##.gad
+||graph.facebook.com^$third-party
+sourceforge.net###dlp-voip-quote
+||yandex.com/clck/*
+##a[href^="https://www.digitalocean.com/?refcode=*"]
+||freestyler.ws/php/sharrre.php
+||getadblock.com/js/log.js
+sourceforge.net##.stackcommerce-widget
+twitter.com##.Footer-adsModule
+||wikia.nocookie.net/*/*adengine3*
+fandom.com##.top-ads-container, .mcf-card-sponsored-content
+||connect.facebook.com^$third-party,domain=~facebook.net|~fb.com
+kotaku.com##.js_newsletter-form-inline
+||fonts.gstatic.com/s/notoseriftc/*
+ipinfo.io##.card-promotion
+www.textnow.com###bannerContainer
+fandom.com###mixed-content-footer
+outlook.live.com###MainModule > div:only-child > div:only-child > div:last-child:has(> div:only-child > div > #owaadbar0)
+www.mediafire.com##.header:style(position: static !important;margin: 12px auto 0 !important)
+www.songfacts.com##.songfacts-song-inline-ads
+userstyles.org##.us-stylecard--long:has(.fallbackDiv)
+||fbcdn-profile-a.akamaihd.net^$third-party,domain=~facebook.com
+gizmodo.com##.ad-container, #commerce-inset-wrapper
+||cloudfront.net/js/profitwell.js^
+||www.vultr.com/dist/img/brand/banner_*.png
+forum.xda-developers.com###honor-launch-banner
+dictionary.cambridge.org##.am-default
+konggames.com##+js(set, window._gaq._createAsyncTracker, noopFunc)
+www.gamesfree.ca##.mobile-games-carrousel
+symbolab.com#@#.tooltipster-show
+||facebook.com/whitepages/wpminiprofile.php$third-party
+||symbolab.com/detailedLog$xhr
+www.textnow.com##.toast-mask
+www.pixiv.net##+js(rc, with-ad)
+symbolab.com##.googleLeftSkyScrapper
+www.pixiv.net###column-misc > .ad + .item:style(margin-top: 0 !important)
+bandcamp.com###app-promo
+||www.getapp.com^$3p
+||yandex.com/ick/r
+symbolab.com###googleAdSenseHomepage
+www.bing.com###b_opalpers
+||rusenov.com^$xhr
+disqus.com##.unread .notification-icon:style(color: #656c7a !important)
+www.microsoft.com##.switchOfficeHeroFirst
+||coolbuddy.com/HtmlAds.ashx
+userstyles.org##.overlay_background
+www.tutorialspoint.com##hr:has(+ #google-top-ads)
+||cdn.xsolla.net/network/xtracking-*.js
+slate.com##.taboola-widget
+||www.youtube.com/youtubei/*/log_event$xhr
+symbolab.com##.googleAdsense
+sourceforge.net###nels, #project-nel, .nel, .nel-block
+||twitter.com/i/promoted_content/log.json
+||static.addtoany.com^$third-party
+www.howtogeek.com##.entry-content > div[data-nosnippet]
+9gag.com##.nav-menu .new::after
+||facebook.com^$subdocument
+||facebook.com/widgets/$third-party
+||yastatic.net/web4/_/*.gif$image
+techcrunch.com##.content-wrap .content:style(width:auto !important)
+userstyles.org###top_android_button
+||api.facebook.com^$third-party
+||fonts.gstatic.com/s/notoserifsc/*
+www.notebookcheck.net##div[id^="div-gpt-ad"], #footer > div[id*="-ad-"]
+css-tricks.com##.fem-ad
+||f-log-editor.grammarly.io^
+||badges.instagram.com^
+||fonts.gstatic.com/s/notoserifhk/*
+||log.getadblock.com^
+||platformbot.xyz^
+||onerm.olsvc.com/api/*/promo$xmlhttprequest
+||www.kongregate.com/*/metrics.json
+www.xmedia-recode.de##a[href="viren_pruf.php"]
+||disqus.com/count.js$script
+www.plazmaburst2.com##[class^="gads"]
+www.codeproject.com##div[data-type="ad"], a[href^="https://useastadprovider.azurewebsites.net/api/AdRedirector"]
+www.microsoft.com##.m-hero
+wikihow.com##+js(rc, hasad)
+@@||www.fosshub.com/media/js/adblock.js$first-party
+||marketplace.visualstudio.com/_apis/customerintelligence/*
+symbolab.com##.googleAdsenseMiddle
+win7gadgets.com##.ads_subtitle, .gads
+www.siftheadsgames.com##+js(nobab)
+||vk.com/js/api/share.js
+||yadi.sk/monitoring.txt/*
+||fonts.googleapis.com/css?family=Noto+Sans+JP$stylesheet
+www.fosshub.com##.ad
+||deviantart.com/_adslot/
+||pixel.ipinfo.io^
+||acdn.adnxs.com/ast/static/*/ast.js$script
+userstyles.org##img.fallbackImg
+www.pixiv.net###js-mount-point-header iframe + a[href^="/premium/lead/"]
+*$3p,script,domain=store.rg-adguard.net
+||fonts.gstatic.com/s/notosanskr/*
+www.npr.org###main-sidebar:has(> #ad-standard-wrap:only-child)
+||fonts.googleapis.com/css?family=Noto+Sans+TC$stylesheet
+sourceforge.net##.sterling, .banner-sterling
+apkpure.com##.aegon-link
+||fonts.googleapis.com/css?family=Noto+Serif+HK$stylesheet
+www.agame.com##.advert
+xhamster.com##.index-videos .thumb-list .wio-xright-rectangle ~ .thumb-list__item:style(margin-right: 0 !important)
+www.textnow.com##.rotation-manager-slot
+||fonts.gstatic.com/s/notosansjp/*
+compass-style.org##.advertisement
+userstyles.org##.android_button_button
+techcrunch.com##.sidebar
+disk.yandex.com##.ns-view-dialogWelcome
+||wikia.nocookie.net/*/*analytics*
+www.wired.com##.newsletter-subscribe-form
+||facebook.com/restserver.php?*.getStats&$third-party
+outlook.live.com###MainModule #notificationBarText + div:last-child > div[data-app-section="MessageList"] > .customScrollBar > div[draggable="false"]:only-child > div[role="region"]:only-child > div[role="listbox"]:only-child .customScrollBar > div:only-child > div:first-child:matches-css(position: absolute):has(> div[data-animatable="true"] .fbAdCallToAction)
+||www.g2.com^$3p
+||api-read.facebook.com/restserver.php?api_key=$third-party
+||wikia.nocookie.net/*/search_tracking_js*
+developer.mozilla.org##.top-level-entry-container .top-level-entry-dot ~ .top-level-entry::after
+||fonts.gstatic.com/s/notosanssc/*
+www.experts-exchange.com##.interceptContainer
+||sharethis.com^$third-party
+www.urbandictionary.com##.mug-ad
+www.mediafire.com###adwrapper
+old.reddit.com##.ad-container
+www.textnow.com##.notification-priming-modal
+||fonts.gstatic.com/s/notoserifjp/*
+||cloudfront.net/audience.js
+www.wikihow.com###contribute_footer_wrap
+crystalmark.info###top-container-widget
+||fonts.googleapis.com/css?family=Noto+Serif+SC$stylesheet
+||fonts.googleapis.com/css?family=Noto+Serif+TC$stylesheet
+||assets.pinterest.com/js/pinit.js
+tvtropes.org##.ad, .proper-ad-unit
+www.mediafire.com##.DLExtraInfo-wrap:style(position: static !important;margin: 0 auto)
+||widget.uservoice.com^$script,3p
+||static.parastorage.com/services/wix-perf-measure/*
+||duckduckgo.com/daily/
+||marketplace.visualstudio.com/_apis/ClientTrace/*
+google.com##.gb_g.gb_aa
+www.agame.com##.show-sidebar .label-wrapper .mainContent, .show-sidebar .label-wrapper .bottomContent:style(margin-right: 0 !important)
+||fonts.googleapis.com/css?family=Noto+Serif+JP$stylesheet
+tvtropes.org##.fad, .sb-fad-unit
+||widget.pushbullet.com/dynamic.js
+apkpure.com##.ad-box-auto
+xhamster.com##.with-dot::before
+userscloud.com##.innerTB > center
+||wikia.nocookie.net/*/*tracking*
+||fonts.googleapis.com/css?family=Noto+Sans+HK$stylesheet
+techcrunch.com##.close-button:style(right: auto !important; margin-right: 0 !important)
+||facebook.com/connect/$third-party
+||log.quora.com^
+||badge.facebook.com^$third-party
+slate.com##.top-ad
+www.gamesfree.ca###adContainer
+www.youtube.com##ytd-mealbar-promo-renderer
+konggames.com##+js(acis, window.NREUM)
+||ipinfo.io/rt$xhr
+||fonts.gstatic.com/s/notosanshk/*
+userstyle.org###stylish-code:style(font-family: monospace !important)
+yadi.sk##.app-promo-banner
+sourceforge.net###newsletter-floating
+||duckduckgo.com/weekly/
+www.experts-exchange.com##.answer > .content.interceptContentScroll:style(display: block !important)
+||o.aolcdn.com/ads/*$important
+userstyles.org##.fallbackDiv
+||www.vultr.com/media/banner_*.png
+||connect.facebook.net^$third-party,domain=~facebook.com|~fb.com
+www.gamesfree.ca##.lol-carrousel-wrapper
+||platform.twitter.com/widgets.js
+||api.callstats.io^$3p
+*/wp-content/plugins/better-content-protector/*
+translate.google.*##div[jsname]:has( > div[jsname] > [role="button"][aria-label="iOS"])
+||www.sololearn.com/Scripts/fngprnt.js
+www.softpedia.com##.flashsale
+y8.com##.ads
+xhamster.com##div[class^="wih-"]
+||gamesfree.ca/js/ads.js$script,important
+||cdn.skype.com/*/telemetry$script
+www.sfgate.com##.adModule
+www.textnow.com##img[src="assets/images/icon/EnableCalling.png"]
+@@|https://readthedocs.org/api/*/sustainability/
+||cdn.jsdelivr.net/npm/stackdriver-errors-js*$script,domain=ipinfo.io
+||twitter.com/i/users/prompts
+stackexchange.com,stackoverflow.com##.js-freemium-cta
+www.ifixit.com##.campaign-banner-generic
+||getadblockpremium.com/js/log.js
+www.boundhub.com##noindex
+userstyles.org##.us-stylecard--short:has(.fallbackDiv)
+fandom.com##.featured-video__wrapper
+twitter.com##.import-prompt
+www.agame.com##.label-page-sidebar
+uptodown.com##.banner-download
+userstyles.org##.walking
+||duckduckgo.com/monthly/
+www.tutorialspoint.com###load, #load + .clear, #google-top-ads + br
+||freestyler.ws/style/tracking
+userstyles.org##.android_button_banner
+||fonts.googleapis.com/css?family=Noto+Sans+SC$stylesheet
+||unity3d.com/*/ga.js
+9gag.com##.get-the-app-banner
+||fonts.googleapis.com/css?family=Noto+Sans+KR$stylesheet
+www.ghacks.net##.ghacks_ad_code
+||fonts.gstatic.com/s/notosanstc/*
+fandom.com###WikiaBar
+||assets.readthedocs.org/static/javascript/readthedocs-analytics.js
+www.mediafire.com##.center:style(position: static !important;margin: 0 auto)
+||server.cpmstar.com^$important
+||ping.getadblock.com^
+css-tricks.com###all-ads
+fandom.com##.wds-global-footer__column:has(.wds-is-fandom-stores)
+outlook.live.com###MainModule + div:last-child:has(> div:only-child > div > #owaadbar1)
+||f.convertkit.com^$3p
+itch.io##.app_banner
+apkpure.com###ad-aegon-side
+||bandcamp.com/stat_record
+||facebook.com/plugins/$third-party
 @@||www.raidrive.com/css/raidrive/ads.min.css$stylesheet
 @@||img.hentai-foundry.com/themes/default/js/ads.js
 @@||slm-assets.secondlife.com/assets/*$image
@@ -1009,6 +950,7 @@ finance.sina.com.cn##.blk_APP_JSr
 ||game.weibo.cn^
 cnbeta.com##.article-global
 ithome.com###side_func
+||sbeacon.sina.com.cn^
 ||sobartop.baidu.com^
 ||jzt.jd.com^
 ||adshmmsg.qq.com^
@@ -1309,6 +1251,18 @@ ithome.com##div[id^="tt"]
 jiemian.com###ad_header_top
 ||mobads.baidu.com^
 ||tuijian.baidu.com^
+www.bjnews.com.cn###v4_wxin
+www.iplaysoft.com###elevator_social > .float-left:nth-of-type(2):style(width: 100% !important)
+gitee.com##.qrcode.weixin
+*/jweixin-*.js^$script
+www.iplaysoft.com###elevator_social:style(width: 230px !important;)
+www.iplaysoft.com##.elevator > li:has(#elevator_social)
+||assets.gitee.com/assets/qrcode-weixin-*$image
+www.iplaysoft.com###elevator_social > .float-left:nth-of-type(1)
+www.myzaker.com##.btn_zaker_mp
+||www.secrss.com/wx_qrcode.jpg
+www.iplaysoft.com##.popWxgzh:not(.ipsicon)
+www.secrss.com##.qrcode
 ||g.csdnimg.cn/track^$important
 gitee.com##.wallet-banner
 */cgi-bin/apptrace^$image
@@ -1598,7 +1552,6 @@ www.icourse163.org##.main-box:style(width: 100% !important;float: none !importan
 ||data-xxt.aichaoxing.com/analysis/datalog
 ||ae.bdstatic.com/msite/*
 music.163.com##.brand-vip.brand-tag
-||sbeacon.sina.com.cn^
 ||assets.tapimg.com/js/sa-*.js
 pan.baidu.com##.nd-guide-svip-bar
 bilibili.com##.download-client-trigger
