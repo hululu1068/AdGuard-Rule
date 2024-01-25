@@ -1,4 +1,4 @@
-# Update time: 2024-01-24 20:22:21
+# Update time: 2024-01-25 08:55:22
 # Repo URL: AdGuard、AdGuardHome广告过滤规则合并/去重
 
 ###################################   合并/去重自以下规则   ####################################
@@ -57,7 +57,6 @@
 ||cnzz.
 ||adsfile.
 ||adserver.
-||adservice.
 ||adpic.
 ||sax.sina.
 ||biz5.
@@ -91,6 +90,7 @@ MRelateFeedAd
 ||adcolony.
 ||advertising.
 ||showad*
+||adservice.
 ||pagead.
 ||djjca.
 ||imageadv.
@@ -268,7 +268,6 @@ analytics-*.aasaam.com
 ||mautic.*.vn^
 ||s*.adduplex.com^
 ||mon*-platform-*.tiktokv.com^
-||collect-elb-*.amazonaws.com^
 ||collector-*.px-cloud.net^
 ||collector-*.tvsquared.com^
 ||adserver1.
@@ -290,7 +289,6 @@ analytics-*.aasaam.com
 ||flurry.agentportal-*.yahoodns.net^
 ||host*.rigbyandpeller.com^
 ||tw*.netcore.co.in^
-||clog*.yuanfudao.com^
 ||mapi-log.qoo*.jp^
 ||rum*.a.trbcdn.net^
 ||xlog*-*.tiktokv.com^
@@ -306,7 +304,6 @@ analytics-*.aasaam.com
 ||u*.takru.com^
 ||rtbimp-loadbalancer-*.amazonaws.com^
 ||www.fuze-sea*.xyz^
-||browser-intake-*-datadoghq.com^
 ||metrics*.fitanalytics.com^
 ||collector-*.px-cdn.net^
 ||eclog*-*.cafe24.com^
@@ -330,7 +327,6 @@ analytics-*.aasaam.com
 ||web-visor.
 ||1024wanzhai.
 ||under-click.
-||collector-*.px-client.net^
 ||log-*.epicdn.me^
 ||metric*.rediff.com^
 ||tracker.twenga.
@@ -394,6 +390,10 @@ analytics-*.aasaam.com
 ||poptraf.
 ||4adtf.com.^
 ||v*.sitecounter.site^
+||ifengad.*.ifeng.com^
+||imgpfx.arenavision.
+||player-feedback*.glomex.*^
+||buzzer.xhamster.
 ||da.hornbach.*^
 ||appsflyer*.*^
 ||brucelead*.com^
@@ -487,12 +487,10 @@ analytics-*.aasaam.com
 ||gg*.51cto.com^
 ||analyzer*.fc2.com^
 ||tracker*.qcloud.com^
-||imgpfx.arenavision.
-||player-feedback*.glomex.*^
-||buzzer.xhamster.
 ||liveweb*.msstatic.com^
 ||pangolin-sdk-toutiao*.com^
 ||ping*.qq.com^
+||clog*.yuanfudao.com^
 ||cj1*.online^
 ||sd.yhzzzs*.com^
 ||w*.*skwai.com^
@@ -505,6 +503,7 @@ analytics-*.aasaam.com
 ||zazgiyoh*.world^
 ||collector-*.us.tvsquared.com^
 ||zazgbqg*.xyz^
+||browser-intake-*-datadoghq.com^
 ||v*.denakop.com^
 ||ads*.zijieapi.com^
 ||opnked*.xyz^
@@ -536,6 +535,7 @@ analytics-*.aasaam.com
 ||bj1*.online^
 ||ac*.pingguolv.com^
 ||api*.batmobil.net^
+||collector-*.px-client.net^
 ||ej1*.online^
 ||mistat.*.xiaomi.com^
 ||stat.*.v-56.com^
@@ -560,7 +560,6 @@ analytics-*.aasaam.com
 ||ulog*.*^
 ||api*.amplitude.com^
 ||app-analytics-*.snapchat.com^
-||ifengad.*.ifeng.com^
 ||bjkedv*.xyz^
 ||p26.gejulm*.com^
 ||adservice.google.*^
@@ -597,6 +596,7 @@ analytics-*.aasaam.com
 ||aj1*.xyz^
 ||analytics*.carambo.la^
 ||util-*.simply-hentai.com^
+||collect-elb-*.amazonaws.com^
 ||mads*z.com^
 ||gtlpa*.com^
 ||auth-*.hismarttv.com^
