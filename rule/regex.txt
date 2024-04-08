@@ -1,4 +1,4 @@
-# Update time: 2024-04-08 08:52:22
+# Update time: 2024-04-08 20:20:15
 # Repo URL: AdGuard、AdGuardHome广告过滤规则合并/去重
 
 ###################################   合并/去重自以下规则   ####################################
@@ -48,13 +48,33 @@
 # 每12小时同步一次、如有误杀、请手动解除
 
 ||report.*.qq.com^
+||allyes.
+||icast.
+||gg.
+||union.
+||ad.
+||ads.
+||cnzz.
+||adsfile.
+||adserver.
+||adpic.
+||sax.sina.
+||biz5.
+||adsense.
+||xmindchina.
+||ggg.
+||admaster.
+||googleadservices.
+||irs01.
+||saxs.sina.
+||adsame.
+||onetrust.
 ||adx.
 ||adx-
 ||adsfs.
 ||adsdk.
 MRelateFeedAd
 ||adsmind.
-||adsfile.
 ||bigdata.
 ||sell*.etlong.com^
 ||smartads.
@@ -65,11 +85,8 @@ MRelateFeedAd
 ||adstats.
 ||toujing*.top^
 ||popup.*.js*
-||ggg.
 ||advert.
-||irs01.
 ||advert-
-||allyes.
 ||adcolony.
 ||advertising.
 ||showad*
@@ -89,22 +106,18 @@ getAds|
 ||appjiagu.
 ||img.piaosugo.com*.jpg
 ||adsmis.
-||adserver.
 ||sense-*.tapdb.net^
 ||pc.min.js*
 ||minero-proxy-*now.sh
 ||pagead2.
 ||guangyaoli.
-||adsense.
 ||ading.
 ||googleads.
 ||umengacs.
 ||ads-
-||ad.
 piao.js|
 oHead6205.appendChild( oScript6205);
 ||ad-
-||ads.
 ||vali-g1.cp31.ott.cibntv.net*.mp4
 ||adxapi.
 ||adsence.
@@ -114,31 +127,22 @@ advertisers.js|
 ||yazhouyu.
 ||advertise.
 ||ap*.pl520.com^
-||onetrust.
-||icast.
-||gg.
-||union.
-||adpic.
-||cnzz.
-||sax.sina.
-||biz5.
-||xmindchina.
-||admaster.
-||googleadservices.
-||saxs.sina.
-||adsame.
+<head>
 <body>
 <!doctype html>
-<head>
 ||sax*.sina.
 ||bdcpro*.techweb.com.cn^
 ||dm*.ppzuowen.com^
+||bd*-ys.km.com^
 ||uc*.atobo.com^
 ||impservice*.youdao.com^
+||d*.ruiwen.com^
 ||fanpingbi*.gaokao.com^
 ||dn*.ixinwei.com^
+||bdlm*.hc360.com^
 728x90.jpg|
 ||ya*.dwstatic.com^
+||d*.xinshipu.com^
 ||fpb*.51edu.com^
 ||ja*.gamersky.com^
 ||static*.365inews.com^
@@ -174,6 +178,7 @@ analytics-*.aasaam.com
 ||allsportsflix.
 ||iphone-caviar.ru*entranceId
 ||w*statistics.info^
+||prebid-*.rubiconproject.com^
 ||faro-collector-prod-*.grafana.net^
 ||sgtm.fashionunited.
 ||lt*.tritondigital.com^
@@ -250,7 +255,6 @@ analytics-*.aasaam.com
 ||popupclick.
 ||dw-informer-*.newsru.com^
 |piwik.
-||datacollector-*.dt.hicloud.com^
 ||piwik.*.vn^
 ||letssex.
 ||production-adserver-*.amazonaws.com^
@@ -294,7 +298,6 @@ analytics-*.aasaam.com
 ||metrics*.fitanalytics.com^
 ||eclog*-*.cafe24.com^
 ||host*.polaroid.com^
-||datacollector-*.dt.dbankcloud.cn^
 ||s*.skencituer.com^
 ||underclick.
 ||imp-*.jampp.com^
@@ -374,6 +377,7 @@ analytics-*.aasaam.com
 ||collector.xhamster*.
 ||poptraf.
 ||v*.sitecounter.site^
+||ifengad.*.ifeng.com^
 ||imgpfx.arenavision.
 ||player-feedback*.glomex.*^
 ||da.hornbach.*^
@@ -492,6 +496,7 @@ analytics-*.aasaam.com
 ||www.xxmh*.com^
 ||ajx*.online^
 ||cas.*.criteo.com^
+||datacollector-*.dt.dbankcloud.cn^
 ||n*adserv.com^
 ||apple.com-*.live^
 ||zbc6hy*.live^
@@ -501,12 +506,10 @@ analytics-*.aasaam.com
 ||batchlogging*-noneu.truecaller.com^
 ||ads*.production-public.tubi.io^
 ||ads-*-nfl.yinzcam.com^
-||bd*-ys.km.com^
 ||ads*.dfiles.eu^
 ||ads.*.yahoo.com^
 ||adv0*.msa.cdn.mediaset.net^
 ||ce-global-track-*.amazonaws.com^
-||d*.ruiwen.com^
 ||ana*.inews24.com^
 ||a*.chajiaotong.com^
 ||gads*s.com^
@@ -547,7 +550,6 @@ analytics-*.aasaam.com
 ||ulog*.*^
 ||api*.amplitude.com^
 ||app-analytics-*.snapchat.com^
-||ifengad.*.ifeng.com^
 ||bjkedv*.xyz^
 ||p26.gejulm*.com^
 ||adservice.google.*^
@@ -579,10 +581,10 @@ analytics-*.aasaam.com
 ||mobileoffers-*-download.com^
 ||zaqlovh*.xyz^
 ||collect-v*.51.la^
+||datacollector-*.dt.hicloud.com^
 ||n*adserv.xyz^
 ||fls-*.amazon.com^
 ||adsfilebssdlbig.*.kugou.com^
-||bdlm*.hc360.com^
 ||ad*.nexage.com^
 ||aj1*.xyz^
 ||analytics*.carambo.la^
@@ -591,7 +593,6 @@ analytics-*.aasaam.com
 ||collect-elb-*.amazonaws.com^
 ||collector-*.px-cloud.net^
 ||collector-*.tvsquared.com^
-||d*.xinshipu.com^
 ||counter*-yadro*-ru.unblocked.lol^
 ||mads*z.com^
 ||gtlpa*.com^
@@ -624,6 +625,5 @@ rgmechanicsgames.com*VPN.exe
 ||142.91.159.
 ||fxhpaoxqyajvmdg.
 ||spryptvqguhpwt^
-||prebid-*.rubiconproject.com^
 ||cintent.streanplay.
 Banner468x60
