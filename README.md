@@ -32,7 +32,7 @@
     <li><a href="https://gitlab.com/cats-team/adrules/">AdRules(AdGuard Full List)</a></li>
     <li><a href="https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt">AdGuard Base</a></li>
     # 自用添加↓
-    <li><a href="https://anti-ad.net/easylist.txt">anti-AD</a></li>
+    <li><a href="https://raw.githubusercontent.com/lingeringsound/10007_auto/master/all">10007_auto_Master</a></li>
     <li><a href="https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/combined_disguised_trackers.txt">AdGuard CNAME 伪装跟踪器列表</a></li>
     <li><a href="https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt">AdGuard DNS filter</a></li>
     <li><a href="https://raw.githubusercontent.com/Crystal-RainSlide/AdditionalFiltersCN/master/CN.txt">AdditionalFiltersCN</a></li>
