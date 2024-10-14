@@ -1,0 +1,16 @@
+application:
+  rule:       
+    #远程规则订阅，仅支持http、https
+    remote:
+      - 'https://example.com/list.txt'
+    #本地规则，请将文件移动到项目路径rule目录中
+    local: 
+      - 'mylist.txt'
+  output:
+    path: rule   #规则文件输出路径，相对路径默认从 项目目录开始
+    files:
+      all.txt:    #输出文件名
+        - DOMAIN  #域名规则，仅完整域名
+        - REGEX   #正则规则，包含正则的域名规则，AdGH支持
+        - MODIFY  #修饰规则，添加了一些修饰符号的规则，AdG支持
+        - HOSTS   #Hosts规则
