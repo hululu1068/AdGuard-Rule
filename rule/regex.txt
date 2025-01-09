@@ -1,4 +1,4 @@
-# Update time: 2025-01-09 09:06:57
+# Update time: 2025-01-09 20:28:37
 # Repo URL: AdGuard、AdGuardHome广告过滤规则合并/去重
 
 ###################################   合并/去重自以下规则   ####################################
@@ -64,6 +64,7 @@
 ||cnzz.
 ||adsfile.
 ||adserver.
+||adservice.
 ||adpic.
 ||sax.sina.
 ||biz5.
@@ -96,7 +97,6 @@ MRelateFeedAd
 ||adcolony.
 ||advertising.
 ||showad*
-||adservice.
 ||pagead.
 ||djjca.
 ||imageadv.
@@ -162,7 +162,6 @@ advertisers.js|
 ||vns86.oss-*.aliyuncs.com^
 ||asd8900.oss-*.aliyuncs.com^
 ||ky891.oss-*.aliyuncs.com^
-||ad*.aginomoto.com
 ||pixel*.production-public.tubi.io^
 ||host*.nti.nl^
 ||adserver*.euroweeklynews.com^
@@ -237,6 +236,7 @@ analytics-*.aasaam.com
 ||log*.byteoversea.com^
 ||mon*-misc-lf.fqnovel.com^
 ||logs*.smithsonian.museum^
+||cs*.mp3bars.com^
 ||bar*.shinobi.jp^
 ||counter*.freecounter.ovh^
 ||tracking-v*.a.run.app^
@@ -276,9 +276,11 @@ analytics-*.aasaam.com
 ||analytics.ahrefs.
 ||s*.adduplex.com^
 ||mon*-platform-*.tiktokv.com^
+||collect-elb-*.amazonaws.com^
 ||collector-*.tvsquared.com^
 ||adserver1.
 ||log-*.previewnetworks.com^
+||counter*-yadro*-ru.unblocked.lol^
 ||backstory.ebay.
 ||adx-*.dbankcloud.
 ||pop-parad.
@@ -320,6 +322,7 @@ analytics-*.aasaam.com
 ||u*.takru.com^
 ||rtbimp-loadbalancer-*.amazonaws.com^
 ||www.fuze-sea*.xyz^
+||browser-intake-*-datadoghq.com^
 ||metrics*.fitanalytics.com^
 ||edgetrksvc.ebay.
 ||eclog*-*.cafe24.com^
@@ -415,8 +418,7 @@ analytics-*.aasaam.com
 ||collector*.ex.co^
 ||poptraf.
 ||v*.sitecounter.site^
-||imgpfx.arenavision.
-||player-feedback*.glomex.*^
+||ad*.aginomoto.com
 <script>
             pageOptions
     xhr.send();
@@ -446,6 +448,8 @@ body {
             }
         return arguments;
 }
+||imgpfx.arenavision.
+||player-feedback*.glomex.*^
 ||da.hornbach.*^
 ||cloudservice*.kingsoft-office-service.com^
 ||dm-*.toutiao.com^
@@ -564,7 +568,6 @@ body {
 ||zazgiyoh*.world^
 ||collector-*.us.tvsquared.com^
 ||zazgbqg*.xyz^
-||browser-intake-*-datadoghq.com^
 ||v*.denakop.com^
 ||ads*.zijieapi.com^
 ||opnked*.xyz^
@@ -616,7 +619,6 @@ body {
 ||adcs-*.myappsget.com^
 ||ads*.textra.me^
 ||aj2*.online^
-||cs*.mp3bars.com^
 ||zazgiyoh*.xyz^
 ||zcchyw*.xyz^
 ||log*-misc-lq.amemv.com^
@@ -664,9 +666,7 @@ body {
 ||chat*-ce.chatdealer.jp^
 ||util-*.simply-hentai.com^
 ||aan.amazon.*^
-||collect-elb-*.amazonaws.com^
 ||collector-*.px-cloud.net^
-||counter*-yadro*-ru.unblocked.lol^
 ||mads*z.com^
 ||gtlpa*.com^
 ||auth-*.hismarttv.com^
