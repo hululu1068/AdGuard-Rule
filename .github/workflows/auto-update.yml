@@ -33,15 +33,15 @@ jobs:
         run:  java -jar ./target/adg-rule-1.0.0.jar
 
       - name: Commit Changes
-        id: commit
+        id: 提交
         run: |
           if [ -z "$(git status --porcelain)" ]; then 
               exit 0
           else
             echo "status=success" >> $GITHUB_OUTPUT
             git add .
-            git config --local user.email "xjianglin@gmail.com"
-            git config --local user.name "hululu1068"
+            git config --local user.email "ldaurcvvrk@outlook.com"
+            git config --local user.name "ldaurcvvrk"
             git commit -m "CI Updated at $(date +'%Y-%m-%d %H:%M:%S')" -a
           fi
 
