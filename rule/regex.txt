@@ -1,4 +1,4 @@
-# Update time: 2025-03-01 20:26:36
+# Update time: 2025-03-02 09:13:04
 # Repo URL: AdGuard、AdGuardHome广告过滤规则合并/去重
 
 ###################################   合并/去重自以下规则   ####################################
@@ -64,6 +64,7 @@
 ||cnzz.
 ||adsfile.
 ||adserver.
+||adservice.
 ||adpic.
 ||sax.sina.
 ||biz5.
@@ -96,7 +97,6 @@ MRelateFeedAd
 ||adcolony.
 ||advertising.
 ||showad*
-||adservice.
 ||pagead.
 ||djjca.
 ||imageadv.
@@ -139,6 +139,7 @@ advertisers.js|
 ||uc*.atobo.com^
 ||fanpingbi*.gaokao.com^
 ||dn*.ixinwei.com^
+||bdlm*.hc360.com^
 728x90.jpg|
 ||ya*.dwstatic.com^
 ||fpb*.51edu.com^
@@ -284,6 +285,7 @@ analytics-*.aasaam.com
 ||mcs-*.lemon8-app.us^
 ||analytics.ahrefs.
 ||s*.adduplex.com^
+||collector-*.tvsquared.com^
 ||adserver1.
 ||log-*.previewnetworks.com^
 ||backstory.ebay.
@@ -406,6 +408,7 @@ analytics-*.aasaam.com
 ||pixel.archive.
 ||log-*.zadn.vn^
 ||ad*.thisisgame.com^
+||collect-v*.51.la^
 ||q*-publick.club^
 ||logger-*.dailymotion.com^
 ||iad-*.appboy.com^
@@ -416,7 +419,6 @@ analytics-*.aasaam.com
 ||snowplow-collector-*.amazonaws.com^
 ||ms*.applvn.com^
 ||thegreatesthits.
-||iad-*.braze.com^
 ||geoloc*.9cd47096ab1495d8d3b18667f6a52b9c.com^
 ||tracking-*.trnox.com^
 ||snowplow-collector.
@@ -430,6 +432,7 @@ analytics-*.aasaam.com
 ||rotator.
 ||pixel-*.convertagain.net^
 ||collector.xhamster*.
+||collector*.ex.co^
 ||poptraf.
 ||v*.sitecounter.site^
 ||ad*.aginomoto.com
@@ -462,6 +465,8 @@ body {
             }
         return arguments;
 }
+||imgpfx.arenavision.
+||player-feedback*.glomex.*^
 ||da.hornbach.*^
 ||cloudservice*.kingsoft-office-service.com^
 ||dm-*.toutiao.com^
@@ -564,8 +569,6 @@ body {
 @@||tongji.*kuwo.cn^
 ||gg*.51cto.com^
 ||tracker*.qcloud.com^
-||imgpfx.arenavision.
-||player-feedback*.glomex.*^
 ||us.*.qwadro.com^
 ||pangolin-sdk-toutiao*.com^
 ||ping*.qq.com^
@@ -675,10 +678,8 @@ body {
 ||zcchyr*.xyz^
 ||js.*2023*.live^
 ||zaqlovh*.xyz^
-||collect-v*.51.la^
 ||n*adserv.xyz^
 ||adsfilebssdlbig.*.kugou.com^
-||bdlm*.hc360.com^
 ||ad*.nexage.com^
 ||aj1*.xyz^
 ||analytics*.carambo.la^
@@ -687,7 +688,7 @@ body {
 ||aan.amazon.*^
 ||collect-elb-*.amazonaws.com^
 ||collector-*.px-cloud.net^
-||collector-*.tvsquared.com^
+||iad-*.braze.com^
 ||bjsvp*.space^
 ||counter*-yadro*-ru.unblocked.lol^
 ||mads*z.com^
@@ -706,7 +707,6 @@ body {
 ||analytics*.prezly.com^
 ||firebaselogging-*.googleapis.com^
 ||gads*z.com^
-||collector*.ex.co^
 ||analytics.*.sky.com^
 ||reachableads-av.*.amazonaws.com^
 ||ads*.opensubtitles.org^
