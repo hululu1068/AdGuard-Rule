@@ -1,0 +1,76 @@
+name: Update Rules
+on: 
+  push:
+    branches: 
+      - adrules
+    paths-ignore:
+      - '*.md'
+      - '.DS_Store'
+  schedule:
+    - cron: '0 */12 * * *'  # 每 12 小时执行一次
+  workflow_dispatch:  # 允许手动触发
+
+env:
+  TZ: Asia/Shanghai
+
+jobs:
+  update-rules:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout adrules branch
+        uses: actions/checkout@main
+        with:
+          ref: adrules  # 切换到 adrules 分支
+
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - uses: actions/setup-node@v2
+        with:
+          #node-version: '14'
+          check-latest: true
+
+      # Install hostlist-compiler
+      - name: Install hostlist-compiler
+        run: npm i -g @adguard/hostlist-compiler
+
+      - name: Update Upstream
+        continue-on-error: false
+        run: |
+          pip install requests
+          bash ./script/update-upstream.sh
+          tar -czvf archive.tar.gz ./tmp/*
+        
+      - name: Build Rules
+        continue-on-error: false
+        run: |
+          bash ./script/update-content-rules.sh
+          bash ./script/update-dns-rules.sh
+          rm -f archive.tar.gz
+
+      - name: Update other rules | 更新其它规则及Github-Hosts
+        run: |
+          cd rules
+          rm *.txt
+          wget https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
+
+          bash ../script/github-hosts.sh
+          cd ../
+
+      - name: Git push assets to Github
+        run: |
+          git init
+          git config --local user.name "actions"
+          git config --local user.email "action@github.com"
+          git add .
+          git commit -am "CI Update at $(TZ=UTC-8 date +"%Y-%m-%d %H:%M")"
+          git push origin adrules
+
+      - name: Delete workflow runs
+        uses: Mattraks/delete-workflow-runs@main
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ${{ github.repository }}
+          retain_days: 0
+          keep_minimum_runs: 2
