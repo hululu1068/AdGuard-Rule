@@ -16,8 +16,9 @@ python ./script/remove.py
 cat ./mod/rules/first-dns-rules.txt >> dns.txt
 python ./script/rule.py dns.txt
 echo -e "! Total count: $(wc -l < dns.txt) \n! Update: $update_time" > total.txt
-cat ./mod/title/dns-title.txt total.txt dns.txt | sed '/^$/d' > tmp.txt && mv tmp.txt dns.txt
-
+cat ./mod/title/dns-title.txt total.txt dns.txt | sed '/^$/d' > tmp.txt
+mv tmp.txt dns.txt
+cat dns.txt |grep -vE '(@|\*)' |grep -Po "(?<=\|\|).+(?=\^)" | grep -v "\*" > ./domain.txt
 
 echo "# Title:AdRules Quantumult X List " > qx.conf
 echo "# Title:AdRules SmartDNS List " > smart-dns.conf
@@ -28,7 +29,6 @@ echo "# Update: $update_time" >> smart-dns.conf
 echo "# Update: $update_time" >> adrules.list
 echo "# Update: $update_time" >> adrules_domainset.txt
 
-cat dns.txt |grep -vE '(@|\*)' |grep -Po "(?<=\|\|).+(?=\^)" | grep -v "\*" > ./domain.txt
 cat domain.txt |sed 's/^/host-suffix,/g'|sed 's/$/,reject/g' >> ./qx.conf
 cat domain.txt |sed "s/^/address \//g"|sed "s/$/\/#/g" >> ./smart-dns.conf
 cat domain.txt |sed "s/^/domain:/g" > ./mosdns_adrules.txt
