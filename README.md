@@ -17,7 +17,7 @@
 
  Syntax             | 🚀Github Raw                                                                           | 🚀jsDelivr                                           |📱专属格式                                           | 
 :------------------:|:--------------------------------------------------------------------------------------:|:----------------------------------------------------------:|:----------------------------------------------------------:|
- ABP                | [链接](https://github.com/hululu1068/AdGuard-Rule/raw/adrules/dns.txt)               | [链接](https://cdn.jsdelivr.net/gh/hululu1068/AdGuard-Rule@adrules/dns.txt)                     | /              |
+ ABP / AdguardHome  | [链接](https://github.com/hululu1068/AdGuard-Rule/raw/adrules/dns.txt)               | [链接](https://cdn.jsdelivr.net/gh/hululu1068/AdGuard-Rule@adrules/dns.txt)                     | /              |
  SmartDNS           | [链接](https://github.com/hululu1068/AdGuard-Rule/raw/adrules/smart-dns.conf)        | [链接](https://cdn.jsdelivr.net/gh/hululu1068/AdGuard-Rule@adrules/smart-dns.conf)              | /              |
  MosDNS             | [链接](https://github.com/hululu1068/AdGuard-Rule/raw/adrules/mosdns_adrules.txt)    | [链接](https://cdn.jsdelivr.net/gh/hululu1068/AdGuard-Rule@adrules/mosdns_adrules.txt)          | /              |
  Clash / mihomo   | [链接](https://github.com/hululu1068/AdGuard-Rule/raw/adrules/adrules_domainset.txt) | [链接](https://cdn.jsdelivr.net/gh/hululu1068/AdGuard-Rule@adrules/adrules_domainset.txt)       | [链接](https://github.com/hululu1068/AdGuard-Rule/raw/adrules/adrules-mihomo.mrs)               |

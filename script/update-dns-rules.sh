@@ -5,15 +5,18 @@ update_time="$(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')(GMT+8)"
 
 cp ./mod/rules/*rule* ./tmp/dns/
 
-cat ./tmp/dns/* | grep -Ev '[A-Z]' |grep -vE '@|:|\?|\$|\#|\!|/' | sort | uniq >dns.txt
+cat ./tmp/dns/* | grep -Ev '[A-Z]' |grep -vE '@|:|\?|\$|\#|\!|/' | sort | uniq > dns.txt
 
-hostlist-compiler -c ./script/dns-rules-config.json -o dns-output.txt 
+# 初步处理黑名单(不定时更新)
+hostlist-compiler -c ./script/dns-rules-config.json -o dns-output.txt
+cat dns-output.txt |grep -P "^\|\|[a-z0-9\.\-\*]+\^$" > dns.txt
 
-cat dns-output.txt |grep -P "^\|\|[a-z0-9\.\-\*]+\^$"> dns.txt
-
+# 提取/合并,黑白名单
 python ./script/remove.py
 
+# 添加关键词过滤规则
 cat ./mod/rules/first-dns-rules.txt >> dns.txt
+
 python ./script/rule.py dns.txt
 echo -e "! Total count: $(wc -l < dns.txt) \n! Update: $update_time" > total.txt
 cat ./mod/title/dns-title.txt total.txt dns.txt | sed '/^$/d' > tmp.txt
