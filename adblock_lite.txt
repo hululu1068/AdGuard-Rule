@@ -2,8 +2,8 @@
 ! Title: AdRules AdBlock List Lite 
 ! Expires: 12h (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-03-21 08:49:03(GMT+8) 
-! Total count: 30240
+! ! Version: 2025-03-21 20:18:45(GMT+8) 
+! Total count: 30248
  
 ###ADtip
 ###Ad_windows
@@ -6095,6 +6095,7 @@ $websocket,domain=wap.yushuwu.cloud
 @@||yantuchina.com/gg/tmp/hong.gif
 @@||yast.rutube.ru/crossdomain.xml$object-subrequest
 @@||yeeach.com^$generichide
+@@||yeeach.com^$generichide,badfilter
 @@||yellowbridge.com^$elemhide
 @@||yesiget.i234.me^$generichide
 @@||yimg.com/ss/rapid-3.*.js$domain=hk.yahoo.com|tw.yahoo.com
@@ -7036,6 +7037,7 @@ bing.com#?#.b_algo:-abp-has(.ad_esltitle)
 bing.com#?#.b_algo:-abp-has(.b_ads1line)
 bing.com#?#.sb_form_placeholder:-abp-has(>.ad-ghost-slug)
 bing.com#?#li[class="b_algo"]:-abp-has(.b_attribution[data-partnertag]+p[class])
+bing.com,cn.bing.net###bnp_rich_div
 bing.com,cn.bing.net##.ad_sc
 bing.com,cn.bing.net##.adsMvC
 bing.com,cn.bing.net##.b_algo:has(.rms_img[src*="/th?id=OADD2."][src$="21.2"])
@@ -8184,7 +8186,6 @@ doupe.zive.cz#@##adblock-leaderboard
 douxie.com##.ndxBanner
 douxie.com##.ndxChdjBox
 douyin.com###videoSideBar iframe
-douyin.com##[class*='h5-ad-']
 douyin.com#?##douyin-right-container > div[class] > div[class]:has(> ul[class] > li[class] > a[href][target="_blank"] + div:contains(广告))
 douyin.com#?##videoSideBar:-abp-has(div:-abp-contains(/商品|商家|退款|店铺/))
 douyin.com#?#.xgplayer>div[class]:-abp-has(svg[height="16"][width="30"])
@@ -13447,6 +13448,9 @@ so.com##div[id^="guang-"]
 so.com##div[id^="mohe-biu_360"] > .g-card
 so.com##li[data-cpc_query]
 so.com##li[data-id^="cm_display_init_text_"]
+so.douyin.com##X-VIEW.container
+so.douyin.com##[class*='h5-ad-']
+so.douyin.com##[class^='layout-']
 so.lenovo.com.cn##.AdSite
 so.toutiao.com##.relative.pointer-events-none
 so.toutiao.com##DIV[id^='ad_']
@@ -17251,6 +17255,7 @@ zzzyk.com###Tinfo
 ||ajkjbcjbaaaed.com^
 ||ajockk.xyz^
 ||ajoqu.cn^
+||ajoxxit.top^
 ||ajtdumo.cn^
 ||ajua.cn^
 ||ajybgc.xyz^
@@ -18371,6 +18376,7 @@ zzzyk.com###Tinfo
 ||bozhou666.com^
 ||bp.blogspot.com^*/s1600/dealer
 ||bpimg.com/4851/19f7543667f26682.jpg
+||bptnzp.top^
 ||bpxbzps.xyz^
 ||bpxxgkoj.icu^
 ||bpztsxx.com^
@@ -20551,6 +20557,7 @@ zzzyk.com###Tinfo
 ||feed.baidu.com^
 ||feedou.com/nzq/style/pc/js/popbig.js
 ||feedou.com/nzq/style/pc/js/zt_bottom.js
+||feernhuhe.com^
 ||feesoon.com/js/cnzz_
 ||fefwe334.fun^
 ||feijisu*.com/js/huimi-
@@ -28298,6 +28305,7 @@ zzzyk.com###Tinfo
 ||vgzytn.xyz^
 ||vh8.icu^
 ||vhhvldyuhm.xyz^
+||vhje.cn^
 ||vhjxrj.xyz^
 ||vhrhnh.icu^
 ||vhsutpgui.xyz^
