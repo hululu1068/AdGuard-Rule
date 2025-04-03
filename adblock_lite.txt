@@ -2,8 +2,8 @@
 ! Title: AdRules AdBlock List Lite 
 ! Expires: 12h (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-04-02 20:21:53(GMT+8) 
-! Total count: 30349
+! ! Version: 2025-04-03 08:49:30(GMT+8) 
+! Total count: 30331
  
 ###ADtip
 ###Ad_windows
@@ -480,6 +480,7 @@
 ##.bus_adsbox
 ##.callApp_fl_btn[onclick^="open_app"]
 ##.cari-ads
+##.ceo_ads
 ##.cfa_popup
 ##.chat-ad
 ##.chat-right-ad
@@ -1532,7 +1533,7 @@
 #@#.afs_ads
 #@#.has-ad
 #@#div[itemtype="http://schema.org/WPAdBlock"]
-$csp=script-src 'self' * 'unsafe-inline',domain=biquluo.info|zk01.net
+$csp=script-src 'self' * 'unsafe-inline',domain=biquluo.info|bqgh.com|zk01.net
 $domain=ads.adxadserv.com|adserver.juicyads.com|cs.adxpansion.com|olmsoneenh.info|static.javhd.com|syndication.exosrv.com
 $domain=googleads.g.doubleclick.net
 $image,third-party,domain=258zw.com
@@ -1896,7 +1897,6 @@ $websocket,domain=wap.yushuwu.cloud
 .xyz:9002/*?x=$websocket,script,third-party
 .z.dkt-ib.com
 .zone/ads/
-/(mon|tue|wed|thu|fri|sat|sun)\d{1,2}\.so\d{1,6}koaq\.com\//$script,third-party
 /*/*.add.*.add
 /*_*_aubi.js$third-party
 //*.emgrt.com^$third-party
@@ -1995,7 +1995,7 @@ $websocket,domain=wap.yushuwu.cloud
 /\/theme\/js\/[a-z0-9]{5,}\.js\?v=/$domain=novipnoad.com
 /\/upload\/[a-z0-9]{7}\/[0-9]+-[0-9]?\/[a-z0-9]{32}\.gif/$domain=higu.tv
 /^(?!.*(ilfcdn.li|bytecdntp.com|fastlycdn.com|doodcdn.co|intensedebate.com|vixcloud.co|cdn.plyr.io|authkong.com|rsc.cdn77.org|linkvertise.com|fastly.net|statically.io|sharecast.ws|b-cdn.net|bunnycdn.ru|bootstrapcdn.com|cdn.ampproject.org|cloudflare.com|cdn.staticfile.org|disqus.com|disquscdn.com|dmca.com|ebacdn.com|facebook.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|googletagmanager.com|gstatic.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|recaptcha.net|shrink.pe|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|(\/\/|\.)vk\.com|yandex.|yastatic.net|ytimg.com|zencdn.net|player|youtube.com|cackle.me|googleoptimize.com|vuukle.com|chatango.com|twimg.com|google-analytics.com|hcaptcha.com|raincaptcha.com|media-imdb.com|blogger.com|hwcdn.net|instagram.com|wp.com|imgsmail.ru|cloudflare.net|(\/\/|\.)x\.com)).*$/$third-party,script,_____,domain=manshuxs.com|yemancomic.com|qimiaoxiaoshuo.com|gaofuwu.org|nxpaaq.com|dengbi2.com|92hm.top|634.tv|myhaitang.cc|ckplayer.vip|qushucheng.com
-/^(mon|tue|wed|thu|fri|sat|sun)\d{1,2}\.so\d{1,6}koaq\.com$/
+/^https:\/\/[a-z0-9-]{3,12}\.[a-z0-9]+\.com\/([A-Za-z0-9.]+)(?:\/([A-Za-z0-9.]+))?\.\d{4}\.(doc|docx|html|jpeg|jpg|js|json|odf|pdf|png|ppt|psd|rtf|shtml|sxml|txt|wedp|wps|xml|xps)\?\d{13}$/$third-party,match-case
 /^https:\/\/zz\d{4}bb\d{4}\.com/$third-party,image
 /_xa/ads
 /_xa/ads?
@@ -4120,7 +4120,6 @@ $websocket,domain=wap.yushuwu.cloud
 9kld.com##iframe[src^="http://www.9kld.com/ad"]
 9kld.com##table[width="990"] img[width="990"]
 9ku.com##.youFix
-9le8.com###program_play_right
 9miao.com###deanrlc22
 9s102.xyz###main > .container-fluid.mb-3 > .row > .col-sm .alert
 9s102.xyz##.jsv > .container-fluid.mb-0 > .row > .col-sm > a[target="_blank"]
@@ -10094,11 +10093,6 @@ ilive.to###ad_overlay_content
 ilive.to###ad_overlay_countdown
 ilix.in,urlink.at,priva.us###blockMsg
 ilix.in,urlink.at,priva.us##.backk
-ilvruan.com###text-13
-ilvruan.com###text-14
-ilvruan.com##.n2-section-smartslider
-ilvruan.com##.site-AG
-ilvruan.com##a[href^="http"]:not([href*="ilvruan"]) > img
 ilxdh.com###nice-banner0
 ilxdh.com##.bottom-show
 ilxdh.com##.double-eleven-container
@@ -10803,7 +10797,6 @@ kairos.news##a[href^="https://kairos.shopping/product/"]
 kairos.news#?#.theiaStickySidebar > div.widget:has(> div.textwidget a[href^="https://kairos.shopping/product/"])
 kaitao.cn###ad-tit
 kaitao.cn##a[href*="/a.php?id="]
-kaixindy.com###pege_ad1
 kaka12345.cc###main
 kalvin.cn##.fell_advertisement_box
 kankan.com###adv_box
@@ -12577,9 +12570,6 @@ playno1.com##.mn > div[style="margin-bottom:10px;"]
 playno1.com##.sd.pph
 playonlinux.com###menu_droite > .login > div
 plays01.com##.adbox-bg
-playtv.com.cn###table6
-playtv.com.cn##a[href="http://www.sdhanrui.cn/"]
-playtv.com.cn##table[id] > tbody > tr > td[colspan="2"][width^="32"]
 playwire.com#@#.adsbox
 playwire.com#@#.adsense
 playwire.com#@#.adslot
@@ -13108,7 +13098,6 @@ sdzbcg.com##td[width="297"] img
 sdzbcg.com##td[width="580"][height="279"] > table:nth-child(2n-1)
 se.pl###adb_popup
 se533.com##div[style="width:960px;margin:0 auto;text-align:center;"]
-sea-group.org###text-7
 search.bilibili.com##.video-list > div.col_3:has(> div.bili-video-card > div.bili-video-card__wrap > a[href*="&csource="])
 search.bilibili.com#?#.video-list > div.col_3:has(> div.bili-video-card a[href*="//cm.bilibili.com/"])
 search.chongbuluo.com##.search > div > a[target="_blank"] > img
@@ -14863,7 +14852,6 @@ xiaohongshu.com##.recommend-box
 xiaohongshu.com##.section.related-notes
 xiaohongshu.com##.user-notes-clo-layout-container.user-notes-box
 xiaohongshu.com##.wx-open-launch-app-container
-xiaohutuwb.com##.ceo_ads
 xiaolz.cn###masonry2
 xiaolz.cn###zzbuluoled_sx
 xiaoma.com##.leftewm_topa
@@ -14886,7 +14874,6 @@ xiazaizhijia.com###public_right_mid_ad
 xiazaizhijia.com##.down_list
 xiebruce.top###ai_widget-2
 xiebruce.top#%#//scriptlet("prevent-addEventListener", "", "showRemoveAdBlocker")
-xijucn.com###topc
 ximalaya.com##.change-logo.S_q,.packet-container._PC,.less-tips._PC *
 ximalaya.com##.dl-pc
 xineurope.com###qmenu_menu + .wp
@@ -15371,12 +15358,8 @@ zybang.com##.related-question-below-text
 zybang.com##.top_download
 zybang.com##body.m-question > a[href^="https://www.kuaiduizuoye.com/"][target="_blank"] > img
 zyue.com##div[id^="divad_"]
-zzbaike.com###topnav
-zzbaike.com###topnav + div[style]
-zzbaike.com##.imglistbg-ad
-zzbaike.com##.imglistbg_ad
-zzbaike.com##.left > .bottom[style]
-zzbaike.com##.link2
+zzbaike.com##.ceo_slide2
+zzbaike.com#?#.ceo-margin-bottom:-abp-has(img[width="340"])
 zzkdhb.com##li[style*="important"]
 zzkdhb.com##p[style^="width: 100%; margin: 0px;"]
 zznews.cn#@#.ad-wrapper
@@ -21516,6 +21499,7 @@ zzzyk.com###Tinfo
 ||hasdser.com^
 ||hasgde.site^
 ||hauqks.top^
+||hauqoa.com^
 ||hauqou.top^
 ||hb8g86k.mom/mz.js
 ||hbandier.com^
@@ -25162,6 +25146,7 @@ zzzyk.com###Tinfo
 ||oodcd.cn/pan/config/ad.json
 ||oodcd.cn/pan/config/copy.
 ||oodcd.cn/pan/config/history.
+||ookaso.com^
 ||ooksq.top^
 ||oopej.xyz^
 ||ooqiu.com/ad_js/
@@ -25567,7 +25552,6 @@ zzzyk.com###Tinfo
 ||pl520.com^$third-party
 ||play6111.com/js/
 ||playstats.v.duowan.com^
-||playtv.com.cn/Pictuer/
 ||plbs9k.icu^
 ||plecnyz.icu^
 ||plfwxtgu.icu^
@@ -28246,6 +28230,7 @@ zzzyk.com###Tinfo
 ||uu22662.com^
 ||uu3192uu.com^
 ||uu8811uu.com^
+||uuaisp.com^
 ||uuajq.top^
 ||uugtv.com/x/app/videoSpread?
 ||uuiaoq.top^
@@ -29239,6 +29224,7 @@ zzzyk.com###Tinfo
 ||xiyouence.com^$popup,third-party
 ||xizi.com/js/rotator.js
 ||xj-landing.gdtimg.com^
+||xj-oss.com^
 ||xjpmlf.xyz^
 ||xjrvwz.com^
 ||xjssjc.com^
@@ -30301,10 +30287,6 @@ zzzyk.com###Tinfo
 ||zyrwfd.xyz^
 ||zyzlpt.com^
 ||zzad.com^$third-party
-||zzbaike.com/main/*-20
-||zzbaike.com/main/arvixe
-||zzbaike.com/main/host
-||zzbaike.com/sites/all/themes/zzbaike/images/
 ||zzccseo.com/statics/js/di.js
 ||zzdsjxsb.com^
 ||zzgxqlzh.com^
