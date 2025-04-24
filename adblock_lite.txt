@@ -2,8 +2,8 @@
 ! Title: AdRules AdBlock List Lite 
 ! Expires: 12h (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-04-23 20:19:59(GMT+8) 
-! Total count: 30422
+! ! Version: 2025-04-24 08:51:50(GMT+8) 
+! Total count: 30436
  
 ###ADtip
 ###Ad_windows
@@ -1536,7 +1536,7 @@
 #@#.afs_ads
 #@#.has-ad
 #@#div[itemtype="http://schema.org/WPAdBlock"]
-$csp=script-src 'self' * 'unsafe-inline',domain=kunnu.com|yourbiquge.com|biquge345.com|666biquge.com|biquwx.cc|1kans.net|aidu123.com|biquluo.info|bqgh.com|jmshuwu.net|maxshuku.com|shukuge.com|sthuojia.net|tvyun07.com|zk01.net
+$csp=script-src 'self' * 'unsafe-inline',domain=xianguke.net|kunnu.com|yourbiquge.com|biquge345.com|666biquge.com|biquwx.cc|1kans.net|aidu123.com|biquluo.info|bqgh.com|jmshuwu.net|maxshuku.com|shukuge.com|sthuojia.net|tvyun07.com|zk01.net
 $domain=ads.adxadserv.com|adserver.juicyads.com|cs.adxpansion.com|olmsoneenh.info|static.javhd.com|syndication.exosrv.com
 $domain=googleads.g.doubleclick.net
 $image,third-party,domain=258zw.com
@@ -1614,6 +1614,7 @@ $websocket,domain=wap.yushuwu.cloud
 .cn/gg/$script,third-party
 .cn/js/ads/
 .cn/nd389.js$script,third-party
+.cn/o.js
 .cn/redbaiduct.com?s=$third-party
 .cn/sc/*?x=$script,third-party
 .cn/uL389.js$script,third-party
@@ -2315,6 +2316,7 @@ $websocket,domain=wap.yushuwu.cloud
 /html/709/*.js
 /html/taobao_focus_
 /htmm/20*.php$popup
+/https?:\/\/[^\/]*18comic\.(org|vip)\/static\/.*?\d{3}[-xX_]\d{3}.*?\.gif/$domain=18comic.org|18comic.vip
 /huijiad/huijiad.
 /hunter/alog/*
 /huya/main/widget/roomGg
@@ -3254,6 +3256,9 @@ $websocket,domain=wap.yushuwu.cloud
 18comic.*##body .bot-per
 18comic.*##div[data-height="90"][data-width="728"]
 18comic.*#@#img[style*="300px"]
+18comic.org,18comic.vip##.container > div[style^="margin-bottom:"]:has(> div.col-lg-3 > div[data-exo])
+18comic.org,18comic.vip##.container > div[style^="padding:"]:has(> [data-group="content_page"])
+18comic.org,18comic.vip##.tab-content + .row:has(> div[class] > div[class] > .group-notice)
 18comic.org,18comic.vip##div[class="row"][style="display: flex;flex-wrap: wrap;"]
 18comic.org,18comic.vip##div[data-group^="photo_center_games_"]
 18comic.org,18comic.vip##div[data-group^="skyscraper_"]
@@ -3267,8 +3272,6 @@ $websocket,domain=wap.yushuwu.cloud
 18comic.org,18comic.vip,jmcomic1.city,jmcomic1.win,jmcomic1.group##[data-group^='album_related'],[data-group^='all_bottom']
 18comic.org,18comic.vip,jmcomic1.city,jmcomic1.win,jmcomic1.group##[data-group^='photo_center_']
 18comic.org,18comic.vip,jmcomic1.city,jmcomic1.win,jmcomic1.group#.bot-per-times
-18comic.vip##.container > div[style^="padding:"]:has(> [data-group="content_page"])
-18comic.vip##.tab-content + .row:has(> div[class] > div[class] > .group-notice)
 18comic.vip##IMG[src^='//18comic.vip/media/albums/']
 18comic.vip#%#//scriptlet('prevent-setTimeout', 'float_right > div')
 18h.animezilla.com###manga-bottom
@@ -6372,6 +6375,7 @@ alypw.com##.adbkk
 alypw.com##.ceadd
 am730.com.hk##.adbox
 am730.com.hk#?#.newslist-row > li.newslist-item:has(> div.adbox)
+amanmi.com##.leaderboardcontainer
 amap.com##.app-download-panel
 amap.com##.app_download_box
 amazon.cn#?#.s-result-item:-abp-has(> .s-item-container > h5 .s-sponsored-info-icon)
@@ -7042,6 +7046,8 @@ bilibili.com##a[href="/video/av8587236/?tg"]
 bilibili.com##div[style*="height:"][data-loc-id]
 bilibili.com##span[style*="height:"][data-loc-id]
 bilibili.com#$#.container > div[class*="-card"]:has(div[style="display: none !important;"]) { position: absolute !important; left: -3000px !important; }
+bilibili.com#$?#.container > .feed-card:has(> .bili-video-card.is-rcmd > div.bili-video-card__wrap .bili-video-card__stats--icon > path[d*="M16.9122 1.50323C17.4366 1.48358 17.99745 1.54938 18.4701 1.8207C18.9423 2.09168 19.28085"]) { remove: true; }
+bilibili.com#$?#.container > .feed-card:has(>.bili-video-card.is-rcmd > div.bili-video-card__wrap div.bili-video-card__stats > div.bili-video-card__stats--left:empty + span.bili-video-card__stats--text) { remove: true; }
 bilibili.com#$?#.ex-card-common:has(.gg-icon) { remove: true; }
 bilibili.com#$?#.van-slide > .item:has(.bypb-icon) { remove: true; }
 bilibili.com#%#//scriptlet('json-prune', 'data.cm_info.ads')
@@ -14877,6 +14883,9 @@ xia1ge.com##.wsappad
 xia1ge.com##div[class^="category-iloveyou"]
 xiadele.com##.details-small-carousel
 xiadele.com##.yun-advertisement
+xianguke.net###htmlContenthtml
+xianguke.net##.app
+xianguke.net##.dbfh
 xianzhenyuan.cn##.sd_ad:not(#xztba)
 xianzhenyuan.cn##a[href*=".tmall.com"]:not(#xztba)
 xiaohongshu.com##.android.all-comment
@@ -15774,7 +15783,8 @@ zzzyk.com###Tinfo
 ||18comic.*/exads-adblock-*/backend_loader.php
 ||18comic.*/media/albums/*?$media
 ||18comic.*/templates/frontend/airav/js/*1_2df4.js
-||18comic.vip/templates/frontend/airav/js/92_81c7.js
+||18comic.*/templates/frontend/airav/js/92_81c7.js
+||18comic.*/templates/frontend/airav/js/jquery.*_*.js
 ||18dui.com^
 ||1905.com/data/js/*.json
 ||1905.com/data/js/*.json?pwd=*.shtml&rand=$xmlhttprequest
@@ -20492,6 +20502,7 @@ zzzyk.com###Tinfo
 ||ewrwf.com^
 ||ewtyewj.com^
 ||ewurserw.top^
+||ewvz.cn^
 ||ewxufqs.cn^
 ||excelhome.net/js/banner-
 ||excsyrv.cn^
@@ -27898,6 +27909,7 @@ zzzyk.com###Tinfo
 ||tubeviral.com/visitScript/$script,third-party
 ||tubingacater.com^
 ||tucnmti.top^
+||tucnwti.top^
 ||tudxhzj.cn^
 ||tufzdj.xyz^
 ||tuhmkjce.icu^
@@ -29386,6 +29398,7 @@ zzzyk.com###Tinfo
 ||xn--xhq326apqhcx0d.cn^
 ||xn--xhq9mt12cf5v.ren^
 ||xn--zw0autp42d.cn^
+||xn860wu.vlxue.cn^
 ||xnbuapwp.icu^
 ||xne1ocient87zxz.360doc.cn^
 ||xng02.com/api.php?mod=ad&
@@ -29427,6 +29440,7 @@ zzzyk.com###Tinfo
 ||xs8.cn/qreport?
 ||xsbiquge.la/js/detail.js
 ||xsjh001.xyz^
+||xsrezl.icu^
 ||xsti.cn^
 ||xstt5.com/skin/v3/js/dibu.js
 ||xstt5.com/template/js/fx
