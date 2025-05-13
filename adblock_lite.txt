@@ -2,8 +2,8 @@
 ! Title: AdRules AdBlock List Lite 
 ! Expires: 12h (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-05-13 08:53:39(GMT+8) 
-! Total count: 30331
+! ! Version: 2025-05-13 20:21:18(GMT+8) 
+! Total count: 30343
  
 ###ADtip
 ###Ad_windows
@@ -1528,8 +1528,8 @@
 #@#.has-ad
 #@#div[itemtype="http://schema.org/WPAdBlock"]
 $csp=script-src 'self' * 'unsafe-inline',domain=candoug.com|hanziwen.com|haduzw.com|modaoshu.com|nipubook.com|nuoshuge.com|puquz.com|wuwusk.com
-$csp=script-src 'self' * 'unsafe-inline',domain=m.6666xsw.com|m.chenkuan.com|m.jmshuwu.net|wodexiaoshuoh.com|tetservices.net|haitangsoshu.org|4hrz.net|x33yq.org|56xiaoshuo.net|novelser.com|ykxs.cc|biqudd.com|diyibanzhu44444.com|dbrxs.org|kaixindu.net|1ingatlan.net|gaofuwu.org|yushuwu.cloud|yswxs.com|biquge2345.com|dingdian911.com|bqug8.com|xianguke.net|kunnu.com|yourbiquge.com|biquge345.com|666biquge.com|biquwx.cc|1kans.net|aidu123.com|biquluo.info|bqgh.com|jmshuwu.net|maxshuku.com|shukuge.com|sthuojia.net|tvyun07.com
 $csp=script-src 'self' * 'unsafe-inline',domain=smsonline.cloud
+$csp=script-src 'self' * 'unsafe-inline',domain=snxsw.com|xiexinde.net|m.6666xsw.com|m.chenkuan.com|m.jmshuwu.net|wodexiaoshuoh.com|tetservices.net|haitangsoshu.org|4hrz.net|x33yq.org|56xiaoshuo.net|novelser.com|ykxs.cc|biqudd.com|diyibanzhu44444.com|dbrxs.org|kaixindu.net|1ingatlan.net|gaofuwu.org|yushuwu.cloud|yswxs.com|biquge2345.com|dingdian911.com|bqug8.com|xianguke.net|kunnu.com|yourbiquge.com|biquge345.com|666biquge.com|biquwx.cc|1kans.net|aidu123.com|biquluo.info|bqgh.com|jmshuwu.net|maxshuku.com|shukuge.com|sthuojia.net|tvyun07.com
 $csp=script-src 'self' *,domain=biquge678.com|biqugezw.us|zk01.net
 $domain=ads.adxadserv.com|adserver.juicyads.com|cs.adxpansion.com|olmsoneenh.info|static.javhd.com|syndication.exosrv.com
 $domain=googleads.g.doubleclick.net
@@ -1753,6 +1753,7 @@ $websocket,domain=wap.yushuwu.cloud
 .html?$third-party,domain=m.800xs.net
 .html?android=hx*&_$csp=script-src
 .html|$domain=www.gamer.com.tw
+.hur0*kns.com/$script,third-party
 .icu/*_*_*.js$third-party
 .icu/*_*_rony.js
 .icu/?token=$third-party
@@ -3727,9 +3728,9 @@ $websocket,domain=wap.yushuwu.cloud
 4gamers.com.tw##video[src^="https://img.4gamers.com.tw/ads-media/"]
 4gamers.com.tw#?#.aroma-news-detail-side > div[media-width]:has(div.aols-wrapper > a[target="_blank"][rel="noopener"])
 4gamers.com.tw#?#.container-fluid > .vue-portal-target:has(> div[style] > .aroma-news-detail-iframe-ads)
-4hrz.net,1ingatlan.net,xianguke.net,tetservices.net###htmlContenthtml
-4hrz.net,1ingatlan.net,xianguke.net,tetservices.net##.app
-4hrz.net,1ingatlan.net,xianguke.net,tetservices.net##.dbfh
+4hrz.net,1ingatlan.net,xianguke.net,xiexinde.net,tetservices.net###htmlContenthtml
+4hrz.net,1ingatlan.net,xianguke.net,xiexinde.net,tetservices.net##.app
+4hrz.net,1ingatlan.net,xianguke.net,xiexinde.net,tetservices.net##.dbfh
 4hu.tv##.couplet-left
 4hu.tv##.wrap > div.mod > div.row > dl:has(> dt > a[target="_blank"]:not([href^="/html/"]) > img)
 4spaces.org,fuliba.net,fuliba2023.net,fuliba2025.net,uliba.net,ypojie.com##.widget_ui_orbui
@@ -8136,6 +8137,7 @@ digitalcitizen.life##.TopAdBanner
 digitimes.com.tw##.dt-ad-block
 digitimes.com.tw##.edm-frame:has(> .adtext)
 digitimes.com.tw##a[href*="/webad/"]
+digitimes.com.tw#$#.ad-banner { visibility: hidden !important; }
 dilidili.wang#$#body > article[class][style*="position: fixed;top: 0;z-index: 9999;display:block !important;"] { position: absolute!important; left: -3000px!important; }
 dilidili3.com#?#.body > div.body-wrap:has(> div.mod-box > div.mod-title > h3:contains(友情链接))
 dimtown.com##.aggd
@@ -16003,6 +16005,7 @@ zzzyk.com###Tinfo
 ||3158.cn/static/js/fixbtm/
 ||3158.cn^*_analyser.
 ||315che.com/tree/ad.js
+||31fq.com^$third-party
 ||31up.icu^
 ||31vcd.com^*.js
 ||31y.fun^
@@ -17333,6 +17336,7 @@ zzzyk.com###Tinfo
 ||akdie.xyz^
 ||akmh074.vip^
 ||akmh080.vip^
+||akoo0513uis.com^
 ||akqipai.com/m/Tpl/v3/js/indexbottom.js
 ||akuziti.com/tu/*.js
 ||al.newxue.com^
@@ -18567,6 +18571,7 @@ zzzyk.com###Tinfo
 ||by4d.com/love/
 ||by8428.com^
 ||bybrrn.icu^
+||bycrovalb.com^
 ||byjykj.xyz^
 ||bylwtf.xyz^
 ||bypllv.icu^
@@ -21795,6 +21800,7 @@ zzzyk.com###Tinfo
 ||hnxxt.net^
 ||hnyishidengbao.com^$third-party
 ||hnzzff.club^
+||hodynx.top^
 ||hohmaryt.com^
 ||hollg8023.745c.cn^
 ||holor0701.cn^
@@ -21970,6 +21976,7 @@ zzzyk.com###Tinfo
 ||hur05101kns.com^
 ||hur05110kns.com^
 ||hur05121kns.com^
+||hur05130kns.com^
 ||huresdu.top^
 ||hushenqiquan.com^
 ||huya.com*/cache1min.
@@ -22727,6 +22734,7 @@ zzzyk.com###Tinfo
 ||jebrhb.icu^
 ||jeepyy.com^$third-party
 ||jeryt111.fun^
+||jesfsf.top^
 ||jessicarace.com^
 ||jetlwsa.top^
 ||jewruta.top^
@@ -26572,6 +26580,7 @@ zzzyk.com###Tinfo
 ||sdfewed.com^
 ||sdfgbuy.com^
 ||sdfyiu.com^
+||sdgsheh.top^
 ||sdhjueue.com^
 ||sdhuawen.cn^
 ||sdickeb.top^
@@ -28163,6 +28172,7 @@ zzzyk.com###Tinfo
 ||uporods.com^
 ||uposnmb.icu^
 ||upresim.tk/berat/js/entry$script,domain=fakirdebrid.net
+||upufkg.icu^
 ||upyzqf.cn^
 ||upzabkw.cn^
 ||uqcktxp.icu^
@@ -28684,6 +28694,7 @@ zzzyk.com###Tinfo
 ||wensixuetang.com^
 ||wenxue.weimeifan.net^
 ||wenxue.youzhicn.com^
+||weod.cn^
 ||werois.com^
 ||weryt111.fun^
 ||wesat.cn^
@@ -29726,6 +29737,7 @@ zzzyk.com###Tinfo
 ||yqlxkzs.cn^
 ||yqlzccxn.icu^
 ||yqqv.cn^
+||yqrsdfh.top^
 ||yquqoj.com^
 ||yrccils0spqnkc3.xyz^
 ||yrqwnc.cn^
