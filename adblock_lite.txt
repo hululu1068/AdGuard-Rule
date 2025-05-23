@@ -2,8 +2,8 @@
 ! Title: AdRules AdBlock List Lite 
 ! Expires: 12h (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-05-23 08:53:31(GMT+8) 
-! Total count: 30464
+! ! Version: 2025-05-23 20:20:11(GMT+8) 
+! Total count: 30482
  
 ###ADtip
 ###Ad_windows
@@ -1533,9 +1533,9 @@
 #@#.afs_ads
 #@#.has-ad
 #@#div[itemtype="http://schema.org/WPAdBlock"]
-$csp=script-src 'self' * 'unsafe-inline',domain=jinmusb.com|hunshuge.com|puyewk.com|kaaiwk.com|hadu520.com|qubosw.com|meisibook.com|cuaizw.cc|boxue8.cc|cipubook.com|ququsk.cc|yiyezao.com|shanhuxs.com|jiutusw.com|chahuax.com|candoug.com|hanziwen.com|haduzw.com|modaoshu.com|nipubook.com|nuoshuge.com|puquz.com|wuwusk.com
 $csp=script-src 'self' * 'unsafe-inline',domain=smsonline.cloud
 $csp=script-src 'self' * 'unsafe-inline',domain=vipbiquge.com|jpbqg7.com|zuizhong.net|oldtimeswx.org|2dsk.org|5book.cc|softtechsolution.org|product44.com|snxsw.com|xiexinde.net|m.6666xsw.com|m.chenkuan.com|m.jmshuwu.net|wodexiaoshuoh.com|tetservices.net|haitangsoshu.org|4hrz.net|x33yq.org|56xiaoshuo.net|novelser.com|ykxs.cc|biqudd.com|diyibanzhu44444.com|dbrxs.org|kaixindu.net|1ingatlan.net|gaofuwu.org|yushuwu.cloud|yswxs.com|biquge2345.com|dingdian911.com|bqug8.com|xianguke.net|kunnu.com|yourbiquge.com|biquge345.com|666biquge.com|biquwx.cc|1kans.net|aidu123.com|biquluo.info|bqgh.com|jmshuwu.net|maxshuku.com|shukuge.com|sthuojia.net|tvyun07.com
+$csp=script-src 'self' * 'unsafe-inline',domain=zuxiku.com|jinmusb.com|hunshuge.com|puyewk.com|kaaiwk.com|hadu520.com|qubosw.com|meisibook.com|cuaizw.cc|boxue8.cc|cipubook.com|ququsk.cc|yiyezao.com|shanhuxs.com|jiutusw.com|chahuax.com|candoug.com|hanziwen.com|haduzw.com|modaoshu.com|nipubook.com|nuoshuge.com|puquz.com|wuwusk.com
 $csp=script-src 'self' *,domain=wuwxs.com|biquge678.com|biqugezw.us|zk01.net
 $domain=ads.adxadserv.com|adserver.juicyads.com|cs.adxpansion.com|olmsoneenh.info|static.javhd.com|syndication.exosrv.com
 $domain=googleads.g.doubleclick.net
@@ -2008,7 +2008,7 @@ $websocket,domain=wap.yushuwu.cloud
 /\.(cc|com|top|xyz)\/i\/v$/$third-party,xmlhttprequest
 /\.(com|cn|top|xyz)\/(j|K)\/[0-9]{6}$/$script,third-party
 /\.(cyou|ink)\/[a-z]{4}_[0-9]{5}_[a-z]{5}js\?/$script,third-party
-/\.[a-z]+[\:\/]/$~image,third-party,domain=jinmusb.com|hunshuge.com|puyewk.com|kaaiwk.com|hadu520.com|qubosw.com|meisibook.com|cuaizw.cc|boxue8.cc|cipubook.com|ququsk.cc|yiyezao.com|shanhuxs.com|jiutusw.com|chahuax.com|candoug.com|hanziwen.com|haduzw.com|modaoshu.com|nipubook.com|nuoshuge.com|puquz.com|wuwusk.com
+/\.[a-z]+[\:\/]/$~image,third-party,domain=zuxiku.com|jinmusb.com|hunshuge.com|puyewk.com|kaaiwk.com|hadu520.com|qubosw.com|meisibook.com|cuaizw.cc|boxue8.cc|cipubook.com|ququsk.cc|yiyezao.com|shanhuxs.com|jiutusw.com|chahuax.com|candoug.com|hanziwen.com|haduzw.com|modaoshu.com|nipubook.com|nuoshuge.com|puquz.com|wuwusk.com
 /\.[a-z]cinma[a-z].top\//$script,third-party
 /\.[a-z]dinma[a-z].top\//$script,third-party
 /\.[a-z]dinmi[a-z].top\//$script,third-party
@@ -4111,12 +4111,16 @@ $websocket,domain=wap.yushuwu.cloud
 91lai.com##.showimgs
 91porn.com##.preroll-blocker
 91porn.com#@#.vjs-preroll
+91porna.com###app-nav > ul > li:has(> a.app-nav-item[target="_blank"]:not([href*="91porna.com"]))
+91porna.com##.ad-dialog
 91porna.com##.carousel-container-bottom
 91porna.com##.carousel-container:has(#carouselExampleInterval)
 91porna.com##.dx-banner-item
 91porna.com##.row > div.flex-container:has(> a[href][target="_blank"] > img)
 91porna.com##.row > div[class^="col"]:has(> .video-wrap > a.checkNum)
+91porna.com##.text-mini:has(> .dx-recommend-icons)
 91porna.com##.video-items > li:has(> a.checkNum)
+91porna.com##a.checkNum[target="_blank"]:not([href*="91porna.com"])
 91porna.com##div[class^="aspect-"]:has(> div > .swiper-backface-hidden)
 91porna.com##div[class^="col"] div.filters:has(a.checkNum)
 91porna.com#%#//scriptlet('remove-attr', 'data-ads_url', '[data-ads_url]')
@@ -12629,6 +12633,8 @@ planetatvonlinehd.blogspot.com###tupiklan
 planetatvonlinehd.blogspot.com#@#.adsantilok
 planetatvonlinehd.blogspot.com.ar#@#.adsantilok
 playallvideos.com,pron.co##.rmedia
+playav.cc###overlay
+playav.cc#%#//scriptlet('abort-current-inline-script', 'document.getElementById', 'adBlockDetected')
 player.hboav.com#%#//scriptlet('set-constant', 'player.VastADPlugin', 'noopFunc')
 playerapp1.pw###divPanel
 playerapp1.pw##[id^="total"]
@@ -14447,9 +14453,9 @@ videowood.tv#@#.text_ads
 vidhub.me,vidhub.tv##.promonk
 vidhub1.cc,vidhub.me,vidhub.tv##.adpwc
 vidhub1.cc,vidhub.me,vidhub.tv##.adwap
-vidhub1.cc,vidhub.me,vidhub.tv##div:is([class^="ad"], [class*="pwc"]):has(> div[class][style] > img[onclick^="window.open"])
+vidhub1.cc,vidhub.me,vidhub.tv##div:is([class^="ad"], [class*="pwc"], [class^="ww"]):has(> div[class][style] > img[onclick^="window.open"])
+vidhub1.cc,vidhub.me,vidhub.tv##div[class][style^="position:"] > img[onclick^="window.open"]
 vidhub1.cc,vidhub.me,vidhub.tv##div[class^="pro"][class*="nk"][style]
-vidhub1.cc,vidhub.me,vidhub.tv##div[class^="pro"][style] > img[onclick^="window.open"]
 vidhub3.top,vidhub4.cc##div[style^="position:"]:has(> img[onclick^="window.open"])
 view.inews.qq.com##div[class^="article-recommend_wrapper"]
 view.inews.qq.com##div[class^="bottom-bar_buttonWrap"]
@@ -16749,6 +16755,7 @@ zzzyk.com###Tinfo
 ||94994.com*/js/plugin/shoppingMall/
 ||949949.com/2013/end/hot_news.js
 ||94ab.com^$third-party
+||94az.com/astyle/wap.
 ||94itv.app/casino/
 ||94itv.net/f/
 ||94lm.com^
@@ -16825,6 +16832,7 @@ zzzyk.com###Tinfo
 ||9ku.com/aaa/
 ||9miwo.com^
 ||9odes.ltd^
+||9oru1vh0w.com^
 ||9tata.com/js/Rand.js
 ||9tata.com/js/pbanner.js
 ||9tata.com/js/topxia.js
@@ -17123,6 +17131,7 @@ zzzyk.com###Tinfo
 ||addthis.com/live/
 ||adf.dahe.cn^
 ||adf.ly/puscript$script,domain=imgnova.xyz
+||adfjxsrw.cc^
 ||adfox.yandex.ru^
 ||adfsda005.xyz^
 ||adfstat.yandex.ru^
@@ -18772,6 +18781,7 @@ zzzyk.com###Tinfo
 ||cdilm.cn^
 ||cdinmaf.top^
 ||cdipsumf.top^
+||cdjst7i1v.com^
 ||cdlekgr.icu^
 ||cdmjur.xyz^
 ||cdmyeg.xyz^
@@ -20501,6 +20511,7 @@ zzzyk.com###Tinfo
 ||everydaycarry.com^$popup
 ||everyonepiano.cn/Public/*0x
 ||evidhjksdtgyxrh.xyz^
+||evkc.cn^
 ||evkzqs.xyz^
 ||evreiks.com^
 ||evtubescms.phncdn.com^
@@ -20682,6 +20693,7 @@ zzzyk.com###Tinfo
 ||fgadsqdma.top^
 ||fgdkfr.xyz^
 ||fgetmzx.icu^
+||fgfhgvtj.com^
 ||fgnfpnae.icu^
 ||fgnzdb.xyz^
 ||fgre9.top^
@@ -21497,6 +21509,7 @@ zzzyk.com###Tinfo
 ||haili-spitzer.com^
 ||hairoak.com^
 ||haise10.top^
+||haitang77.com^
 ||haiwainet.cn*/k.js
 ||haiwaiyy.com/B970X90.gif
 ||haiwanli.com^
@@ -25836,6 +25849,7 @@ zzzyk.com###Tinfo
 ||q27sz.com^
 ||q2usj.icu^
 ||q8q.icu^
+||qa6z7kz5r.com^
 ||qacdf511.cn^
 ||qaemphaels.com^
 ||qaljfiwv.com^
@@ -27513,6 +27527,7 @@ zzzyk.com###Tinfo
 ||tbcdn.cn/mm/tanxssp-custom/sina_
 ||tbcgumkadc.xyz^
 ||tbl258ym4.cc^
+||tbunkrolo.com^
 ||tbyfz.xyz^
 ||tc6tc.com^
 ||tc911.vip^
@@ -28371,6 +28386,7 @@ zzzyk.com###Tinfo
 ||uwnvcxb.cn^
 ||uwsaqoi.icu^
 ||uwursert.top^
+||uwxez.com^
 ||uxbd4id.xyz^
 ||uxcnhsf.cn^
 ||uxieks.com^
@@ -29887,6 +29903,7 @@ zzzyk.com###Tinfo
 ||ytoeyxz.icu^
 ||ytqeavc.icu^
 ||ytqlyw.xyz^
+||ytqvuq.icu^
 ||ytroytj33.fun^
 ||ytse*.top/Static/Home/GongGao/img/
 ||ytvwhbejc.com^
@@ -30076,6 +30093,7 @@ zzzyk.com###Tinfo
 ||zcczrvsaqw.world^
 ||zcczrvsaqw.xyz^
 ||zcczrvsaw.xyz^
+||zcdfnl.top^
 ||zcfhi.cn.com^
 ||zcgqsd.icu^
 ||zcnmjb.icu^
