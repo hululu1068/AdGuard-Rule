@@ -111,6 +111,8 @@ application:
 - 参照示例配置，修改配置文件: `src/main/resources/application.yml`，注意本地规则文件应放入项目根目录 `rule` 文件夹
 - 编辑 `.github/workflows/auto-update.yml` 文件，将 `Commit Changes` 区块下邮箱与用户名修改为自己的（Github邮箱与用户名）
 - 提交所有修改并等待 `Github Action` 执行，执行完成后相应规则生成在配置中指定的目录下
-
-
 - 👉 特别感谢@fordes123
+
+<br/>
+<h2 id="c">🧭 支持</h2>
+[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
