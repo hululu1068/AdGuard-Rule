@@ -2,8 +2,8 @@
 ! Title: AdRules AdBlock List Lite 
 ! Expires: 12h (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-07-07 20:21:38(GMT+8) 
-! Total count: 30702
+! ! Version: 2025-07-08 08:55:45(GMT+8) 
+! Total count: 30706
  
 ###ADtip
 ###Ad_windows
@@ -12121,7 +12121,10 @@ news.china.com.cn##.Wrapper > div[style]
 news.cn2che.com##.banner01
 news.cnyes.com##.content-main > div:empty
 news.cnyes.com##.content-main > div:has(> div[id^="div-gpt-"])
+news.cnyes.com##.content-main > div[class]:has(div[id^="div-gpt-ad-"])
+news.cnyes.com##.section-aside-wrapper ~ div[class] > a[title] ~ div[class]:not([title])
 news.cnyes.com##article > div:has(> div[id^="div-gpt-"])
+news.cnyes.com##div[id^="desktop-ad-card-"]
 news.ebc.net.tw###marquee-box
 news.ebc.net.tw##.fncnews-content > div.raw-style > div > p > a[href]
 news.ebc.net.tw##.inline_text.has_marker
@@ -18857,6 +18860,7 @@ zzzyk.com###Tinfo
 ||cdn3.mancdn88.com^
 ||cdn77.org^*.mp4$badfilter
 ||cdn77.org^*.mp4|
+||cdn77.org^*.mp4|$badfilter
 ||cdn93d99x0e.23bei.com^
 ||cdncg.com^*/Aepku
 ||cdncg.com^*/FCPXku.
