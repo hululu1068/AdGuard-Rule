@@ -2,8 +2,8 @@
 ! Title: AdRules AdBlock List Lite 
 ! Expires: 12h (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-07-17 08:58:23(GMT+8) 
-! Total count: 30809
+! ! Version: 2025-07-17 20:22:21(GMT+8) 
+! Total count: 30823
  
 ###ADtip
 ###Ad_windows
@@ -3330,6 +3330,7 @@ $websocket,domain=wap.yushuwu.cloud
 1kkk.com,dm5.com,dm5.hk###beitou
 1kkk.com,dm5.com,dm5.hk##.adform_1
 1kkk.com,dm5.com,dm5.hk##.adform_2
+1lou.me,1lou.one,1lou.pro###advert > :not(.card)
 1m3d.com###klp_adtop
 1point3acres.com###portal_block_479
 1point3acres.com##div[style="width: 450px; min-height: 210px;"]
@@ -14366,9 +14367,11 @@ v.qq.com##.site_bg_variety
 v.qq.com##.slider_item[href^="http"]:not([href*=".qq."])
 v.qq.com##.svg_icon_client.svg_quick_icon
 v.qq.com##.svg_icon_client.svg_quick_icon > path:nth-of-type(1)
+v.qq.com##.video-card-wrap[element-params*="ad_creative_id"]
 v.qq.com##a[href*=".renrendai.com"]
 v.qq.com##a[href*=".vip.com"]
 v.qq.com##a[href*="amway.com.cn"]
+v.qq.com#%#//scriptlet('json-prune', 'data.CardList.[].children_list.ad_list data.CardList.[-].params.advertiser_name')
 v.shensgo.com##body > div[id][class*="animated"][style*="position"][style*="z-index"]
 v.shensgo.com##brde[id][style*="height"]
 v.youku.com###player-advertise
@@ -15854,6 +15857,7 @@ zzzyk.com###Tinfo
 ||1dfsdfg.com^
 ||1dki0.icu^
 ||1dm6ccvy8.com^
+||1dor1d6vc.com^
 ||1gmzo.icu^
 ||1gtp.icu^
 ||1iohncj.xyz^
@@ -15980,6 +15984,7 @@ zzzyk.com###Tinfo
 ||283.laobanfa.com^
 ||2898.com/index/flowexchange/getGoods?
 ||28hse.com/adsman/www/images/
+||28jbkeigl.com^
 ||28kys.com/92kviptupian/
 ||28kys.com/cpstupian/
 ||28lu.net^*/0
@@ -17823,6 +17828,7 @@ zzzyk.com###Tinfo
 ||autoimg.cn/club/v1Content/images/young
 ||autonet.com.tw/90/
 ||autopiano.cn/data/jd_
+||auy07170km.com^
 ||av-yoyo.com/images/*.gif
 ||av01.tv/av01/floating_video_ads
 ||av01.tv/images/partners/
@@ -20825,6 +20831,7 @@ zzzyk.com###Tinfo
 ||filesonthe.net/Webservices/jsParseLinks.aspx$script,third-party
 ||filesonthe.net/visitScript/$script,third-party
 ||fillhr.xyz^
+||fingerly63.top^
 ||fingkndk.com^
 ||fintechpi.com^
 ||fionamignon.com^
@@ -22183,6 +22190,7 @@ zzzyk.com###Tinfo
 ||huo07150hy.com^
 ||huo07160hy.com^
 ||huo07161hy.com^
+||huo07170hy.com^
 ||huo720.com/back/ad_
 ||huo720.com/files/vidhub
 ||huobaowang.com/meeting/js/hbchat.
@@ -25514,6 +25522,7 @@ zzzyk.com###Tinfo
 ||oqidsgkq.com^
 ||oqipegjz.icu^
 ||oqjfekdkc.net^
+||oqmqqm.icu^
 ||oqpgq.top^
 ||oqyiapj.cn^
 ||orange-dc.youku.com^
@@ -26074,6 +26083,7 @@ zzzyk.com###Tinfo
 ||pw2.fun^
 ||pw321.com/bulu/
 ||pw321.com^*.gif
+||pwaihoe.icu^
 ||pwchaukoieor.com^
 ||pwfqjp.xyz^
 ||pwrgcxaj.icu^
@@ -28249,6 +28259,7 @@ zzzyk.com###Tinfo
 ||tuwan.com/events/courseiframe?
 ||tuwan.com/myad/
 ||tuwaqtjcood.com^
+||tux76afo5.com^
 ||tuxpfiok.icu^
 ||tuyiyi.com/tuyiyi/m.js
 ||tuyv.cn^
@@ -28800,6 +28811,8 @@ zzzyk.com###Tinfo
 ||video.itxueyuan.com/1672473525178992.mp4
 ||video.new-eve.com^
 ||video.qq.com/checktime?
+||video.qq.com/trpc.vector_layout.page_view.PageService/getPage$jsonprune=\$.data.CardList..children_list.ad_list
+||video.qq.com/trpc.vector_layout.page_view.PageService/getPage$jsonprune=\$.data.CardList[?(has "\$.params.advertiser_name")]
 ||video231.oss-cn-beijing.aliyuncs.com^
 ||videodroid.org/vip/adblockcheck.js$script
 ||videojj.com/api/v1/adsTags?
@@ -28860,6 +28873,7 @@ zzzyk.com###Tinfo
 ||vmvps.com/aoyohost-com-bann
 ||vmxvcjuf.icu^
 ||vnbbrx.top^
+||vncq.cn^
 ||vnet.cn^*.html
 ||vnet.cn^*.html?$popup,third-party
 ||vnfjsus.xyz^
