@@ -2,8 +2,8 @@
 ! Title: AdRules AdBlock List Lite 
 ! Expires: 12h (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-07-28 20:23:42(GMT+8) 
-! Total count: 30893
+! ! Version: 2025-07-29 09:04:42(GMT+8) 
+! Total count: 30901
  
 ###ADtip
 ###Ad_windows
@@ -3281,17 +3281,12 @@ $websocket,domain=wap.yushuwu.cloud
 18comic.org,18comic.vip##div[data-height="250"][data-width="300"]
 18comic.org,18comic.vip##div[data-height="90"][data-width="728"]
 18comic.org,18comic.vip#@#img[style*="300px"]
-18comic.org,18comic.vip,18-comic.work#$?#.col-xs-6 > div[data-type][style]:has(> ins + script) { remove: true; }
-18comic.org,18comic.vip,18-comic.work#%#//scriptlet('abort-current-inline-script', 'document.dispatchEvent', '/getexoloader/')
-18comic.org,18comic.vip,18-comic.work#?#.col-xs-6 > div[data-show][style]:has(> p:only-child > a[target="_blank"] > img)
-18comic.org,18comic.vip,18-comic.work#@?#:-abp-has(>ins+script)
 18comic.org,18comic.vip,jmcomic1.city,jmcomic1.win,jmcomic1.group##.bot-per-context
 18comic.org,18comic.vip,jmcomic1.city,jmcomic1.win,jmcomic1.group##[data-group^='album_related'],[data-group^='all_bottom']
 18comic.org,18comic.vip,jmcomic1.city,jmcomic1.win,jmcomic1.group##[data-group^='photo_center_']
 18comic.org,18comic.vip,jmcomic1.city,jmcomic1.win,jmcomic1.group#.bot-per-times
 18comic.org,18comic.vip,jmcomic1.win#@?#:-abp-has(> script[src*=".realsrv.com"])
 18comic.vip##IMG[src^='//18comic.vip/media/albums/']
-18comic.vip#%#//scriptlet('prevent-setTimeout', 'float_right > div')
 18h.animezilla.com###manga-bottom
 18moe.org##.alignnone[alt="恰饭广告"]
 18moe.vip##a[href^="http"]:not([href*="18moe.vip"]) > img[src*="tc.18moe.net"]
@@ -9789,7 +9784,6 @@ huanqiu.com#%#//scriptlet('set-constant', 'AD_SURVEY_Add_AdPos', 'noopFunc')
 huanqiu.com#%#//scriptlet('set-constant', 'AD_SURVEY_Add_AdPos_Simple', 'noopFunc')
 huaren.live##.action-ad
 huaren.live#%#//scriptlet('set-constant', 'ConFig.config.ads', 'emptyObj')
-huaren.live#%#//scriptlet('trusted-replace-node-text', 'script', 'ConFig', 'let ConFig', 'var ConFig')
 huaren.tv##.live-client_left
 huaren.tv##.live-client_right
 huaren.tv##a[style*="height:"]
@@ -10740,6 +10734,13 @@ jlpcn.net##.vodAd
 jmbbs.com###xjj_jmbbs2015_01
 jmbbs.com##.middle_guanggao
 jmbbs.com##img[width="1100"]
+jmcomic-zzz.org,18comic.org,18comic.vip##.div-bf-pv
+jmcomic-zzz.org,18comic.org,18comic.vip##div[style="position: absolute;bottom: 0px;z-index: 10;"]
+jmcomic-zzz.org,18comic.org,18comic.vip#$?#.col-xs-6 > div[data-type][style]:has(> ins + script) { remove: true; }
+jmcomic-zzz.org,18comic.org,18comic.vip#%#//scriptlet('abort-current-inline-script', 'document.dispatchEvent', '/getexoloader/')
+jmcomic-zzz.org,18comic.org,18comic.vip#%#//scriptlet('prevent-setTimeout', 'float_right > div')
+jmcomic-zzz.org,18comic.org,18comic.vip#?#.col-xs-6 > div[data-show][style]:has(> p:only-child > a[target="_blank"] > img)
+jmcomic-zzz.org,18comic.org,18comic.vip#@?#:-abp-has(>ins+script)
 jmcomic1.me##div[style^="max-height: 600px"]
 jmcomic1.me#%#//scriptlet('remove-node-text', '#text', '中間廣告')
 jmcomic1.me#?#.container > div.row:has(ins[data-width="300"])
@@ -16986,6 +16987,7 @@ zzzyk.com###Tinfo
 ||aafns.xyz^
 ||aafuck.xyz^$third-party
 ||aai07280mu.com^
+||aai07281mu.com^
 ||aaoffice.cn^
 ||aapj.cn^
 ||aaread.space/images/*0.gif
@@ -21318,6 +21320,7 @@ zzzyk.com###Tinfo
 ||gio07270rp.com^
 ||gio07271rp.com^
 ||gio07280rp.com^
+||gio07281rp.com^
 ||giphaudoq.com^
 ||githubusercontent.com/vip888vip/ug/main/*.gif
 ||gjh9v.tianshilv.cn^
@@ -22154,6 +22157,7 @@ zzzyk.com###Tinfo
 ||huanqiu.com/ssi/show_*_mall.ssi
 ||huanqiu.com/statics/*/dist/js/detected_block.js
 ||huanqiucdn.cn/huanqiu/js/www/common/detected_block.
+||huaren.live/player/$replace=/let ConFig/var ConFig/,document
 ||huaren.us/Adverts/
 ||huaren.us/banners/
 ||huaren.us/bbs_ads/
@@ -26350,6 +26354,7 @@ zzzyk.com###Tinfo
 ||qksapp.net/gif/
 ||qktmwiq.cn^
 ||ql.uzuzuz.com^
+||qlghunil.com^
 ||qlkysc.icu^
 ||qlogo.cn^$domain=chichiav1.xyz
 ||qm2.icu^
@@ -27892,6 +27897,7 @@ zzzyk.com###Tinfo
 ||templates_pc/default/scripts/chapter_bottom.js
 ||tencent-cloud.com/s9m1/12f70718c866ea3e5f22c68e6a34c54f.
 ||tencent-cloud.com/s9m1/54cb71aff82cfd690619065f2e31c346.
+||tencent.com/confighub/ads/
 ||tencent.com/developer/api/common/getAds
 ||tencent.com/developer/api/common/getOneAds
 ||tencent.xn--io0a7i^
@@ -29322,6 +29328,7 @@ zzzyk.com###Tinfo
 ||wowfan.net/static/js/index.
 ||wowreality.info^
 ||woyaoq.com/201904100958_5cad4dbac9c5f.png
+||wozlx.cn^
 ||wpa.b.qq.com/cgi/wpa.php?
 ||wpcihg.com^
 ||wpdaxue.com/img/*/txy-
@@ -30000,6 +30007,7 @@ zzzyk.com###Tinfo
 ||y1.junshitt.com^
 ||y1.spreton.com^
 ||y18ut1kw22.com^
+||y1ma8c054n.com^
 ||y1n1n3e0v.com^
 ||y3600.cc/20
 ||y3600.cc/js/jquery.min.js
