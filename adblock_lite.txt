@@ -2,8 +2,8 @@
 ! Title: AdRules AdBlock List Lite 
 ! Expires: 12h (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-08-05 09:00:50(GMT+8) 
-! Total count: 30986
+! ! Version: 2025-08-05 20:24:50(GMT+8) 
+! Total count: 30992
  
 ###ADtip
 ###Ad_windows
@@ -1358,6 +1358,7 @@
 ##body > div#inplayer[align="center"]
 ##body > div[style$=";background: #000;opacity:0.01;"]
 ##body > div[style="display:none;"] + div[style="display:none;"] + div[id][class][style^="background-color:"]
+##body > embed[id][src*="://"][src$="="]
 ##body#chapterbody.novel_chapter [style='padding-top: 150px;']
 ##body#nr_body #appss
 ##body#nr_body [onclick='goAppHtml();']
@@ -13858,6 +13859,7 @@ tbtdg.com##.reveal-modal-bg
 tbtdg.com##.s11text
 tbxt.com###headad2
 teachinghand.com##.actions__wrapper
+tech.ifeng.com##body > div[style^="width:"][style*="margin: 0px auto; transition:"][style*="position: fixed; z-index:"]
 tech.qq.com##.kjad2
 tech.sina.com.cn##.zc-app
 tech.sina.com.cn##.zc-app-btn.right-bar-btn
@@ -14343,6 +14345,7 @@ v.baidu.com,v.duba.com##div[id*="categoryPageColumn"]
 v.ifeng.com##.keyword
 v.ifeng.com##div[class^="index_container"]
 v.ifeng.com##section[class^="index_hot"]
+v.ifeng.com#%#//scriptlet('set-constant', 'allData.safeLevel', '1')
 v.pptv.com###video-download-game
 v.qq.com###iwan-gamependant-page
 v.qq.com###pc_client > .quick_link
@@ -17271,7 +17274,8 @@ zzzyk.com###Tinfo
 ||aegzoils.com^
 ||aeinkailrupe.com^
 ||aeletheacd.com^
-||aem.three.com.hk/content/three/sosim/app/tc/api/promotion/rotation-start-ads/
+||aem.three.com.hk/content/three/sosim/app/tc/*/promo-
+||aem.three.com.hk/content/three/sosim/app/tc/*/promotion/
 ||aeryt111.fun^
 ||aesxgy.xyz^
 ||aewgwu.icu^
@@ -22335,6 +22339,7 @@ zzzyk.com###Tinfo
 ||i-part.com.tw/js2/newShineStar
 ||i.alipayobjects.com/i/ecmng/$image,domain=my.alipay.com
 ||i.cidianwang.com^
+||i.flive.ifeng.com/baidu_*.html?parentId=frondAd_
 ||i.imgur.com^$domain=av.movie
 ||i100.cao-gao.xyz/aimgs/
 ||i2wq4.icu^
@@ -29651,6 +29656,7 @@ zzzyk.com###Tinfo
 ||wzjs1.oss-accelerate.aliyuncs.com^
 ||x-resource05.com/media_orange/server-img/*_1200_120.
 ||x.yaohuo.me^
+||x0.ifengimg.com/feprod/c/web/d/pc_bottom.js
 ||x05occvjw.com^
 ||x0or8.icu^
 ||x0y081e.xyz^
