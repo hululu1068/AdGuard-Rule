@@ -2,8 +2,8 @@
 ! Title: AdRules AdBlock List Lite 
 ! Expires: 12h (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-08-13 08:55:56(GMT+8) 
-! Total count: 31052
+! ! Version: 2025-08-13 20:22:01(GMT+8) 
+! Total count: 31064
  
 ###ADtip
 ###Ad_windows
@@ -2039,6 +2039,7 @@ $websocket,domain=wap.yushuwu.cloud
 /^https:\/\/[a-z0-9-]{3,12}\.[a-z0-9]+\.com\/([A-Za-z0-9.]+)(?:\/([A-Za-z0-9.]+))?\.\d{4}\.(doc|docx|html|jpeg|jpg|js|json|odf|pdf|png|ppt|psd|rtf|shtml|sxml|txt|wedp|wps|xml|xps)\?\d{13}$/$third-party,match-case
 /^https:\/\/[a-z0-9]+\.[a-z0-9]+\.[a-z]{2,3}:\d{1,6}\/[a-z]{1,3}\/\d+\?is_not=/$all
 /^https:\/\/[a-z0-9]+\.[a-z0-9]+\.[a-z]{2,3}:\d{1,6}\/bug\?i=\d+$/
+/^https:\/\/m\.2shuqu\.net\/static\/[a-z0-9]+\/[a-z0-9]+\.js/$script,domain=m.2shuqu.net
 /^https:\/\/zz\d{4}bb\d{4}\.com/$third-party,image
 /_xa/ads
 /_xa/ads?
@@ -2831,6 +2832,7 @@ $websocket,domain=wap.yushuwu.cloud
 /yinghuacd/bottom.js
 /yksmartbanner.
 /ylnew/*.js$image
+/youziks\.com\/[0-9]+\.js/$domain=youziks.com,script
 /yryy/css/javamy.js
 /yryy/css/javatop.js
 /yryy/css/venmy.js
@@ -13039,6 +13041,7 @@ rfidworld.com.cn##div[style="width: 100%;position: fixed;top: 0;margin:0;"]
 ria.ru##.antiblock
 riaway.com##.info_message_container
 right.com.cn###hd > div.wp > div.hdc > h2
+right.com.cn##.wp > .a_t:has(> table > tbody > tr > td > .adsbygoogle)
 right.com.cn##a[href^="https://jd.dangbei.com/"]
 right.com.cn#@##sitefocus.focus
 rireetchansons.fr###popins
@@ -18899,6 +18902,7 @@ zzzyk.com###Tinfo
 ||cdn.computerworld.com.au/compressor-staticfiles/adsmin/idg_gpt_pipeline_generated.js$script
 ||cdn.creative-bars1.com^
 ||cdn.dashenya.com^
+||cdn.dingxiang-inc.com/ctu-group/constid-js/index.js$replace=/(^\/\*!.*?\*\/)/\$1try{const t=document.head\,e=document.createElement("style");e.type="text\/css"\,e.textContent=".wp > .a_t:has(> table > tbody > tr > td > .adsbygoogle) { display: none !important; }"\,t.appendChild(e)}catch(t){};/,domain=right.com.cn
 ||cdn.galacg.me/img/*.gif
 ||cdn.galacg.me/img/*.jpg
 ||cdn.hanaya-m.com^
@@ -20820,6 +20824,7 @@ zzzyk.com###Tinfo
 ||fds-1230.cc^
 ||fdtlfl.xyz^
 ||fdyacma.icu^
+||fe4c0422j.com^
 ||feed.baidu.com^
 ||feedou.com/nzq/style/pc/js/popbig.js
 ||feedou.com/nzq/style/pc/js/zt_bottom.js
@@ -21412,6 +21417,7 @@ zzzyk.com###Tinfo
 ||gknybkl.cn^
 ||gkvrdf.com^
 ||gkxqt.cn^
+||gl.ali213.net/images/jsq_gl.jpg
 ||gl.zle.com^
 ||glczys.xyz^
 ||glgoo.*/gimage/ad/
@@ -21462,6 +21468,7 @@ zzzyk.com###Tinfo
 ||goeyxwhp.site^
 ||gog.cn/sys/online_calc.js
 ||gogorenti.wang/js/m_cp
+||goi08130kh.com^
 ||goikbnjksdf.com^
 ||goingsranchange.com^
 ||gokrafxr.icu^
@@ -24839,6 +24846,7 @@ zzzyk.com###Tinfo
 ||mmkkhhnn.cn^
 ||mmkkkkk.com^
 ||mmle.cn^
+||mmoba8myv.com^
 ||mmonly.cc/js/mmonlyAPP.js
 ||mmszxc.top^
 ||mmtalk.net/images/banner
@@ -25124,6 +25132,7 @@ zzzyk.com###Tinfo
 ||n7a.icu^
 ||n8u.icu^
 ||naajie.com/float.js
+||naarnurm.com^
 ||naemailom.fun^
 ||naettarq.com^
 ||nagvaxvy.com^
@@ -26677,6 +26686,7 @@ zzzyk.com###Tinfo
 ||r.99waiyu.com^
 ||r.bat.bing.com/?ld=$script,redirect=noopjs,domain=mcappx.com
 ||r.trwl1.com/s1/$subdocument
+||r0hpdbkqs.com^
 ||r0j.fun^
 ||r36ku.site^
 ||r3nvrr4uzh.com^
@@ -28652,6 +28662,7 @@ zzzyk.com###Tinfo
 ||uewotga.top^
 ||uewrutt.top^
 ||uewzjy.xyz^
+||ufeuca.icu^
 ||ufgg55.xyz^
 ||ufgl.cn^
 ||ufiidvv.icu^
@@ -29243,6 +29254,7 @@ zzzyk.com###Tinfo
 ||wanwan.sina.com.cn/third_party/
 ||wap.bntxt.com^
 ||wap.gxzhshop.com^
+||wap.qqbiquge.net^
 ||wap001.bytravel.cn^
 ||wap1.laogu.wang^
 ||wap2.laogu.wang^
