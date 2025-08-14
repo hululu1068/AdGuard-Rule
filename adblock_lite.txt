@@ -2,8 +2,8 @@
 ! Title: AdRules AdBlock List Lite 
 ! Expires: 12h (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-08-14 08:56:11(GMT+8) 
-! Total count: 31068
+! ! Version: 2025-08-14 20:22:40(GMT+8) 
+! Total count: 31079
  
 ###ADtip
 ###Ad_windows
@@ -738,6 +738,7 @@
 ##.pure-g[onclick*="float"]
 ##.push-bottom-container[clickmode="cpt"]
 ##.push-slider[clickmode="cpt"]
+##.push-top[clickmode="cpt"]
 ##.qpdb + a[href]
 ##.qzdhf
 ##.qzhfaaa
@@ -1571,6 +1572,7 @@ $third-party,websocket,xmlhttprequest,domain=qiyoudy2.com|qiyoudy4.com
 $third-party,xmlhttprequest,domain=subhd.tv|subhdtw.com|xyg688.com|xyg688.xyz|zzzzz688.com
 $websocket,domain=wap.yushuwu.cloud
 &xhtml?$script,third-party
+*$denyallow=efuxs.com,domain=efuxs.com,script,subdocument,xmlhttprequest
 *$denyallow=qiexs.cc|ququge.cc,domain=qiexs.cc|ququge.cc,xmlhttprequest,image,script
 *$denyallow=xpxs.net|jiasucdn.com,domain=xpxs.net,xmlhttprequest,image,script
 *$script,third-party,denyallow=mega.co.nz|mega.nz|libs.baidu.com|ilfcdn.li|bytecdntp.com|doodcdn.io|intensedebate.com|vixcloud.co|cdn.plyr.io|rsc.cdn77.org|linkvertise.com|fastly.net|statically.io|sharecast.ws|b-cdn.net|bunnycdn.ru|bootstrapcdn.com|cdn.ampproject.org|cloudflare.com|cdn.staticfile.org|disqus.com|disquscdn.com|dmca.com|ebacdn.com|facebook.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|googletagmanager.com|gstatic.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|recaptcha.net|shrink.pe|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|vk.com|yastatic.net|ytimg.com|zencdn.net|youtube.com|cackle.me|googleoptimize.com|vuukle.com|chatango.com|twimg.com|google-analytics.com|hcaptcha.com|media-imdb.com|blogger.com|hwcdn.net|instagram.com|wp.com|fastcomments.com|plyr.io|imgsmail.ru|cloudflare.net|rabbitstream.net|x.com|51.la|cloudflareinsights.com|tongjiniao.com|vp1shop.shop,_____,domain=wap.dmwenku.com|m.wfxs.tw|wap.ishuquge.la|m.91zww.com|592mh.top|dubuxiaoshuo.com|clm410.buzz|bookbl.com|shuku99.com|qiyoudy2.com|1yydstxt178.com|rouman5.com|feijisu20.com|iqb5.org|wap.xkushu.com|spoilertop.com|booktxts.com|bixia33.com|rouwenwu19.com|91porny.com|yznnw.com|vodtw.la|ckplayer.vip|uuread.tw|fengchedmp.com|aeahsck.cc|xiaoshubao.net|wap.yushuwu.cloud|twbook.cc|vodtw.xyz|xbqg6.com|qq3009qq.link|18jtv.cc|m.haxuku.com|xm200.com|av6k.com|18j.tv
@@ -3309,8 +3311,7 @@ $websocket,domain=wap.yushuwu.cloud
 1905.com##.zx-pic
 1905.com##.zx-small-pic
 1905.com,news.ltn.com.tw,commonhealth.com.tw,health.tvbs.com.tw,idreamx.com,xchina.co,manhuafen.com,world68.com##.ad
-1909.me,8se.me,crxs.me,xchina.biz,xchina.co##.media
-1909.me,8se.me,crxs.me,xchina.biz,xchina.co##.push-top
+1909.me,8se.me,crxs.me,xchina.site,xchina.biz,xchina.co##.media
 199it.com,softwarebrother.com##.adsbygoogle
 19lou.com##.ad-980x40
 19lou.com##.editor-ad
@@ -3942,7 +3943,7 @@ $websocket,domain=wap.yushuwu.cloud
 58pic.com##.xyyh
 591hx.com##.banner_w
 5dm.app##[src*="sinaimg.cn"]
-5dm.link###player_pausex
+5dm.link##div[id^="player_p"]
 5dm.link#@#.tm-share-this
 5dy15.cc##div[id][class^="is_"][style^="margin"]
 5eplay.com##img[width="1240"]
@@ -8546,6 +8547,8 @@ efu.com.cn##.banners-top-b
 efu.com.cn##.banners-top-x2
 efu.com.cn##.zs_banner_a
 efu.com.cn##div[class*="banner-"]
+efuxs.com#$?#body > div[style^="position:fixed;"] { remove: true; }
+efuxs.com#%#//scriptlet('abort-current-inline-script', 'document.write', 'position:')
 egame.qq.com###inner-container
 egame.qq.com##.left-menu-footer
 egame.qq.com##.live-list-guess
@@ -16195,6 +16198,7 @@ zzzyk.com###Tinfo
 ||3ts.icu^
 ||3uo.fun^
 ||3v7c7y.online^
+||3vnofjidlv.com^
 ||3vp.icu^
 ||3wk.cc/images/*.gif
 ||3xl.icu^
@@ -16263,6 +16267,7 @@ zzzyk.com###Tinfo
 ||4shared.com/js/blockDetect/blockDetect.4min.js$script
 ||4sq.icu^
 ||4t6u.icu^
+||4ufutzmihl.com^
 ||4ve.fun^
 ||4vgyjja.cn^
 ||4we.icu^
@@ -16435,8 +16440,7 @@ zzzyk.com###Tinfo
 ||5azvpjx8xj.com^
 ||5brxi.icu^
 ||5d7k30pv1u.com^
-||5dm.link/ablgld/
-||5dm.link/ancblmszmd/
+||5dm.link/a$image
 ||5dm.tv/html/5dmm.jpg
 ||5dmail.net/image/$object
 ||5dmail.net/image/ORF_1000.gif
@@ -16534,6 +16538,7 @@ zzzyk.com###Tinfo
 ||6820tp1.com^
 ||68287zubo85737.com^
 ||68710266.com^
+||6888.site^
 ||68s4eyiru.com^
 ||68yscw.com^
 ||693836.com^$popup
@@ -17356,6 +17361,7 @@ zzzyk.com###Tinfo
 ||ai.bioon.com^
 ||ai36588.com^
 ||aiai123.cc/js/*.js
+||aiamok.icu^
 ||aibing.cc/vip/img/gou.gif
 ||aiboav.vip/wp-content/uploads/*/3aaa-
 ||aiboav.vip/wp-content/uploads/ad/
@@ -20739,6 +20745,7 @@ zzzyk.com###Tinfo
 ||f7j.icu^
 ||f7tkpjw6v.com^
 ||f7ugx6b863.com^
+||f8c2gftcsj.com^
 ||f8dy.tv/template/m1938/js/b
 ||f8dy.tv/template/m1938/js/foot.js
 ||f8ejqxp.cn^
@@ -21143,6 +21150,7 @@ zzzyk.com###Tinfo
 ||fzlol.com/images/$script
 ||fznidd.top^
 ||fzpchome.com/txt/$script
+||fzruzulad.com^
 ||fzxiaoshuo.com/source/
 ||g-years.com/gy/
 ||g-years.com/tb/
@@ -21472,6 +21480,7 @@ zzzyk.com###Tinfo
 ||gogorenti.wang/js/m_cp
 ||goi08130kh.com^
 ||goi08131kh.com^
+||goi08141kh.com^
 ||goikbnjksdf.com^
 ||goingsranchange.com^
 ||gokrafxr.icu^
@@ -25785,6 +25794,7 @@ zzzyk.com###Tinfo
 ||p4gdt4um6.com^
 ||p4p.sina.com.cn^
 ||p52q.cn^
+||p7jroq6xco.com^
 ||p8u.hinet.net^
 ||pa6.fun^
 ||pagead2.googleadservices.com^
@@ -29498,6 +29508,7 @@ zzzyk.com###Tinfo
 ||wpwpquse.cn^
 ||wqdro6us.icu^
 ||wqdwork.com^
+||wqhuludpb.com^
 ||wqnggnse.fun^
 ||wqrv.cn^
 ||wqshui.com^
