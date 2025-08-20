@@ -2,7 +2,7 @@
 ! Title: AdRules AdBlock List Lite 
 ! Expires: 12h (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-08-19 20:21:17(GMT+8) 
+! ! Version: 2025-08-20 08:52:08(GMT+8) 
 ! Total count: 31152
  
 ###ADtip
@@ -501,10 +501,10 @@
 ##.con_section > .da
 ##.conch-ads-box
 ##.container + .container > .warp > .cate
+##.container .t-img-box:first-child
 ##.container > #dhshtml
 ##.container > .index-ad
 ##.container > .slide-baidu
-##.container > .t-img-box:first-child
 ##.container > a[href^="http"] > .ads
 ##.containeradvertising
 ##.content > #dhxhtml
@@ -7068,6 +7068,7 @@ bilibili.com#%#//scriptlet('json-prune-fetch-response', 'data.item.[-].business_
 bilibili.com#?#.eva-extension-body > .bili-video-card:-abp-has(.bili-video-card__info--ad)
 bilibili.com#?#.float-btn:contains(打开App)
 bilibili.com#?#.is-rcmd:-abp-has(>div:not(div:-abp-has(div)))
+bilibili.com#?#.recommended-container_floor-aside .container > div[class$="feed-card"]:has(div[style$="56.25%;"] > div[class]:matches-css(before, content: /AdGuard/))
 bilibili.com#?#.van-popover__reference:contains(下载)
 bilibili.com#?#.video-card-common:-abp-has(>.card-pic>a[href*="cm.bilibili.com"][data-target-url])
 bilibili.com#?#.video-page-special-card-small:-abp-has(>.card-box>.info>a[href^="http"]:not([href*=".bilibili.com/"]))
@@ -11150,7 +11151,6 @@ libaclub.com##.merchant-link
 libaclub.com##.ui-ad
 libaclub.com##.ui-adsame
 libaclub.com#?#.ui-list-item:-abp-has(>.ui-list-item-title>a[onclick^="SendAd"])
-libvio.cc,libvio.me##.t-img-box
 libvio.me##.hidden-log
 lien-torrent.com###ad_divl
 lien-torrent.com###ad_divr
