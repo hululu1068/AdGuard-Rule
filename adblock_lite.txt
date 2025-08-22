@@ -2,8 +2,8 @@
 ! Title: AdRules AdBlock List Lite 
 ! Expires: 12h (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-08-21 20:21:10(GMT+8) 
-! Total count: 31184
+! ! Version: 2025-08-22 08:52:15(GMT+8) 
+! Total count: 31191
  
 ###ADtip
 ###Ad_windows
@@ -2045,6 +2045,7 @@ $websocket,domain=wap.yushuwu.cloud
 /^https:\/\/m\.2shuqu\.net\/static\/[a-z0-9]+\/[a-z0-9]+\.js/$script,domain=m.2shuqu.net
 /^https:\/\/www\.38ksw\.com\/public\/[0-9]+\.js/$domain=38ksw.com
 /^https:\/\/zz\d{4}bb\d{4}\.com/$third-party,image
+/^https?:\/\/kan\.znds\.com\/public\/home\/images\/[0-9]+-[0-9]+\.gif\?v=/$domain=kan.znds.com
 /_xa/ads
 /_xa/ads?
 /_xa/ads_
@@ -7026,6 +7027,7 @@ bilibili.com##.desktop-download-tip
 bilibili.com##.download-client-trigger.download-entry
 bilibili.com##.eva-banner
 bilibili.com##.extension-tips
+bilibili.com##.feed-card:has(> div.bili-feed-card > div > div > div.bili-video-card__no-interest + a[target="_blank"]:not([href^="https://www.bilibili.com/"]))
 bilibili.com##.floor-single-card:has(.floor-skeleton):not(:has(> div.bili-video-card__skeleton))
 bilibili.com##.gg-floor-module
 bilibili.com##.index-promote
@@ -19547,6 +19549,7 @@ zzzyk.com###Tinfo
 ||cupfox*.com/statics/js/ing.js
 ||cupfox.app^$third-party
 ||cupid.iqiyi.com/mixer?
+||cupid.iqiyi.com/mixer?$domain=www.iqiyi.com,badfilter
 ||cupid.iqiyi.com/show2?
 ||cuqpi.cn^
 ||curesdf.top^
@@ -19715,6 +19718,7 @@ zzzyk.com###Tinfo
 ||damai.cn/phpstat/
 ||dangbei.net/2022/dbhezi.
 ||dangbei.net/img/db/downdangbei.gif
+||dangbei.net/jing/dbai/$domain=kan.znds.com
 ||dangdang.com/adall.
 ||dangongshijie.com^
 ||danicirvr.com^
@@ -23494,6 +23498,7 @@ zzzyk.com###Tinfo
 ||jszctech.com^
 ||jsztl.com/img/particular/tbyhq.jpg
 ||jt01151knd.com^
+||jt5.dangbei.net/site/$domain=kan.znds.com,image
 ||jtbunh.xyz^
 ||jtdltu.top^
 ||jthotb.icu^
@@ -28098,6 +28103,7 @@ zzzyk.com###Tinfo
 ||tciqgx.xyz^
 ||tclimii.top^
 ||tcmap.com.cn/js/b_
+||tcragarnh.com^
 ||tcsgcdn.top^
 ||tcss.qq.com^
 ||tcuqqhj.icu^
@@ -29086,6 +29092,7 @@ zzzyk.com###Tinfo
 ||venetrigni.com^
 ||venienceilo.fun^
 ||vercel.app/ads/
+||vernaellac.com^
 ||verysadfun.com/assets/publish/jquery.*.js
 ||veryt111.fun^
 ||vexilorath.com^
