@@ -2,8 +2,8 @@
 ! Title: AdRules AdBlock List Lite 
 ! Expires: 12h (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-08-22 20:20:25(GMT+8) 
-! Total count: 31206
+! ! Version: 2025-08-23 08:49:58(GMT+8) 
+! Total count: 31209
  
 ###ADtip
 ###Ad_windows
@@ -1483,6 +1483,7 @@
 ##div[style="position: fixed;top: 60px;right:0;z-index:999;width:250px"]
 ##div[style^="line-height"][style*="http"][style$="fixed;"]
 ##div[style^="position"][onclick^="window.open"]
+##div[style^="position:fixed; bottom:0vw; left:"][style$="vw;background: #000;opacity:0.01;"]
 ##dl#listwoBox
 ##header + #main:nth-child(n+4) .container-fluid.mb-0.p-0
 ##header + #main:nth-child(n+4) .container-fluid.mb-3.p-0
@@ -1547,6 +1548,7 @@
 #@#.has-ad
 #@#.uk-container.uk-container-expand
 #@#div[itemtype="http://schema.org/WPAdBlock"]
+$$script:contains(?is_not=1&target=1&ty=2)
 $csp=script-src 'self' * 'unsafe-inline',domain=efuxs.com|i3book.com|genbiquge.com|quanbiqu.com|pinshu.org|13xsw.com|bbiquge.cc|taobiquge.com|haijiaobooksw.top|zlobin.net|piaotianxiaoshuo.com|yebiquge.com|jvbiquge.com|vipbiquge.com|jpbqg7.com|zuizhong.net|oldtimeswx.org|5book.cc|softtechsolution.org|product44.com|snxsw.com|xiexinde.net|m.6666xsw.com|m.chenkuan.com|jmshuwu.net|wodexiaoshuoh.com|tetservices.net|haitangsoshu.org|4hrz.net|x33yq.org|56xiaoshuo.net|novelser.com|ykxs.cc|biqudd.com|diyibanzhu44444.com|dbrxs.org|kaixindu.net|1ingatlan.net|gaofuwu.org|yushuwu.cloud|yswxs.com|biquge2345.com|dingdian911.com|bqug8.com|xianguke.net|kunnu.com|yourbiquge.com|biquge345.com|666biquge.com|biquwx.cc|1kans.net|aidu123.com|biquluo.info|bqgh.com|jmshuwu.net|maxshuku.com|shukuge.com|sthuojia.net|tvyun07.com
 $csp=script-src 'self' * 'unsafe-inline',domain=pucixs.com|tuqisw.com|xueyisw.com|zuye8.com|yawoxs.com|guwoxs.com|jiufuzw.com|beianxs.com|shuying6.com|mafusw.com|cule9.com|riquzw.com|xingksw.com|enbusw.com|waguwk.cc|ruyisw.com|zuxiku.com|jinmusb.com|hunshuge.com|puyewk.com|kaaiwk.com|hadu520.com|qubosw.com|meisibook.com|cuaizw.cc|boxue8.cc|cipubook.com|ququsk.cc|yiyezao.com|shanhuxs.com|jiutusw.com|chahuax.com|candoug.com|hanziwen.com|haduzw.com|modaoshu.com|nipubook.com|nuoshuge.com|puquz.com|wuwusk.com
 $csp=script-src 'self' * 'unsafe-inline',domain=smsonline.cloud
@@ -11182,6 +11184,7 @@ linetv.tw#%#//scriptlet('prevent-fetch', '/pagead2\.googlesyndication\.com|\/fbe
 linetv.tw#%#//scriptlet('prevent-xhr', 'pagead2.googlesyndication.com')
 linetv.tw#%#//scriptlet('set-constant', 'google.ima.AdError', 'noopFunc')
 linetv.tw#%#//scriptlet('set-constant', 'google_tag_manager', 'emptyObj')
+link.bilibili.com#?#.shortcut-item:contains(下载客户端)
 linkdecode.com#@#.adsbygoogle
 linkedin.com#?#.core-rail > div > div[id^="ember"]:-abp-has(.feed-shared-actor__description span:-abp-contains(/促銷內容|广告/))
 linkedin.com#?#.core-rail > div > div[id^="ember"]:-abp-has(.feed-shared-actor__sub-description span:-abp-contains(/促銷內容|广告/))
@@ -11295,6 +11298,7 @@ lzep.cn##.aside
 m.07073.com##.main_content_tit + div
 m.07073.com##.new_heads
 m.07073.com##.new_heads_bg
+m.13xsw.com,wap.yushuwu.cloud#%#//scriptlet('prevent-addEventListener', 'touchend', 'clientheight')
 m.163.com##.floatMenu-backflow
 m.163.com##.floatMenu-logo
 m.163.com##footer > span
@@ -14567,7 +14571,6 @@ wap.sogou.com###indexAppOneClose
 wap.sogou.com##.index-carousel
 wap.sogou.com##.index-tab
 wap.sougou.com###sug_wraper
-wap.yushuwu.cloud#%#//scriptlet('prevent-addEventListener', 'touchend', 'clientheight')
 wap.yushuwu.cloud#%#//scriptlet('prevent-eval-if', 'WebSocket')
 wap.zol.com.cn###waitrep
 wapwenku.baidu.com,wk.baidu.com###bottomFixed
