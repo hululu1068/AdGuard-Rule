@@ -2,8 +2,8 @@
 ! Title: AdRules AdBlock List Lite 
 ! Expires: 12h (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-08-26 08:52:41(GMT+8) 
-! Total count: 31256
+! ! Version: 2025-08-26 20:22:08(GMT+8) 
+! Total count: 31276
  
 ###ADtip
 ###Ad_windows
@@ -1577,6 +1577,7 @@ $websocket,domain=wap.yushuwu.cloud
 *$denyallow=efuxs.com,domain=efuxs.com,script,subdocument,xmlhttprequest
 *$denyallow=qiexs.cc|ququge.cc,domain=qiexs.cc|ququge.cc,xmlhttprequest,image,script
 *$denyallow=tszw.org,subdocument,script,xmlhttprequest,domain=tszw.org
+*$denyallow=ucloud140.xyz,domain=jiuse.io,image
 *$denyallow=xpxs.net|jiasucdn.com,domain=xpxs.net,xmlhttprequest,image,script
 *$script,third-party,denyallow=mega.co.nz|mega.nz|libs.baidu.com|ilfcdn.li|bytecdntp.com|doodcdn.io|intensedebate.com|vixcloud.co|cdn.plyr.io|rsc.cdn77.org|linkvertise.com|fastly.net|statically.io|sharecast.ws|b-cdn.net|bunnycdn.ru|bootstrapcdn.com|cdn.ampproject.org|cloudflare.com|cdn.staticfile.org|disqus.com|disquscdn.com|dmca.com|ebacdn.com|facebook.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|googletagmanager.com|gstatic.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|recaptcha.net|shrink.pe|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|vk.com|yastatic.net|ytimg.com|zencdn.net|youtube.com|cackle.me|googleoptimize.com|vuukle.com|chatango.com|twimg.com|google-analytics.com|hcaptcha.com|media-imdb.com|blogger.com|hwcdn.net|instagram.com|wp.com|fastcomments.com|plyr.io|imgsmail.ru|cloudflare.net|rabbitstream.net|x.com|51.la|cloudflareinsights.com|tongjiniao.com|vp1shop.shop,_____,domain=wap.dmwenku.com|m.wfxs.tw|wap.ishuquge.la|m.91zww.com|592mh.top|dubuxiaoshuo.com|clm410.buzz|bookbl.com|shuku99.com|qiyoudy2.com|1yydstxt178.com|rouman5.com|feijisu20.com|iqb5.org|wap.xkushu.com|spoilertop.com|booktxts.com|bixia33.com|rouwenwu19.com|91porny.com|yznnw.com|vodtw.la|ckplayer.vip|uuread.tw|fengchedmp.com|aeahsck.cc|xiaoshubao.net|wap.yushuwu.cloud|twbook.cc|vodtw.xyz|xbqg6.com|qq3009qq.link|18jtv.cc|m.haxuku.com|xm200.com|av6k.com|18j.tv|haiwaishubao.com
 *.lijie.*/*_*?$third-party
@@ -3985,6 +3986,7 @@ $websocket,domain=wap.yushuwu.cloud
 699pic.com##.springtime-floatLink
 699pic.com##.springtime-pop
 699pic.com##.winpopbg
+69shumi.com,biquge543.com,beqg.cc,biquge321.com#%#//scriptlet('prevent-addEventListener', 'touchend', 'window.location.href')
 69story.com###main > div[style="margin-top: 15px;"]
 69story.com##aside#secondary > section[id="text-2"]
 69vj.com###nta
@@ -7119,7 +7121,6 @@ biqgg.com##a[onclick="guangtui();"]
 biquge001.com###content > a
 biquge345.com##.puaxqbxs_b
 biquge345.com##div[style^="position:fixed;"]
-biquge543.com,beqg.cc,biquge321.com#%#//scriptlet('prevent-addEventListener', 'touchend', 'window.location.href')
 bitauto.com###advCarsumType1
 bitauto.com###bitAd_background
 bitauto.com###bitAd_floatFlash
@@ -8261,6 +8262,9 @@ doupe.zive.cz#@##adblock-leaderboard
 douxie.com##.ndxBanner
 douxie.com##.ndxChdjBox
 douyin.com###videoSideBar iframe
+douyin.com##.playerContainer #video-info-wrap > .video-info-detail:has(a[href="https://gad.netease.com/gad/access"])
+douyin.com##xg-controls + div[class]:has(> div[style] > a[href^="https://gad.netease.com/gad/"])
+douyin.com#%#//scriptlet('adjust-setTimeout', '.current=setTimeout', '5000', '0.001')
 douyin.com#?##douyin-right-container > div[class] > div[class]:has(> ul[class] > li[class] > a[href][target="_blank"] + div:contains(广告))
 douyin.com#?##videoSideBar:-abp-has(div:-abp-contains(/商品|商家|退款|店铺/))
 douyin.com#?#.xgplayer>div[class]:-abp-has(svg[height="16"][width="30"])
@@ -10738,6 +10742,9 @@ jisuxz.com##.dl_gaosu
 jitashe.org##.bc_side_250
 jitashe.org##a[href*=".makeding.com/"]
 jiumodiary.com###forum-panel
+jiuse.io###rd0
+jiuse.io###rd1
+jiuse.io##div[class^="column is-one-quarter-tablet"]
 jiyingdm.com###otherWindowBox
 jiyingdm.com##.abcde
 jiyingw.vip##div[style="text-align:center"] > a > img
@@ -11212,6 +11219,7 @@ litv.tv##body > .right_float_poster_container
 liues.cn##.widget-graphic-cover
 live.bilibili.com##.container-wrapper[style="height:180px;min-width:1280px"]
 live.bilibili.com##.container-wrapper[style="height:446px;min-width:1280px"]
+live.bilibili.com##.layerWrapperRoot > div[class^="_root_bhaoj_"]
 live.bilibili.com#?#div.pointer:contains(下载客户端)
 live.gtcaster.com###bbb
 live.gtcaster.com##[id^="adc"]
@@ -16168,6 +16176,7 @@ zzzyk.com###Tinfo
 ||3boys2girls.com/templates/default/2013/life/160b5.js
 ||3boys2girls.com/templates/default/2013/randlinks.js
 ||3boys2girls.com^$subdocument
+||3bzsoex618.com^
 ||3czol.com/ad/
 ||3dmax8.com/atu4/
 ||3dmax8.com/jiaoche
@@ -16535,6 +16544,7 @@ zzzyk.com###Tinfo
 ||63ys.com/*/gct.js
 ||63ys.com/ggg/
 ||644446.com^
+||64lv69ncb9.com^
 ||64ma.com/tv/images/web.png
 ||65432.pw^
 ||66.fmx.cn/js/
@@ -16718,6 +16728,7 @@ zzzyk.com###Tinfo
 ||81book.com/static/scripts/1.js
 ||81book.com/static/scripts/common.
 ||81wx.info^
+||828guvngj1.com^
 ||82e9ac3c1.com^
 ||83133.com/api/
 ||835images1.com^
@@ -16908,6 +16919,7 @@ zzzyk.com###Tinfo
 ||9clasfdc3.com^
 ||9duw.com/js/sj
 ||9duw.com/pic/
+||9e0917xf7x.com^
 ||9ez.me/embd.php?type=
 ||9fgh98k.com^
 ||9fum.ifeng.com^
@@ -17853,6 +17865,7 @@ zzzyk.com###Tinfo
 ||astrill.com/bnrs/
 ||asvysvxr.com^
 ||asycxtz.cn^
+||asypwo.icu^
 ||asyy6.com/dm/
 ||at*.doubanio.com^
 ||atanx.alicdn.com^
@@ -18518,6 +18531,8 @@ zzzyk.com###Tinfo
 ||bjk08241ip.com^
 ||bjk08250ip.com^
 ||bjk08251ip.com^
+||bjk08260ip.com^
+||bjk08261ip.com^
 ||bjkedv*.xyz^
 ||bjmama.net/a/spc_
 ||bjmantis.net^
@@ -18549,6 +18564,7 @@ zzzyk.com###Tinfo
 ||blog.sina.com.cn/lm/mini/
 ||blog.xuite.net/_public/js/ysmad.js
 ||blogspot.com^*/s1600/drug.gif
+||bloom331.top^
 ||blsenpg.cn^
 ||blueidea.com/js/ajs.js
 ||blvhq.com^
@@ -23019,6 +23035,7 @@ zzzyk.com###Tinfo
 ||itopdog.cn/itopdog/d*.js
 ||itoqals.com^
 ||itpest.cn^
+||itqseeh.icu^
 ||itqwesk.icu^
 ||itsmore.cn^$third-party
 ||ittaels.com^
@@ -25522,6 +25539,7 @@ zzzyk.com###Tinfo
 ||nsclick.baidu.com^
 ||nsfsfn.xyz^
 ||nshvhfw.cn^
+||nslfhb.icu^
 ||nsvohb.top^
 ||nswtojdi.icu^
 ||ntce.com/images/js/ntce_public.js
@@ -25834,6 +25852,7 @@ zzzyk.com###Tinfo
 ||oss-ap-southeast-1.aliyuncs.com/js/copy.js
 ||ossfile001.com^
 ||osujcq.xyz^
+||otfx.cn^
 ||otfy.cn^
 ||other.v.duowan.com^
 ||otheve.beacon.qq.com^
@@ -28276,6 +28295,7 @@ zzzyk.com###Tinfo
 ||thonkoirs.com^
 ||thoohizoogli.xyz^
 ||threkuth.com^
+||thricroiw.com^
 ||thricrulnf.com^
 ||thriseds.com^
 ||throxul.com^
