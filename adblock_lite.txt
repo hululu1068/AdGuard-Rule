@@ -2,8 +2,8 @@
 ! Title: AdRules AdBlock List Lite 
 ! Expires: 12h (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-09-04 20:20:26(GMT+8) 
-! Total count: 31185
+! ! Version: 2025-09-05 08:49:21(GMT+8) 
+! Total count: 31195
  
 ###ADtip
 ###Ad_windows
@@ -1774,6 +1774,7 @@ $websocket,domain=wap.yushuwu.cloud
 .html?android=hx*&_$csp=script-src
 .html|$domain=www.gamer.com.tw
 .hur0*kns.com/$script,xmlhttprequest,third-party
+.icu/$domain=cidetxt.cc
 .icu/*?ssid=_$third-party
 .icu/*_*_*.js$third-party
 .icu/*_*_rony.js
@@ -2025,6 +2026,7 @@ $websocket,domain=wap.yushuwu.cloud
 /Static/Home/GongGao/img/kaiyuan.gif
 /V.aspx?Bln=$script,third-party
 /View/img/b72890.jpg
+/[a-z0-9]+\.[a-z0-9]+\//$denyallow=cidetxt.cc,domain=cidetxt.cc,subdocument,script
 /\.(cc|com|top|xyz)\/i\/v$/$third-party,xmlhttprequest
 /\.(com|cn|top|xyz)\/(j|K)\/[0-9]{6}$/$script,third-party
 /\.(cyou|ink)\/[a-z]{4}_[0-9]{5}_[a-z]{5}js\?/$script,third-party
@@ -7619,6 +7621,7 @@ cibaipuki.com##A[href^='/article-list-id']
 cibaipuki.com##IMG[border='0'][width='100%']
 cibaipuki.com##SECTION[id^='download_']
 cibaipuki.com##[href*=":"]
+cidetxt.cc#%#//scriptlet('prevent-setTimeout', 'try{e()}catch(e){if(t[e.message])return;')
 cilil.cn,magnet2048.com##.hotwords
 cilimao.co,cilimao.one##div[class^="FixBanner"]
 cinemablend.com#@#.adsbox
@@ -19794,6 +19797,7 @@ zzzyk.com###Tinfo
 ||daysou.com/images/huaweicloud.png
 ||dayujs.top^
 ||db11yy.com^
+||db8b41ie5.com^
 ||dbdophuz.icu^
 ||dbhfre.xyz^
 ||dbigboq.top^
@@ -21244,6 +21248,7 @@ zzzyk.com###Tinfo
 ||g3f3.com/love/
 ||g41i.icu^
 ||g4y7uuk.com^
+||g4yk4cyyw.com^
 ||g6tgashb.fun^
 ||g7ghdash2.fun^
 ||g7htk7ls7.com^
@@ -23083,6 +23088,8 @@ zzzyk.com###Tinfo
 ||jacksonyee.club^
 ||jads.co^
 ||jads.co^$domain=avgle.com
+||jadxs.org/themes/*/js/fixed.js
+||jadxs.org/themes/*/js/test.js
 ||jakid.xyz^
 ||jakisity.top^
 ||janapi.jd.com^
@@ -23352,6 +23359,7 @@ zzzyk.com###Tinfo
 ||johojima.com/wp-content/uploads/*/bnr_*.jpg
 ||johojima.com/wp-content/uploads/*/cropped-johojima_fabicon-*.jpg
 ||joi09041pt.com^
+||joi09050pt.com^
 ||joiwnq2.cn^
 ||jojog.com^
 ||jokerlu.com/upload/addon/
@@ -25608,6 +25616,7 @@ zzzyk.com###Tinfo
 ||offer.alibaba.com^$popup
 ||offerwall.yandex.net^
 ||ofincm.icu^
+||ofja.cn^
 ||ofooe.cn^
 ||ofqvca.xyz^
 ||ofreadingand.biz^
@@ -27735,6 +27744,7 @@ zzzyk.com###Tinfo
 ||spl.ztvx8.com^$third-party
 ||spoaven.top^
 ||spoh.cn^
+||spongeds.com^
 ||sportingbet-affiliate.host.bannerflow.com/core_bannerviewer.swf$domain=record.xl.pt
 ||sports747.com^$popup
 ||sportscn.com/js/commerical
