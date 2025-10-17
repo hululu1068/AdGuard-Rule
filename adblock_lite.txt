@@ -2,8 +2,8 @@
 ! Title: AdRules AdBlock List Lite 
 ! Expires: 12h (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-10-16 20:21:55(GMT+8) 
-! Total count: 30999
+! ! Version: 2025-10-17 08:51:32(GMT+8) 
+! Total count: 31012
  
 ###ADtip
 ###Ad_windows
@@ -1344,6 +1344,8 @@
 ##body > DIV[style='display: block; width: 100%; height: 132px;']
 ##body > DIV[style='display: block; width: 100%; height: 133px;']
 ##body > [id][style*='width:100%'][style*='min-height:120px']
+##body > [style^="display: block; width: 100%; height:"]:empty
+##body > [style^="display: block; width: 100%; height:"]:empty ~ :not(div)[style^="display: block; z-index: "]
 ##body > a[id*='hudie_']
 ##body > div#bottommob.bottommob
 ##body > div#inplayer[align="center"]
@@ -1538,12 +1540,13 @@
 #@#.has-ad
 #@#.uk-container.uk-container-expand
 #@#div[itemtype="http://schema.org/WPAdBlock"]
-$$div[style="display: none !important; width: 1px"]:contains(ed2k://)
+$$div[style="display: none !important;"]:contains(!function(){function a(a){var _idx=)
 $$script:contains(?is_not=1&target=1&ty=2)
+$$script:contains(||!navigator.platform){setTimeout(function () {w.location.href=url)
 $csp=script-src 'self' * 'unsafe-inline',domain=buhesw.com|luenbook.cc|zahubook.com|heciwk.com|quhesw.com|erzuwk.com|bowoxs.com|guashuge.com|mudanxs.com|mzbook.cc|haduks.com|caimozw.com|zaaizw.com|bogeks.com|oushuku.com|haxu8.com|pucixs.com|tuqisw.com|xueyisw.com|zuye8.com|yawoxs.com|guwoxs.com|jiufuzw.com|beianxs.com|shuying6.com|mafusw.com|cule9.com|riquzw.com|xingksw.com|enbusw.com|waguwk.cc|ruyisw.com|zuxiku.com|jinmusb.com|hunshuge.com|puyewk.com|kaaiwk.com|hadu520.com|qubosw.com|meisibook.com|cuaizw.cc|boxue8.cc|cipubook.com|ququsk.cc|yiyezao.com|shanhuxs.com|jiutusw.com|chahuax.com|candoug.com|hanziwen.com|haduzw.com|modaoshu.com|nipubook.com|nuoshuge.com|puquz.com|wuwusk.com
-$csp=script-src 'self' * 'unsafe-inline',domain=minaeast.net|shumi.la|59xs.com|biqugen.com|8181zw.vip|biqugequ.org|69shumi.com|fxxs3.com|efuxs.com|i3book.com|genbiquge.com|quanbiqu.com|pinshu.org|13xsw.com|bbiquge.cc|taobiquge.com|haijiaobooksw.top|zlobin.net|piaotianxiaoshuo.com|yebiquge.com|jvbiquge.com|vipbiquge.com|jpbqg7.com|zuizhong.net|oldtimeswx.org|5book.cc|softtechsolution.org|product44.com|snxsw.com|xiexinde.net|m.6666xsw.com|m.chenkuan.com|jmshuwu.net|wodexiaoshuoh.com|tetservices.net|haitangsoshu.org|4hrz.net|x33yq.org|56xiaoshuo.net|novelser.com|ykxs.cc|biqudd.com|diyibanzhu44444.com|dbrxs.org|kaixindu.net|1ingatlan.net|gaofuwu.org|yushuwu.cloud|yswxs.com|biquge2345.com|dingdian911.com|bqug8.com|xianguke.net|kunnu.com|yourbiquge.com|biquge345.com|666biquge.com|biquwx.cc|1kans.net|aidu123.com|biquluo.info|bqgh.com|jmshuwu.net|maxshuku.com|shukuge.com|sthuojia.net|tvyun07.com
+$csp=script-src 'self' * 'unsafe-inline',domain=minaeast.net|shumi.la|59xs.com|biqugen.com|8181zw.vip|biqugequ.org|69shumi.com|fxxs3.com|efuxs.com|i3book.com|genbiquge.com|quanbiqu.com|pinshu.org|13xsw.com|bbiquge.cc|taobiquge.com|haijiaobooksw.top|zlobin.net|piaotianxiaoshuo.com|yebiquge.com|jvbiquge.com|vipbiquge.com|jpbqg7.com|zuizhong.net|oldtimeswx.org|5book.cc|softtechsolution.org|product44.com|snxsw.com|xiexinde.net|m.6666xsw.com|m.chenkuan.com|jmshuwu.net|wodexiaoshuoh.com|tetservices.net|haitangsoshu.org|4hrz.net|x33yq.org|56xiaoshuo.net|novelser.com|ykxs.cc|biqudd.com|diyibanzhu44444.com|dbrxs.org|kaixindu.net|1ingatlan.net|gaofuwu.org|yushuwu.cloud|yswxs.com|biquge2345.com|dingdian911.com|bqug8.com|xianguke.net|kunnu.com|yourbiquge.com|biquge345.com|666biquge.com|biquwx.cc|1kans.net|aidu123.com|biquluo.info|bqgh.com|jmshuwu.net|maxshuku.com|shukuge.com|sthuojia.net|tvyun07.com|zk01.net
 $csp=script-src 'self' * 'unsafe-inline',domain=nodejs.cn|smsonline.cloud
-$csp=script-src 'self' *,domain=52niuyanks.cc|90shuyuan.com|hunhunxs.com|sswwxs.com|akexs.com|qqmmxs.com|qimiaoxs.cc|qimiaoxiaoshuo.com|wuwxs.com|biquge678.com|biqugezw.us|zk01.net
+$csp=script-src 'self' *,domain=52niuyanks.cc|90shuyuan.com|hunhunxs.com|sswwxs.com|akexs.com|qqmmxs.com|qimiaoxs.cc|qimiaoxiaoshuo.com|wuwxs.com|biquge678.com|biqugezw.us
 $domain=ads.adxadserv.com|adserver.juicyads.com|cs.adxpansion.com|olmsoneenh.info|static.javhd.com|syndication.exosrv.com
 $domain=googleads.g.doubleclick.net
 $image,third-party,domain=258zw.com
@@ -2037,6 +2040,7 @@ $websocket,domain=wap.yushuwu.cloud
 /^(?!.*(mega.co.nz|mega.nz|libs.baidu.com|ilfcdn.li|bytecdntp.com|doodcdn.io|intensedebate.com|vixcloud.co|cdn.plyr.io|rsc.cdn77.org|linkvertise.com|fastly.net|statically.io|sharecast.ws|b-cdn.net|bunnycdn.ru|bootstrapcdn.com|cdn.ampproject.org|cloudflare.com|cdn.staticfile.org|disqus.com|disquscdn.com|dmca.com|ebacdn.com|facebook.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|googletagmanager.com|gstatic.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|recaptcha.net|shrink.pe|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|(\/\/|\.)vk\.com|yandex.|yastatic.net|ytimg.com|zencdn.net|player|youtube.com|cackle.me|googleoptimize.com|vuukle.com|chatango.com|twimg.com|google-analytics.com|hcaptcha.com|media-imdb.com|blogger.com|hwcdn.net|instagram.com|wp.com|fastcomments.com|plyr.io|imgsmail.ru|cloudflare.net|rabbitstream.net|51.la|cloudflareinsights.com|tongjiniao.com|vp1shop.shop|(\/\/|\.)x\.com)).*$/$third-party,script,_____,domain=manshuxs.com|yemancomic.com|qimiaoxiaoshuo.com|gaofuwu.org|nxpaaq.com|dengbi2.com|92hm.top|634.tv|myhaitang.cc|ckplayer.vip|qushucheng.com|av6k.com|18j.tv|uaa.com
 /^(https|ws|wss):\/\/[a-z0-9]+\.[a-z0-9]+\.[a-z]{2,3}:\d{1,6}\/([a-z]{1,3}\/){0,1}\d+\?[a-z]+=[a-z0-9]+($|&)/$script,websocket,third-party
 /^(mon|tue|wed|thu|fri|sat|sun)\d{1,2}\.\w{2}\d{1,6}\w{4}\.com$/
+/^https:\/\/([a-z]+\.){2}\w{2,3}\/\d{4}\/\d{2}\/\d{10,}\.txt$/$third-party,xmlhttprequest,match-case
 /^https:\/\/(www\.)?zxzjhd\.com\/[0-9]+\.gif/$domain=zxzjhd.com
 /^https:\/\/[a-z0-9-]{3,12}\.[a-z0-9]+\.com\/([A-Za-z0-9.]+)(?:\/([A-Za-z0-9.]+))?\.\d{4}\.(doc|docx|html|jpeg|jpg|js|json|odf|pdf|png|ppt|psd|rtf|shtml|sxml|txt|wedp|wps|xml|xps)\?\d{13}$/$third-party,match-case
 /^https:\/\/[a-z0-9]+\.[a-z0-9]+\.[a-z]{2,3}:\d{1,6}\/[a-z]{1,3}\/\d+\?is_not=/$all
@@ -2344,6 +2348,7 @@ $websocket,domain=wap.yushuwu.cloud
 /hm.html?s=*=http
 /hm.js?$third-party
 /hm.js?$third-party,xmlhttprequest
+/hm/*&r=*&t=*&p=*&sign=$script,websocket
 /hm/ytymer?x=
 /hndxweb/push$popup,third-party
 /homead/*_appledaily_bg.
@@ -16528,6 +16533,7 @@ zzzyk.com###Tinfo
 ||58file.com/down/xyk.
 ||58jingxuan.top/115
 ||58jingxuan.top/dhbioperhbvoprwm
+||58rfnch2yq.com^
 ||58shuz.com^
 ||58tg.com^$third-party
 ||591520.xyz^
@@ -16598,6 +16604,7 @@ zzzyk.com###Tinfo
 ||5z2oy.icu^
 ||6.cn/coop/pub/getRand.php?
 ||60.190.139.164^
+||600g3yf2p.com^
 ||600km.com/template/*/ad/
 ||6080.tv/public/js/m/uaredirectformobile.js
 ||6080aa.com/template/*/images/g_js/
@@ -16669,6 +16676,7 @@ zzzyk.com###Tinfo
 ||6gxs.net/js/
 ||6hejing.cn^
 ||6iwoif.com^
+||6jei0t6xp.com^
 ||6jyi7mzae.com^
 ||6ku.icu^
 ||6likosy.com^$domain=pronpic.org
@@ -18777,6 +18785,7 @@ zzzyk.com###Tinfo
 ||business-api.tiktok.com^
 ||business.92wy.com^
 ||bustles1.com^
+||buttocks33.com^
 ||buy.sina.com.tw/js/sina_popup.php
 ||buyihao.com^
 ||buzien.top^
@@ -21441,6 +21450,7 @@ zzzyk.com###Tinfo
 ||gio07311rp.com^
 ||giphaudoq.com^
 ||githubusercontent.com/vip888vip/ug/main/*.gif
+||githuhey.com^
 ||giwl0p3gx7.com^
 ||gjh9v.tianshilv.cn^
 ||gjinuqg.top^
@@ -24376,6 +24386,7 @@ zzzyk.com###Tinfo
 ||lwide.xyz^
 ||lwilmil.top^
 ||lwksxs.com^
+||lwlkw7.com^
 ||lwlqsgr.cn^
 ||lwlwlw.com/ggzx/
 ||lwlwlw.com/js/FVgg.js
@@ -30727,6 +30738,7 @@ zzzyk.com###Tinfo
 ||zhanzhang.net^
 ||zhaofuli.*/data/content
 ||zhaozongqq.com^
+||zhbhivvoid.com^
 ||zhemaijs.net^
 ||zhenben.cc/2000/
 ||zhenbuka*/statics/js/toastr/jquery.toast.js
@@ -30900,6 +30912,7 @@ zzzyk.com###Tinfo
 ||zsjxwj.com^
 ||zsnfdphz.com^
 ||zsy10161yok.com^
+||zsy10170yok.com^
 ||zszhln.xyz^
 ||zt-uc-baidu.cc^
 ||zt.chuanke.com/?mod=
