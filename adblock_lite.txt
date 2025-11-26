@@ -2,8 +2,8 @@
 ! Title: AdRules AdBlock List Lite 
 ! Expires: 12h (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-11-26 08:53:47(GMT+8) 
-! Total count: 31394
+! ! Version: 2025-11-26 20:23:31(GMT+8) 
+! Total count: 31419
  
 ###ADtip
 ###Ad_windows
@@ -1184,6 +1184,7 @@
 ##[src^='https://play.cdn6.buzz/js/']
 ##[src^='https://qwe0231141.bj.bcebos.com/']
 ##[style$="both;margin: auto;text-align: center;line-height: initial;margin-bottom: 10px;"]
+##[style$="z-index:100;display:block;width:9.6vw;height:7.96875vw;background: #000;opacity:0.01;"]
 ##[style$=' 0% 0% / 100% no-repeat; height: 130px; width: 100%; position: relative;']
 ##[style$='auto;text-align: center;line-height: initial;margin-bottom: 10px;margin-left: 20px;margin-right: 20px;']
 ##[style$='display:block;width:9.6vw;height:8.5vw;background: #000;opacity:0.01;']
@@ -1212,7 +1213,7 @@
 ##[style='width:100%;height:auto;min-height:120px;position:relative;display:block;']
 ##[style='z-index: 2147483647; width: 100%;height: auto;left: 0;right: 0;margin: auto;']
 ##[style='z-index: 99999; text-indent: -10em;position: relative; left: 0px;box-sizing: border-box;']
-##[style^="pointer-events: none;background-image:url(': 2147483647; height: 123px; ']
+##[style^="pointer-events: none;background-image:url(': 2147483647; height: 123px; "]
 ##[style^='bottom: 0px; width: 100%; height: 50vw; position: fixed; left: 0px; right: 0px; margin: 0px; background: url("https://']
 ##[style^='display: block; width: 100%; height: 125px; background: url'][style*='center top / contain no-repeat;']
 ##[style^='display: block; z-index: 2147483646; width: 10%;']
@@ -7451,6 +7452,9 @@ cartoonmad.com##tr:nth-child(n+5) > td > table[width="732"]
 cast4u.tv###notice
 cast4u.tv###video_ads_overdiv
 catchv.fooish.com###ad
+cava.tw##.banner
+cava.tw#$##modal-dm { display: none !important; }
+cava.tw#$#body { overflow: auto !important; }
 cb.com.cn##.box > a[href^="http"]:not([href*=".cb."])
 cb.wpio.xyz##.tpc_content > a[target="_blank"][onmouseout]
 cb.wpio.xyz##.tpc_content > span > span > a[target="_blank"][onmouseout]
@@ -9798,14 +9802,21 @@ hjenglish.com###uzt-mask
 hjenglish.com##.fix_questionnaire_btn
 hjenglish.com##.module-recommend-course
 hjenglish.com,hujiang.com##.lamu_banner
+hk.news.yahoo.com,tw.news.yahoo.com##.atoms > div[class^="bg-card-"]:has(> div[id^="sda-"])
 hk.on.cc##div[id^="google_div_"]
 hk.xfastest.com##.adv-side-wrap
 hk.xfastest.com##.adv_v2
 hk.yahoo.com##div[id^="my-ads"]
 hk.yahoo.com,tw.yahoo.com###fullbleed > div[data-content="廣告"]
+hk.yahoo.com,tw.yahoo.com###panel-0 > .grid > .pb-2:not(.group):has(> div[id^="ntk-text"])
 hk.yahoo.com,tw.yahoo.com##.ntk-list > .grid-item:has(> div[data-wf-benji-config])
+hk.yahoo.com,tw.yahoo.com##[id^="taboola-"]
+hk.yahoo.com,tw.yahoo.com##aside > .box-border:has(> div[id^="sda-"])
 hk.yahoo.com,tw.yahoo.com##aside > div[id^="module-adgroup"]
 hk.yahoo.com,tw.yahoo.com##aside > div[id^="module-sponsoredad"]
+hk.yahoo.com,tw.yahoo.com##li[id^="StreamMidCenter2Ad-"]
+hk.yahoo.com,tw.yahoo.com#%#//scriptlet('trusted-set-attr', 'div#Homepage', 'data-top-center-ad-type', 'noAd')
+hk.yahoo.com,tw.yahoo.com,news.yahoo.com##div[id^="sda-"]
 hk01.com###debug-0-ad-outer-container
 hk01.com##.article-grid__desktop-rhs-section > .items-center:has(.lazyload-wrapper > .js-ad-slot)
 hk01.com##.article-grid__desktop-rhs-section > .items-center:has(> div[class^="sc-"] > div[data-id="lazyload-placeholder"])
@@ -14400,10 +14411,11 @@ tw.yahoo.com###abu-live
 tw.yahoo.com###discount
 tw.yahoo.com###tabTemplate
 tw.yahoo.com###util-top-promotion
+tw.yahoo.com##.col1-bottom > .border-solid:not([id]):has(> iframe[src^="https://tw.buy.yahoo.com/smartbanner/"])
 tw.yahoo.com##.travelads
 tw.yahoo.com##[class*="has-beacon-click"][data-wf-beacons^="https://*.gemini.yahoo.com/"]
 tw.yahoo.com##div[id^="applet_p_"][class^="dealstdv2wafer"]
-tw.yahoo.com,news.yahoo.com##div[id^="sda-"]
+tw.yahoo.com##iframe[src^="https://tw.buy.yahoo.com/smartbanner/"]
 tw100s.com##div[class="ui_adblock"]
 tw116.com###t365
 twavking.com##.da_single_video
@@ -16798,6 +16810,7 @@ zzzyk.com###Tinfo
 ||6play.fr/assets/js/vendors-3600848c1f.js$script
 ||6qo.fun^
 ||6quspne.com^
+||6s0zo8jzbb.com^
 ||6s8w2ck1g.com^
 ||6t51r3ge18.com^
 ||6tdz25urqj.com^
@@ -19620,6 +19633,7 @@ zzzyk.com###Tinfo
 ||connect.facebook.net/en_US/fbevents.js$script,redirect=noopjs,domain=linetv.tw
 ||connectormwi.laterpay.net^$script,domain=schoener-wohnen.de
 ||connectreadoasis.com^
+||conscience34.top^
 ||considerice.com^
 ||conyz.cn^
 ||coolaler.com/index_ads/
@@ -22514,6 +22528,7 @@ zzzyk.com###Tinfo
 ||hujiang.com/ciku/getLesson
 ||hujunhao.name^
 ||hummingexam.com^
+||hunzlj.icu^
 ||huo07091hy.com^
 ||huo07100hy.com^
 ||huo07101hy.com^
@@ -22940,6 +22955,7 @@ zzzyk.com###Tinfo
 ||imgur.com^*.gif$domain=18p2p.com
 ||imgwdyey.com^
 ||imgxr.com^$domain=xiuren.org
+||imgzxr.cn^
 ||imjtv.cc^$third-party
 ||imnks.com/ad2023/$image
 ||imooc.com/open/courselistrandjs
@@ -23524,6 +23540,7 @@ zzzyk.com###Tinfo
 ||jqsex.com^
 ||jqtkzuco.xyz^
 ||jquery.envi-met.com.cn^
+||jqz8z7gqxw.com^
 ||jrblfv.icu^
 ||jrbnxw.top^
 ||jrds.net.cn^
@@ -23909,6 +23926,7 @@ zzzyk.com###Tinfo
 ||klandmart.com/K-Landmart_0011.jpg
 ||klbvqqqj.com^
 ||kljslku.com^
+||klljo2cp63.com^
 ||kltjbnfjmnh.com^
 ||klufjdo.com^
 ||klvt.cn^
@@ -24161,6 +24179,7 @@ zzzyk.com###Tinfo
 ||lcbmtd.icu^
 ||lccfjszp.cn^
 ||lcd.aivote.com^
+||lcgcrldp6m.com^
 ||lcidauv.top^
 ||lclimil.top^
 ||lclqbh.icu^
@@ -26157,6 +26176,7 @@ zzzyk.com###Tinfo
 ||people.com.cn/img/gjt/
 ||people.com.cn/rmrb/tplimg/new.js
 ||pepnsnq.cn^
+||periscope73.com^
 ||perlmaven.com/img/*0x2
 ||perlmaven.com/img/sticker-you.jpg
 ||perspective44.top^
@@ -27124,6 +27144,7 @@ zzzyk.com###Tinfo
 ||rlavvoeo.com^
 ||rliwiqr.icu^
 ||rljjt.cn^
+||rlkx.cn^
 ||rlogs.youdao.com^
 ||rlpbld.icu^
 ||rlqoyht.icu^
@@ -27559,6 +27580,7 @@ zzzyk.com###Tinfo
 ||shitouxs.com/static/042417.js
 ||shixiong.xyz^
 ||shiyaokejishanghai.com^
+||shiyiyuefalkjui.com^
 ||shjha.top^
 ||shoagooy.net^
 ||sholphot.com^
@@ -29206,6 +29228,7 @@ zzzyk.com###Tinfo
 ||vegaingi.com^
 ||vehohx.icu^
 ||veilengh.com^
+||veirkaey.com^
 ||vejrp6iq25.com^
 ||vel7.xyz^
 ||venator.link^
@@ -30174,6 +30197,8 @@ zzzyk.com###Tinfo
 ||xjx11241ts.com^
 ||xjx11250ts.com^
 ||xjx11251ts.com^
+||xjx11260ts.com^
+||xjx11261ts.com^
 ||xjzyhp.xyz^
 ||xkbinj.xyz^
 ||xkcxh.com^
