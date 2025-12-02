@@ -2,8 +2,8 @@
 ! Title: AdRules AdBlock List Lite 
 ! Expires: 12h (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-12-02 08:55:06(GMT+8) 
-! Total count: 31483
+! ! Version: 2025-12-02 20:23:54(GMT+8) 
+! Total count: 31498
  
 ###ADtip
 ###Ad_windows
@@ -7085,7 +7085,7 @@ bilibili.com##.bili-video-card__wrap > a[href^="http"]:not([href*=".bilibili.com
 bilibili.com##.btn-ad
 bilibili.com##.btn-ctnr
 bilibili.com##.clearfix.h5-download-bar
-bilibili.com##.container > .bili-feed-card:has(> div.bili-video-card  div.bili-video-card__info--no-interest + h3 > a[target="_blank"]:not([href^="https://www.bilibili.com/"]))
+bilibili.com##.container > .bili-feed-card:has(> div.bili-video-card div.bili-video-card__info--no-interest + h3 > a[target="_blank"]:not([href^="https://www.bilibili.com/"]))
 bilibili.com##.container > div.bili-video-card.is-rcmd:not(:has(> *))
 bilibili.com##.desktop-download-tip
 bilibili.com##.download-client-trigger.download-entry
@@ -7963,6 +7963,8 @@ crsky.com##.banner-leader
 crsky.com##.ml10.Gs_d
 crsky.com##a[href^="http://count."][href$=".exe"]
 crx4.com,galacg.me,moneyweekly.com.tw###carousel-example-generic
+crxs.me##.push-top
+crxs.me#%#//scriptlet('abort-current-inline-script', 'document.createElement', 'visitUrl')
 crypto-clix.net#@#.ad-block
 crypto-clix.net#@#.ad-content
 crypto-clix.net#@#.ad-footer
@@ -8822,7 +8824,7 @@ f2dsex1.com##div.link
 faayoo.com###footer_fd
 faayoo.com##.qr_code
 fabconvert.com#@#.ad-banner-top
-fabconvert.com,knews.com.tw,1905.com,news.ltn.com.tw,commonhealth.com.tw,health.tvbs.com.tw,idreamx.com,xchina.co,manhuafen.com,world68.com##.ad
+fabconvert.com,knews.com.tw,1905.com,news.ltn.com.tw,commonhealth.com.tw,health.tvbs.com.tw,idreamx.com,xchina.*,manhuafen.com,world68.com##.ad
 facebook.com#@#script:not([src]) + style + div[id]:not([class]):not([style])
 facebookproxy.info###overlay-holder
 familydoctor.com.cn##.adExtra
@@ -9816,9 +9818,11 @@ hk01.com##.article-grid__desktop-rhs-section > .items-center:has(> div[class^="s
 hk01.com##.md\:min-h-\[90px\]
 hk01.com##.min-h-\[250px\].mb-3
 hk01.com##article > .items-center:has(.lazyload-wrapper > .js-ad-slot)
+hk01.com##div[class*="placeholder"]:has(> .lazyload-wrapper > .js-ad-slot)
 hk01.com##div[class^="Box-v"] > .enterviewport__wrapper:has(> div[data-id="lazyload-placeholder"]:only-child)
 hk01.com##div[class^="lg\:min-h-[250px] hidden lg:flex lg:items-center"]
 hk01.com##div[data-id="lazyload-placeholder"]
+hk01.com#$#div[class^="placeholder-top-"] { min-height: 0 !important; }
 hkcards.com###ad-slot-01
 hkcards.com###ad-slot[style="min-width: 300px; min-height: 300px;"]
 hkcards.com##.row > .col-12 > #ad-slot
@@ -12276,6 +12280,7 @@ news.baidu.com##.swipe-backflow-container
 news.baidu.com#?#.index-list-item:has(.tip-time:contains(广告))
 news.china.com.cn##.Wrapper > div[style]
 news.cn2che.com##.banner01
+news.cnyes.com##.a133dm9s
 news.cnyes.com##.content-main > div:empty
 news.cnyes.com##.content-main > div:has(> div[id^="div-gpt-"])
 news.cnyes.com##.content-main > div[class]:has(div[id^="div-gpt-ad-"])
@@ -15069,18 +15074,17 @@ xc6b.com##a[href="http://61.160.236.52"]
 xcar.com.cn###eMeng
 xcar.com.cn###show_car
 xcar.com.cn##div[class^="adset"]
+xchina.*##.block-overlay
+xchina.*##.content-box > .list > .item:not(.photo-image):has(> a[clickmode="cpt"])
+xchina.*##.content-box > .list > .item:not(.photo-image):has(> div > ins[data-zoneid])
+xchina.*##.photos > div.item:has(> div > a[target="_blank"])
+xchina.*##.photos > div.item:has(> div[class^="exoclick_"])
+xchina.*##.push-top
+xchina.*##div[class^="item photo zone"]
+xchina.*##div[style*="width: 300px;"][style*="height: 455px;"]
+xchina.*#%#//scriptlet('abort-current-inline-script', '$', 'adModal')
+xchina.*#%#//scriptlet('prevent-addEventListener', '/DOMContentLoaded|load|complete/', '/check|detected/')
 xchina.co##.block-overlay
-xchina.co##.content-box > .list > .item:not(.photo-image):has(> a[clickmode="cpt"])
-xchina.co##.content-box > .list > .item:not(.photo-image):has(> div > ins[data-zoneid])
-xchina.co##.outer-banner
-xchina.co##.photos > div.item:has(> div > a[target="_blank"])
-xchina.co##.photos > div.item:has(> div[class^="exoclick_"])
-xchina.co##.push-top
-xchina.co##div:has(> div:only-child > .media img[src*="/ad/"])
-xchina.co##div[class^="item photo zone"]
-xchina.co##div[style*="width: 300px;"][style*="height: 455px;"]
-xchina.co#%#//scriptlet('abort-current-inline-script', '$', 'adModal')
-xchina.co#%#//scriptlet('prevent-addEventListener', '/DOMContentLoaded|load|complete/', '/check|detected/')
 xclient.info###pop_business
 xdf.cn##.footadv
 xdf.cn##.middleadv
@@ -18580,6 +18584,7 @@ zzzyk.com###Tinfo
 ||beatricecandanceyd.com^
 ||beatricecathy.com^
 ||beatricenba.com^
+||beautiful45.com^
 ||bebx.cn^
 ||beclsbx.icu^
 ||becode.xiao84.com^
@@ -23243,6 +23248,7 @@ zzzyk.com###Tinfo
 ||j2jtq0hpb.com^
 ||j33xvvanl.com^
 ||j4mxrs21gh.com^
+||j4s12kfavg.com^
 ||j694fx3bp.com^
 ||j6zh4g0.cn^
 ||j7ifivzy.icu^
@@ -23754,6 +23760,7 @@ zzzyk.com###Tinfo
 ||jyt58.top^
 ||jytjw.com^
 ||jyvith.xyz^
+||jywn7lkbdw.com^
 ||jyzmtl.icu^
 ||jz5u.com/public/js/t$script
 ||jz5u.com/public/new/
@@ -25362,6 +25369,7 @@ zzzyk.com###Tinfo
 ||n2.hk/promo/
 ||n26iiffw9.com^
 ||n2d79v41a3.com^
+||n2xj2mxg3z.com^
 ||n3567.com^
 ||n3xpjc.xyz^
 ||n55ylc001.vip^
@@ -25570,6 +25578,8 @@ zzzyk.com###Tinfo
 ||niugupan.com/js/tj.js
 ||niuk11291gi.com^
 ||niuk12011gi.com^
+||niuk12020gi.com^
+||niuk12021gi.com^
 ||niulai0323166.space^
 ||niupic.com/images/2019/11/17/_17.
 ||niuza.com^$image,subdocument,third-party
@@ -28121,6 +28131,7 @@ zzzyk.com###Tinfo
 ||suibiankan.co/Runtime/Js/
 ||suibianlu.com/zb_users/ad/
 ||suibianlu.com/zb_users/theme/tx_fzy/script/zhao.js
+||suitcase890.top^
 ||suiyishop.cn/zhuangxiu_
 ||summerwm1.com^
 ||sump4.cc/js/wcount.js
@@ -28619,6 +28630,7 @@ zzzyk.com###Tinfo
 ||tp.sgcn.com^
 ||tp.suppercacheimages.top^
 ||tpaxot.cn^
+||tphurqalq.com^
 ||tpjw.cn^
 ||tpkv.cn^
 ||tptoon.com/skin/js/tjtjkk.
@@ -28998,6 +29010,7 @@ zzzyk.com###Tinfo
 ||uiadmin.net/uview-plus/assets/js/3.1b3a95a0.
 ||uibjhqwkl.com^
 ||uifyeldt.top^
+||uimr.cn^
 ||uioozpxq.com^
 ||uiqatnpooq.com/0f8b73d477b554394e23077935e1fff4.js$script,domain=extratorrent.cc
 ||uiqouw.icu^
@@ -30087,6 +30100,7 @@ zzzyk.com###Tinfo
 ||xcar.com.cn/dsp/ad
 ||xccadc.com^
 ||xcf-bd-js.chuimg.com^
+||xchina.$domain=crxs.me
 ||xchina.*/ad/
 ||xchina.*/plugins/jquery.modal/
 ||xchina.*/plugins/sweetAlert2/
@@ -30563,6 +30577,7 @@ zzzyk.com###Tinfo
 ||ycdywl.com^
 ||ych.asia^
 ||ychahlollfb.com^
+||ycikokryl.com^
 ||yckamq.xyz^
 ||yd.gxdianhua.com^
 ||yd.linjuyihao.com^
