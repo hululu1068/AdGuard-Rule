@@ -1,4 +1,4 @@
-# Update time: 2025-12-08 09:26:23
+# Update time: 2025-12-08 20:39:59
 # Repo URL: AdGuard、AdGuardHome广告过滤规则合并/去重
 
 ###################################   合并/去重自以下规则   ####################################
@@ -64,7 +64,6 @@
 ||cnzz.
 ||adsfile.
 ||adserver.
-||adservice.
 ||adpic.
 ||sax.sina.
 ||biz5.
@@ -97,6 +96,7 @@ MRelateFeedAd
 ||adcolony.
 ||advertising.
 ||showad*
+||adservice.
 ||pagead.
 ||djjca.
 ||imageadv.
@@ -162,8 +162,6 @@ advertisers.js|
 ||asd8900.oss-*.aliyuncs.com^
 ||ky891.oss-*.aliyuncs.com^
 ||ad*.aginomoto.com
-||imgpfx.arenavision.
-||player-feedback*.glomex.*^
 ||da.hornbach.*^
 ||dm-*.toutiao.com^
 ||adsystem*.*^
@@ -221,6 +219,8 @@ advertisers.js|
 ||qchannel*.cn^
 ||tracker*.qcloud.com^
 ||adwords*.*^
+||imgpfx.arenavision.
+||player-feedback*.glomex.*^
 ||pixel*.production-public.tubi.io^
 ||host*.nti.nl^
 ||ping*.qq.com^
@@ -241,6 +241,7 @@ advertisers.js|
 ||mon-*.lemon8-app.us^
 ||mon-*.lemon8-app.com^
 ||beehiiv-adnetwork-production.s*.amazonaws.com^
+||telemetry*.transcend.io^
 ||log*-misc-lf.amemv.com^
 ||stats2.*.fdnames.com^
 ||v*.denakop.com^
@@ -269,6 +270,7 @@ advertisers.js|
 ||events-api*.outfit7.com^
 ||display-ad-*.kgslb.com^
 ||ac*.pingguolv.com^
+||tnc*.tiktokv.us^
 ||mistat.*.xiaomi.com^
 ||ad*.ettoday.net^
 ||report*.appmetrica.webvisor.com^
@@ -354,6 +356,7 @@ advertisers.js|
 ||eum*.instana.io^
 ||report.*.gbqofs.io^
 ||ads*-normal-lq.zijieapi.com^
+||tnc16-*.byteoversea.com^
 ||fads*s.com^
 ||ads-dmp-collect.*.karrotmarket.com^
 ||collector-*.protechts.net^
@@ -446,6 +449,7 @@ advertisers.js|
 ||mgbsdk*.matrix.easebar.com^
 ||api*.amplitude.com^
 ||app-analytics-*.snapchat.com^
+||tnc*.tiktokv.com^
 ||matomo.*.vn^
 ||appanalysis*.banggood.com^
 ||maas-*.phunware.com^
@@ -487,6 +491,7 @@ advertisers.js|
 ||geoloc*.9cd47096ab1495d8d3b18667f6a52b9c.com^
 ||bjsvp*.space^
 ||hw-p2p*pull*com^
+||telemetry.*.pvp.net^
 ||gtlpa*.com^
 ||ali-p2p*pull*com^
 ||log*-normal-lq.toutiaoapi.com^
@@ -502,8 +507,11 @@ analytics-*.aasaam.com
 ||gtmdev.jabra.
 ||tracking.olx.
 ||teleriumads-*.netdna-ssl.com^
+||rgfftupf.
 ||adservice.google.
+||counter*.stat.ovh^
 |load.sst.
+||ads.livetv*.me^
 ||allsportsflix.
 ||iphone-caviar.ru*entranceId
 ||w*statistics.info^
@@ -512,7 +520,6 @@ analytics-*.aasaam.com
 ||sgtm.fashionunited.
 ||partner.superbahisaffiliates*.com^
 ||v.tzbox*.xyz^
-||telemetry*.transcend.io^
 ||cnt.vivatube.
 ||rotabanner.
 ||advert*.ultraweb.hu^
@@ -542,7 +549,6 @@ analytics-*.aasaam.com
 ||sgtm.fairmont.
 ||marketplace-*.hyprmx.com^
 ||analytics.streamfab.
-||tnc*.tiktokv.us^
 ||log-collector.shopee.
 ||ad*.tmgrup.com.tr^
 ||goodadvert.
@@ -556,6 +562,7 @@ analytics-*.aasaam.com
 ||a*.smlog.co.kr^
 ||track.zalando.
 ||seller-log-collector.shopee.
+||advert*.livesportmedia.eu^
 ||subnewss*.net^
 ||t.delfi.
 ||hostingcloud.*.wasm^
@@ -581,6 +588,7 @@ analytics-*.aasaam.com
 |piwik.
 ||letssex.
 ||production-adserver-*.amazonaws.com^
+||ad-host-backup-*.aliyuncs.com^
 ||cl*.k5a.io^
 ||analytics.ahrefs.
 ||s*.adduplex.com^
@@ -598,6 +606,7 @@ analytics-*.aasaam.com
 ||mf*.advantage.as^
 ||query*.petametrics.com^
 ||button.blogs.yandex.
+||fxhpaoxqyajvmdg.
 ||zbb.bbb.*.pics^
 ||tw*.netcore.co.in^
 ||trck.*.prod-na.turntable.sonic.advertising.amazon.dev^
@@ -657,7 +666,6 @@ analytics-*.aasaam.com
 ||dualstack.adbert-web-lbs-*.elb.amazonaws.com^
 ||i-*.ci360.sas.com^
 ||ad*.bilgin.pro^
-||tnc*.tiktokv.com^
 ||px*.mediahills.ru^
 ||23.109.87.
 ||ulog.*.kwai-pro.com^
@@ -672,6 +680,7 @@ analytics-*.aasaam.com
 |load.gtm.
 ||stats*.videonow.ru^
 ||pixel.archive.
+||reachableads-av.*.amazonaws.com^
 ||ad*.thisisgame.com^
 ||q*-publick.club^
 ||iad-*.appboy.com^
@@ -684,7 +693,6 @@ analytics-*.aasaam.com
 ||ms*.applvn.com^
 ||thegreatesthits.
 ||tracking-*.trnox.com^
-||telemetry.*.pvp.net^
 ||sgtm.wimdu.
 ||snowplow-collector.
 ||www.fuze-hill*.xyz^
@@ -700,19 +708,11 @@ analytics-*.aasaam.com
 ||poptraf.
 ||v*.sitecounter.site^
 ||touch.yesim.
-||tnc16-*.byteoversea.com^
-||reachableads-av.*.amazonaws.com^
 ||ads*.opensubtitles.org^
+||gamenguide.com*adbk
 rgmechanicsgames.com*VPN.exe
-||ad-host-backup-*.aliyuncs.com^
+||142.91.159.
 ||fapnado.*.php|
 ||itechpost.com*adbk
-||rgfftupf.
 @@||cdn*.porn300.com^
-||gamenguide.com*adbk
-||counter*.stat.ovh^
-||ads.livetv*.me^
-||advert*.livesportmedia.eu^
-||142.91.159.
-||fxhpaoxqyajvmdg.
 Banner468x60
