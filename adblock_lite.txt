@@ -2,8 +2,8 @@
 ! Title: AdRules AdBlock List Lite 
 ! Expires: 12h (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2026-03-05 09:11:13(GMT+8) 
-! Total count: 31968
+! ! Version: 2026-03-05 20:36:26(GMT+8) 
+! Total count: 32001
  
 ###ADtip
 ###Ad_windows
@@ -534,6 +534,7 @@
 ##.downcode[style^="position:fixed;z-index:1000;top:200px;"]
 ##.dplayer > .tips
 ##.duilian > .leftd
+##.dx-recommend-icons
 ##.ec-ad
 ##.ec-tutu
 ##.edtj
@@ -692,6 +693,7 @@
 ##.module-tglist > .tg-normal-box
 ##.module-ttlist.tt_w-2
 ##.module-yylist.tg_w
+##.my-2.md\:my-3
 ##.my-cat.my-cat-header
 ##.mylist + #topthree
 ##.mylist > a > img[width^="9"][height="80"]
@@ -899,6 +901,7 @@
 ##A[href*='//v.wanfumei.net']
 ##A[href*='/adjump/?']
 ##A[href*='aducx.com']
+##A[href*='cc:'] > IMG[src]
 ##A[href*='com:'] > IMG[src],A[href*='cc:'] > IMG[src]
 ##A[href*='ds2f1sd31g.vip']
 ##A[href*='exuvu.com']
@@ -1241,6 +1244,7 @@
 ##a#wrapper_left_bg
 ##a#wrapper_left_bg\ llll
 ##a#wrapper_right_bg
+##a.checkNum[target="_blank"] > img[data-src]
 ##a.gggg[href^="https"]
 ##a.hengfu > img.hengfu
 ##a[clickmode="ad"]
@@ -1250,6 +1254,8 @@
 ##a[href$="/hjdt9.com"]
 ##a[href$="/xha77.com"]
 ##a[href*=".bright.cn/?utm_"]
+##a[href*=".cc:"] > img[src]
+##a[href*=".cc:"][target="_blank"][class] > span
 ##a[href*=".com/?Extend="]
 ##a[href*=".com/Register.aspx?aid="]
 ##a[href*=".com/Register/?a="]
@@ -1264,6 +1270,7 @@
 ##a[href*=".ssmh"][href*="?u="]
 ##a[href*=".sudun.com/"]
 ##a[href*=".taobao.com"] > img[src*=".tucao."]
+##a[href*=".vip:"] > img[src]
 ##a[href*=".xacg.info/"]
 ##a[href*=".xxmh"][href*="?u="]
 ##a[href*=".xyz:"] > img[src*=".qlogo.cn"]
@@ -1275,6 +1282,7 @@
 ##a[href*="/?INTR="]
 ##a[href*="/?Intr="]
 ##a[href*="/?aff="][target="_blank"]
+##a[href*="/?cid="][target="_blank"]
 ##a[href*="/?intr="]
 ##a[href*="/PageRegister?Agent="][target="_blank"]
 ##a[href*="/Register?a="]
@@ -1297,6 +1305,8 @@
 ##a[href*=":7888/?register="]
 ##a[href*=":8701/?register="]
 ##a[href*="?channelCode="] > img[src*=".xyz"]
+##a[href*="?channelCode="] > img[src]
+##a[href*="?channelCode="][target="_blank"]
 ##a[href*="?invite_code="] > img[src*=".com"]
 ##a[href*="?register="] > img[src*=".douyinpic.com"]
 ##a[href*="?register="] > img[width="100%"]
@@ -1316,7 +1326,9 @@
 ##a[href="javascript:GoGd();"]
 ##a[href="javascript:GoTp();"]
 ##a[href="javascript:window.GoTp();"]
+##a[href][data-ad_slot_name]
 ##a[href][target="_blank"] > img[width="100%"][src$=".gif"]
+##a[href][target="_blank"][rel="external nofollow"] > img[src]
 ##a[href^="/ad.html?url="]
 ##a[href^="/ad/"] > img[id][src*="hdslb.com"]
 ##a[href^="/archives/"] > .post-card > .blog-background[style*="gif;base64"]
@@ -1504,6 +1516,15 @@
 ##img#adv1
 ##img#hth[onclick$="hth.html')"]
 ##img#hth[onclick^="window.open"]
+##img[alt$="抖阴"]
+##img[alt*="PG"][alt*="娱乐"]
+##img[alt*="成人"][alt*="免费直播"]
+##img[alt*="成人"][alt*="抖阴"]
+##img[alt*="色情"][alt*="免费直播"]
+##img[alt="33直播"]
+##img[alt="开元电子"]
+##img[alt="澳门新葡京"]
+##img[alt^="PG"][alt*="爆率"]
 ##img[data-link][data-src*="/u/"]:not([data-link*="/i/"])
 ##img[data-src*=".alicdn.com/img/ibank/"][src="/static/images/loadingerror.gif"]
 ##img[onclick*=".qq.com/doc/"]
@@ -7179,13 +7200,13 @@ bing.com#?#.b_algo:has(.b_ads1line)
 bing.com#?#.sb_form_placeholder:has(>.ad-ghost-slug)
 bing.com#?#li[class="b_algo"]:has(.b_attribution[data-partnertag]+p[class])
 bing.com,cn.bing.net###bnp_rich_div
+bing.com,cn.bing.net###uaanswer
 bing.com,cn.bing.net##.ad_sc
 bing.com,cn.bing.net##.adsMvC
 bing.com,cn.bing.net##.b_algo:has(.b_ads1line)
 bing.com,cn.bing.net##.b_algo:has(.rms_img[src*="/th?id=OADD2."][src$="21.2"])
 bing.com,cn.bing.net##.b_algo:has(.rms_img[src*="=AdsPlus"])
 bing.com,cn.bing.net##.b_algo:has([tabindex="0"][role="link"])
-bing.com,cn.bing.net##.b_ans
 bing.com,cn.bing.net##.b_ans:has([class^="xm_"][class*="_ansCont"])
 bing.com,cn.bing.net##.b_bza_pole
 bing.com,cn.bing.net##.pa_sb
@@ -11998,6 +12019,7 @@ mnews.tw##.ad-container-pc-only
 mnw.cn##.mnw_685
 mnw.cn##.mnw_960
 mnw.cn##.mnw_top_ads
+mnya.tw#@##advertise
 mo.fish##.list-item-content-ad
 mob.iyingdi.com##.down-button
 mob.iyingdi.com##.down-load-app-container
@@ -17577,6 +17599,7 @@ zzzyk.com###Tinfo
 ||ac*.786ip.com^
 ||ac*.faxingchina.com^
 ||ac*.pingguolv.com^
+||ac-baidu.90dao.com/inject.js
 ||ac.86huoche.com^
 ||ac.art456.com^
 ||ac.tc.qq.com/store_file_download?*&dir_path=/admin/swf/
@@ -18491,6 +18514,7 @@ zzzyk.com###Tinfo
 ||b82q168jgj.com^
 ||b8b4ix7bj.com^
 ||b9b2oe8720j.xyz^
+||b9jda4zig.com^
 ||baby-kingdom.com/reqsads?
 ||bacder.fun^
 ||bace10.top^
@@ -18984,6 +19008,7 @@ zzzyk.com###Tinfo
 ||bkad13gfu.com^
 ||bkam33lsr.com^
 ||bkhblj.xyz^
+||bkhpdrblv.com^
 ||bkhxut1rz.com^
 ||bkill.com/css/js/*top
 ||bkill.com/css/js/abcbl.js
@@ -20278,6 +20303,7 @@ zzzyk.com###Tinfo
 ||dbmp4.com/js/foot.js
 ||dbnsd2viud.xyz^
 ||dbnwlp.xyz^
+||dbqhingien.com^
 ||dbraulmat.com^
 ||dbraxb.icu^
 ||dbt6ga5v6d15f.cloudfront.net/slf^$domain=vikacg.com
@@ -20880,6 +20906,7 @@ zzzyk.com###Tinfo
 ||e26fr9qb4m.com^
 ||e2icbtrs1g.com^
 ||e2jda3h01.com^
+||e2us4880k.com^
 ||e3c7.com/dh/
 ||e3c7.com/love/
 ||e3ol.com/inc/
@@ -21721,6 +21748,7 @@ zzzyk.com###Tinfo
 ||g3f3.com/love/
 ||g3m92egwo.com^
 ||g4yk4cyyw.com^
+||g64njjhyh.com^
 ||g66ryy88z.com^
 ||g7htk7ls7.com^
 ||g8hi6r3odr.com^
@@ -24780,6 +24808,7 @@ zzzyk.com###Tinfo
 ||llbquucai.com^
 ||llj22.com/1.gif
 ||llksja.com^
+||llmb.cn^
 ||llpuhx.xyz^
 ||lls11050ko.com^
 ||lls11060ko.com^
@@ -25228,6 +25257,7 @@ zzzyk.com###Tinfo
 ||mdqpkdne.xyz^
 ||mdrihnok.com^
 ||mdt.qq.com^
+||mdumaldf.com^
 ||mdwhxw.com^
 ||me360.com/swt/swt.js
 ||me4b65enw.com^
@@ -25749,6 +25779,7 @@ zzzyk.com###Tinfo
 ||naajie.com/float.js
 ||naarnurm.com^
 ||naemailom.fun^
+||nahg4lhbr.com^
 ||naiep.xyz^
 ||naivety48.com^
 ||naivtyu.icu^
@@ -26573,6 +26604,7 @@ zzzyk.com###Tinfo
 ||pealefe.com^
 ||pebrihmethwa.com^
 ||peculiar93.top^
+||pedestrian94.top^
 ||peer-stream.com/api/AdvertisementPlugin$object-subrequest,domain=schoener-fernsehen.com
 ||peise.net/Skin/js/global.
 ||pejrq.xyz^
@@ -30559,6 +30591,7 @@ zzzyk.com###Tinfo
 ||xdyn03010jy.com^
 ||xdyn03011jy.com^
 ||xdyn03021jy.com^
+||xdyn03051jy.com^
 ||xebetp.icu^
 ||xeccotftw.com^
 ||xecner.top^
