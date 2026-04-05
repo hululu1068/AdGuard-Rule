@@ -9,12 +9,18 @@ echo Start Merge
 
 rules=(
   jiekouAD.txt
-  224.txt
   NoAppDownload.txt
   cjx-annoyance.txt
   anti-adblock-killer-filters.txt
-  antiadblockfilters.txt
-  abp-filters-anti-cv.txt
+  clear_urls_uboified.txt
+  2_optimized.txt
+  easyprivacy.txt
+  annoyances.txt
+  privacy.txt
+  2.txt
+  3.txt
+  224.txt
+  14.txt
 )
 
 #Lite
