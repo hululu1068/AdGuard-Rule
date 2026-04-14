@@ -1,11 +1,15 @@
 [Adblock Plus 2.0]
 ! Title: 轻量广告拦截规则
 ! Homepage: https://github.com/damengzhu/banad
-! Update Time: 2026-04-12 13:16:42（北京时间）
-! Version: 20260412131642
-! Total Count: 5830
+! Update Time: 2026-04-14 19:52:41（北京时间）
+! Version: 20260414195241
+! Total Count: 5838
 ! by: 酷安@大萌主
 ! domain name
+||creative.myavlive.com^
+||go.xlivrdr.com^
+||zzuccikqt.com^
+||edgelib.net^
 ||fourier.alibaba.com^
 ||lmtjapi.com^
 ||ymmiyun.com^
@@ -113,7 +117,6 @@
 ||g7htk7ls7.com^
 ||ktgpgoa.top^
 ||xxsmad4.com^
-||xn--jor0b302fdhgwnccw8g.com^
 ||h1v3fa.com^
 ||hdwiey.com^
 ||youjiudilai.com^
@@ -4785,7 +4788,11 @@ xyz:9002/*?x=$third-party
 ||5dm.tv/html/5dmm.jpg
 ||domp4.cc/js/wcount.js
 /gg/gg.js
+/tongji/ad.js
+/tong*ji.js
 .com:*/cc/*?is_not=*&target=*
+.com:*/d/*?t=
+.com:*/bug?*=$third-party
 /template/piankuwap/js/afixed.js
 ://tj.*.com$third-party
 /astyle/wap.js$~third-party
@@ -4962,6 +4969,7 @@ _300x250.js
 .xyz/?token=
 .shop:*/bid?url=
 .shop:*/ack?s=
+||missav.*/pop?url=
 x.com/*/videoads/
 /xxgg/pf*.js
 /xxgg/gd*.js
@@ -5786,7 +5794,6 @@ javbus.com##.container-fluid:nth-child(9) > .row > .ad-list:nth-child(3)
 ##[href*='3400.org']
 ##.cpcad
 ##DIV#ad-float.kyty
-##.banner-container-h5 > .banner_all_wrap
 ##DIV.floating-ad
 ##.ant-modal-root > .tuia-modal-wrap
 ##.ant-modal-root > .ant-modal-mask
@@ -5832,6 +5839,7 @@ javbus.com##.container-fluid:nth-child(9) > .row > .ad-list:nth-child(3)
 ##.dx-recommend-icons
 ##img[alt="开元电子"]
 ##img[alt*="PG"][alt*="娱乐"]
+##[id^="ts_ad_"]
 52movieba.com,acglala.me,acglala.net,awaker.cn,bimiacg4.net,bimiacg5.net,ccav1.com,cdsoso.me,cgown.com,cn163.net,comicat.org,cosersuki.org,dzbhdm.net,epinv.com,eroacg.com,galacg.me,gmgard.com,haochi123.com,hexieshe.cn,hexieshe.com,hexieshe.xyz,hggard.com,hmghmg.com,hmoe11.net,idanmu.ee,ifenpaidy.com,jitapu.com,jitashe.org,jiyingw.vip,kelatv.com,kisssub.org,languang.co,llss.bz,mtrend.cn,mydrivers.com,mzh.ren,nxing.cn,oyksoft.com,souxue8.com,speedtest.cn,tingroom.com,whsir.com,xxshe.info,xxshe.xyz##a[href*=".taobao.com"]
 ! gif ads
 ikan6.vip,www.1111modruba.cc##IMG[src$='.gif']
