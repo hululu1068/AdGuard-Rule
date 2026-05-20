@@ -71,7 +71,7 @@
 
 <h2 id="b">🎯 订阅</h2>
 
-| 名称           | 说明                                                | Github订阅                                                                              | jsDelivr加速订阅                                                                        |
+| 名称           | 说明                                                | Github Raw                                                                              | jsDelivr加速                                                                        |
 |--------------|---------------------------------------------------|---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
 | `all.txt`    | 去重的规则合集，包含以下所有规则，适用于 `AdGuard` 客户端                | [✈️点此查看](https://raw.githubusercontent.com/hululu1068/AdGuard-Rule/main/rule/all.txt)      | [🚀点此查看(延迟)](https://cdn.jsdelivr.net/gh/hululu1068/AdGuard-Rule@main/rule/all.txt)    |
 | `adgh.txt`   | 针对 `AdGuardHome` 的规则，包含 `domain.txt` `regex.txt`和`mylist.txt` | [✈️点此查看](https://raw.githubusercontent.com/hululu1068/AdGuard-Rule/main/rule/adgh.txt)   | [🚀点此查看(延迟)](https://cdn.jsdelivr.net/gh/hululu1068/AdGuard-Rule@main/rule/adgh.txt)   |
@@ -116,4 +116,9 @@ application:
 <br/>
 <h2 id="c">🧭 支持</h2>
 
-[![Powered by DartNode](https://dartnode.com/_branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
+<table>
+  <tr>
+    <td><a href="https://dartnode.com?aff=GrumpySalamander981"><img src="./src/img/DartNode.png" width="350" height="150" border="0" alt="Stop Overpaying Start Sharing Save More with DolOffer"></a></td>
+    <td><a href="https://doloffer.com/friend/0ApoCZTz"><img src="./src/img/DolOffer.png" width="350" height="150" border="0" alt="Stop Overpaying Start Sharing Save More with DolOffer"></a></td>
+  </tr>
+</table>
