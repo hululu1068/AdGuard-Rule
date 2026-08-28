@@ -75,14 +75,12 @@ application:
     files:
       all.txt:    #输出文件名
         - DNS_EXCEPTION #AdGuard Home例外规则
-        - DOMAIN  #基础域名规则，仅匹配该域名本身
-        - DNS_FILTER #AdGuard Home拦截规则
+        - DNS_FILTER #规范域名拦截规则
         - HOSTS   #Hosts规则
         - REGEX   #严格正则规则，AdGH支持
         - MODIFY  #AdGuard客户端专用规则
       adgh.txt:
         - DNS_EXCEPTION
-        - DOMAIN
         - DNS_FILTER
         - REGEX
       hosts.txt:
@@ -90,8 +88,7 @@ application:
       regex.txt:
         - REGEX
       domain.txt:
-        - DOMAIN
-      modify.txt:
         - DNS_EXCEPTION
         - DNS_FILTER
+      modify.txt:
         - MODIFY

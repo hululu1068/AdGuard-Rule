@@ -63,7 +63,7 @@ public final class RuleParser {
             return ParsedRule.valid(RuleType.REGEX, rule, rule);
         }
 
-        if (isDnsFilterRule(rule)) {
+        if (isDnsFilterRule(rule) && isCanonicalDomainFilter(rule)) {
             RuleType type = rule.startsWith("@@")
                     ? RuleType.DNS_EXCEPTION
                     : RuleType.DNS_FILTER;
@@ -110,7 +110,8 @@ public final class RuleParser {
         if (domain == null) {
             return null;
         }
-        return ParsedRule.valid(RuleType.DOMAIN, domain, domain);
+        String output = "0.0.0.0 " + domain;
+        return ParsedRule.valid(RuleType.HOSTS, output, output);
     }
 
     private static String normalizeDomain(String candidate) {
@@ -186,6 +187,13 @@ public final class RuleParser {
             }
         }
         return true;
+    }
+
+    private static boolean isCanonicalDomainFilter(String rule) {
+        String candidate = rule.startsWith("@@") ? rule.substring(2) : rule;
+        int modifierIndex = candidate.indexOf('$');
+        String pattern = modifierIndex >= 0 ? candidate.substring(0, modifierIndex) : candidate;
+        return pattern.startsWith("||");
     }
 
     private static boolean isAdGuardClientRule(String rule) {
