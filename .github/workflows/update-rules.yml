@@ -1,0 +1,97 @@
+name: Update Rules
+on:
+  push:
+    branches: 
+      - adrules
+    paths-ignore:
+      - '*.md'
+      - '.DS_Store'
+  schedule:
+    - cron: '0 */12 * * *'  # 每 12 小时执行一次
+  workflow_dispatch:        # 允许手动触发
+
+env:
+  TZ: Asia/Shanghai
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: update-rules-${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  update-rules:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout adrules branch
+        uses: actions/checkout@v5
+        with:
+          ref: adrules  # 切换到 adrules 分支
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+
+      # Install hostlist-compiler
+      - name: Install hostlist-compiler
+        run: npm i -g @adguard/hostlist-compiler
+
+      - name: Update Upstream
+        continue-on-error: false
+        run: |
+          pip install requests
+          bash ./script/fetch-rules.sh
+        
+      - name: Build Rules
+        continue-on-error: false
+        run: |
+          bash ./script/build-content-rules.sh
+          bash ./script/update-dns-rules.sh
+          python3 ./script/validate-output.py
+
+      - name: Update other rules | 更新其它规则及Github-Hosts
+        run: |
+          cd rules
+          rm -f ./*.txt
+          curl --fail --location --retry 3 --output jiekouAD.txt \
+            https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
+
+          bash ../script/github-hosts.sh
+          cd ../
+
+      - name: Git push assets to Github
+        id: commit
+        run: |
+          assets=(
+            adblock.txt adblock_lite.txt adblock_plus.txt dns.txt
+            adrules_domainset.txt adrules-surge.conf
+            adrules-singbox.json adrules-singbox.srs adrules-mihomo.mrs
+            adrules.list adrules.list.json qx.conf smart-dns.conf
+            mosdns_adrules.txt rules
+          )
+          if [ -z "$(git status --porcelain -- "${assets[@]}")" ]; then
+            exit 0
+          fi
+          echo "status=success" >> "$GITHUB_OUTPUT"
+          git config --local user.name "actions"
+          git config --local user.email "action@github.com"
+          git add -- "${assets[@]}"
+          git commit -m "Update rules: $(TZ=UTC-8 date +"%Y-%m-%d %H:%M")" -- "${assets[@]}"
+
+      - name: Push rule updates
+        if: steps.commit.outputs.status == 'success' && !cancelled()
+        run: git push origin HEAD:adrules
+
+      - name: Delete Workflow Runs
+        uses: Mattraks/delete-workflow-runs@v2.1.0
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          retain_days: 1
+          keep_minimum_runs: 2
