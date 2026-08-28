@@ -1,8 +1,8 @@
 spring:
   application:
-    名字: adg-rule
+    name: adg-rule
   profiles:
-    已激活: prod  #切换至 dev 即可输出调试信息
+    active: prod  #切换至 dev 即可输出调试信息
 
 logging:
   file:
@@ -74,14 +74,17 @@ application:
     path: rule   #规则文件输出路径，相对路径默认从 项目目录开始
     files:
       all.txt:    #输出文件名
-        - DOMAIN  #域名规则，仅完整域名
-        - REGEX   #正则规则，包含正则的域名规则，AdGH支持
-        - MODIFY  #修饰规则，添加了一些修饰符号的规则，AdG支持
+        - DNS_EXCEPTION #AdGuard Home例外规则
+        - DOMAIN  #基础域名规则，仅匹配该域名本身
+        - DNS_FILTER #AdGuard Home拦截规则
         - HOSTS   #Hosts规则
+        - REGEX   #严格正则规则，AdGH支持
+        - MODIFY  #AdGuard客户端专用规则
       adgh.txt:
+        - DNS_EXCEPTION
         - DOMAIN
+        - DNS_FILTER
         - REGEX
-#        - HOSTS
       hosts.txt:
         - HOSTS
       regex.txt:
@@ -89,4 +92,6 @@ application:
       domain.txt:
         - DOMAIN
       modify.txt:
+        - DNS_EXCEPTION
+        - DNS_FILTER
         - MODIFY

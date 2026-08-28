@@ -1,43 +1,34 @@
 package org.fordes.adg.rule.thread;
 
-import cn.hutool.core.exceptions.ExceptionUtil;
-import cn.hutool.core.io.IoUtil;
 import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpResponse;
-import com.google.common.hash.BloomFilter;
-import lombok.extern.slf4j.Slf4j;
-import org.fordes.adg.rule.enums.RuleType;
 
-import java.io.File;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
 import java.io.InputStream;
-import java.nio.charset.Charset;
-import java.util.Map;
-import java.util.Set;
 
-@Slf4j
 public class RemoteRuleThread extends AbstractRuleThread {
 
-
-    public RemoteRuleThread(String ruleUrl, Map<RuleType, Set<File>> typeFileMap, BloomFilter<String> filter) {
-        super(ruleUrl, typeFileMap, filter);
+    public RemoteRuleThread(String ruleUrl) {
+        super(ruleUrl);
     }
 
     @Override
-    InputStream getContentStream() {
-        try {
-            HttpResponse response = HttpRequest.get(getRuleUrl())
+    protected InputStream getContentStream() throws IOException {
+        try (HttpResponse response = HttpRequest.get(getRuleUrl())
                     .setFollowRedirects(true)
                     .timeout(20000)
-                    .execute();
-            if (response.isOk()) {
-                setCharset(Charset.forName(response.charset()));
-                return response.bodyStream();
+                    .execute()) {
+            if (!response.isOk()) {
+                throw new IOException("HTTP " + response.getStatus());
             }
-        }catch (Exception e) {
-            log.error(getRuleUrl());
-            log.error(ExceptionUtil.stacktraceToString(e));
+            setCharset(response.charset());
+            return new ByteArrayInputStream(response.bodyBytes());
         }
-        return IoUtil.toStream(new byte[0]);
     }
 
+    @Override
+    protected boolean isRemote() {
+        return true;
+    }
 }

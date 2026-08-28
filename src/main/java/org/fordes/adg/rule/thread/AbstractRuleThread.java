@@ -3,23 +3,19 @@ package org.fordes.adg.rule.thread;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.date.TimeInterval;
 import cn.hutool.core.exceptions.ExceptionUtil;
-import cn.hutool.core.io.IoUtil;
-import cn.hutool.core.io.LineHandler;
-import cn.hutool.core.map.MapUtil;
-import cn.hutool.core.util.StrUtil;
-import com.google.common.hash.BloomFilter;
-import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
-import org.fordes.adg.rule.Util;
-import org.fordes.adg.rule.enums.RuleType;
+import org.fordes.adg.rule.ParsedRule;
+import org.fordes.adg.rule.RuleParser;
+import org.fordes.adg.rule.SourceResult;
 
-import java.io.File;
+import java.io.BufferedReader;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.nio.charset.Charset;
-import java.util.Collections;
-import java.util.Map;
-import java.util.Set;
-import java.util.concurrent.atomic.AtomicReference;
+import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.Callable;
 
 /**
  * 规则处理线程抽象
@@ -27,79 +23,54 @@ import java.util.concurrent.atomic.AtomicReference;
  * @author ChengFengsheng on 2022/7/7
  */
 @Slf4j
-@Data
-public abstract class AbstractRuleThread implements Runnable {
+public abstract class AbstractRuleThread implements Callable<SourceResult> {
 
     private final String ruleUrl;
 
-    private final Map<RuleType, Set<File>> typeFileMap;
-
-    private final BloomFilter<String> filter;
-
-    public AbstractRuleThread(String ruleUrl, Map<RuleType, Set<File>> typeFileMap, BloomFilter<String> filter) {
+    protected AbstractRuleThread(String ruleUrl) {
         this.ruleUrl = ruleUrl;
-        this.typeFileMap = typeFileMap;
-        this.filter = filter;
     }
 
-    private Charset charset = Charset.defaultCharset();
+    private Charset charset = StandardCharsets.UTF_8;
 
-    abstract InputStream getContentStream();
+    protected abstract InputStream getContentStream() throws Exception;
+
+    protected abstract boolean isRemote();
 
     @Override
-    public void run() {
+    public SourceResult call() {
         TimeInterval interval = DateUtil.timer();
-        AtomicReference<Integer> invalid = new AtomicReference<>(0);
-        Map<File, Set<String>> fileDataMap = MapUtil.newHashMap();
-        try {
-            //按行读取并处理
-            IoUtil.readLines(getContentStream(), charset, (LineHandler) line -> {
-                if (StrUtil.isNotBlank(line)) {
-                    String content = Util.clearRule(line);
-                    if (StrUtil.isNotBlank(content)) {
-                        if (!filter.mightContain(line)) {
-                            filter.put(line);
+        List<ParsedRule> rules = new ArrayList<>();
+        int invalidCount = 0;
 
-                            if (Util.validRule(content, RuleType.DOMAIN)) {
-                                typeFileMap.getOrDefault(RuleType.DOMAIN, Collections.emptySet())
-                                        .forEach(item -> Util.safePut(fileDataMap, item, line));
-                                log.debug("域名规则: {}", line);
-
-                            } else if (Util.validRule(content, RuleType.HOSTS)) {
-                                typeFileMap.getOrDefault(RuleType.HOSTS, Collections.emptySet())
-                                        .forEach(item -> Util.safePut(fileDataMap, item, line));
-                                log.debug("Hosts规则: {}", line);
-
-                            } else if (Util.validRule(content, RuleType.MODIFY)) {
-
-                                if (Util.validRule(content, RuleType.REGEX)) {
-                                    typeFileMap.getOrDefault(RuleType.REGEX, Collections.emptySet())
-                                            .forEach(item -> Util.safePut(fileDataMap, item, line));
-                                    log.debug("正则规则: {}", line);
-
-                                } else {
-
-                                    typeFileMap.getOrDefault(RuleType.MODIFY, Collections.emptySet())
-                                            .forEach(item -> Util.safePut(fileDataMap, item, line));
-                                    log.debug("修饰规则: {}", line);
-                                }
-                            } else {
-                                invalid.getAndSet(invalid.get() + 1);
-                                log.debug("无效规则: {}", line);
-                            }
-                        }
-                    }else {
-                        invalid.getAndSet(invalid.get() + 1);
-                        log.debug("不是规则: {}", line);
-                    }
+        try (InputStream inputStream = getContentStream();
+             BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream, charset))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                ParsedRule rule = RuleParser.parse(line);
+                if (rule.isValid()) {
+                    rules.add(rule);
+                } else {
+                    invalidCount++;
                 }
-            });
+            }
+
+            log.info("规则<{}> 耗时 => {} ms 有效数 => {} 无效数 => {}",
+                    ruleUrl, interval.intervalMs(), rules.size(), invalidCount);
+            return SourceResult.success(ruleUrl, isRemote(), rules, invalidCount);
         } catch (Exception e) {
             log.error(ExceptionUtil.stacktraceToString(e));
-        }finally {
-            fileDataMap.forEach(Util::write);
-            log.info("规则<{}> 耗时 => {} ms 无效数 => {}",
-                    ruleUrl, interval.intervalMs(), invalid.get());
+            return SourceResult.failure(ruleUrl, isRemote(), e.getMessage());
+        }
+    }
+
+    public String getRuleUrl() {
+        return ruleUrl;
+    }
+
+    protected void setCharset(Charset charset) {
+        if (charset != null) {
+            this.charset = charset;
         }
     }
 }

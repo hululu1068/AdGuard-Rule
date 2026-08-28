@@ -12,6 +12,14 @@ on:
 env:
   TZ: Asia/Shanghai
 
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: update-filters-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   Update_Filters:
     runs-on: ubuntu-latest
@@ -35,22 +43,19 @@ jobs:
       - name: Commit Changes
         id: commit
         run: |
-          if [ -z "$(git status --porcelain)" ]; then 
+          if [ -z "$(git status --porcelain -- rule/*.txt)" ]; then
               exit 0
           else
             echo "status=success" >> $GITHUB_OUTPUT
-            git add .
+            git add -- rule/*.txt
             git config --local user.name "actions"
             git config --local user.email "action@github.com"
-            git commit -m "CI Updated at $(date +'%Y-%m-%d %H:%M:%S')" -a
+            git commit -m "CI Updated at $(date +'%Y-%m-%d %H:%M:%S')" -- rule/*.txt
           fi
 
-      - name: GitHub Push
+      - name: Push rule updates
         if: steps.commit.outputs.status == 'success' && !cancelled()
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{secrets.GITHUB_TOKEN}}
-          branch: ${{github.ref}}
+        run: git push origin "HEAD:${GITHUB_REF_NAME}"
 
       - name: Mirror Refresh
         run: sleep 10 && curl 'https://purge.jsdelivr.net/gh/${{github.repository}}/rule'
