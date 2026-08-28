@@ -6,6 +6,7 @@ import cn.hutool.http.HttpResponse;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.charset.Charset;
 
 public class RemoteRuleThread extends AbstractRuleThread {
 
@@ -22,7 +23,10 @@ public class RemoteRuleThread extends AbstractRuleThread {
             if (!response.isOk()) {
                 throw new IOException("HTTP " + response.getStatus());
             }
-            setCharset(response.charset());
+            String charset = response.charset();
+            if (charset != null && !charset.trim().isEmpty()) {
+                setCharset(Charset.forName(charset));
+            }
             return new ByteArrayInputStream(response.bodyBytes());
         }
     }
