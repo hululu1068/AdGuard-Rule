@@ -65,7 +65,7 @@ public final class RuleOutputWriter {
                 Path relative = outputRoot.relativize(target);
                 Path stagedFile = stagingDirectory.resolve(relative);
                 Files.createDirectories(stagedFile.getParent());
-                Files.write(stagedFile, render(aggregator.getSources(),
+                Files.write(stagedFile, render(entry.getKey(), aggregator.getSources(),
                     aggregator.getRules(entry.getValue())));
                 stagedTargets.put(target, stagedFile);
 
@@ -113,9 +113,14 @@ public final class RuleOutputWriter {
         return target;
     }
 
-    private static byte[] render(List<String> sources, List<String> rules) {
+    private static byte[] render(String fileName, List<String> sources, List<String> rules) {
+        String title = Constant.TITLE.replace("{}", fileName);
         String update = Constant.UPDATE.replace("{}", LocalDateTime.now().format(UPDATE_TIME));
-        StringBuilder content = new StringBuilder(update).append(Constant.OUTPUT_HEADER);
+        StringBuilder content = new StringBuilder(title)
+                .append(update)
+                .append(Constant.EXPIRES)
+                .append(Constant.REPO_URL)
+                .append(Constant.OUTPUT_HEADER);
         for (String source : sources) {
             content.append("# - '").append(source).append("'\r\n");
         }
