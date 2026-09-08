@@ -1,5 +1,5 @@
 # Title: AdGuard、AdGuardHome广告过滤规则合并/去重 - modify.txt
-# Update time: 2026-09-08 01:15:37
+# Update time: 2026-09-08 11:06:53
 # Expires: 12 hours
 # Repo URL:: https://github.com/hululu1068/AdGuard-Rule
 
@@ -1462,6 +1462,9 @@ youporn.com$$script:contains(/window\.[\s\S]*?_zone_[\s\S]*?{"zone_id":/)
 #@#.ads_banner
 ##.stickyads:not([style^="width: 32px"], [style^="width: 33px"], [style*="left: -43px"], [style*="-3"][style*="important"][style*="display: block;"], [style*="position: fixed"][style*="-188"], [style*="!important;"][style*="width:"][style*="height:"][style*="position"][style*="left:"][style*="top:"][style*="display"], [data-freestar-ad="123"]):not(:empty)
 ##.ads_banner:not([style^="width: 32px"], [style^="width: 33px"], [style*="left: -43px"], [style*="-3"][style*="important"][style*="display: block;"], [style*="position: fixed"][style*="-188"], [style*="!important;"][style*="width:"][style*="height:"][style*="position"][style*="left:"][style*="top:"][style*="display"]):not(:empty)
+plataformamedia.com#%#//scriptlet('set-constant', 'advanced_ads_check_adblocker', 'noopFunc')
+plataformamedia.com#@#.ad-unit:not(.textads)
+plataformamedia.com#@#.ad_unit
 unicorn.gt.tc#@#.ad-unit:not(.textads)
 unicorn.gt.tc#%#//scriptlet('prevent-element-src-loading', 'script', 'pemsrv.com')
 @@||a.pemsrv.com/popunder1000.js$domain=unicorn.gt.tc
@@ -79476,7 +79479,6 @@ freepik.com##div[data-testid="unicorn-banner"]
 birminghammail.co.uk,bristolpost.co.uk,dailyrecord.co.uk,hulldailymail.co.uk,irishstar.com,liverpoolecho.co.uk,manchestereveningnews.co.uk,stokesentinel.co.uk,walesonline.co.uk##div[data-testid^="commercial-"]
 forbes.com##div[data-testid^="fbs-ad"]
 hulldailymail.co.uk##div[data-tmdatatrack-type="commercial"]
-startpage.com##div[data-visible="true"][data-identifier]
 audi-sport.net##div[data-widget-key="Snack_Side_Menu_1"]
 audi-sport.net##div[data-widget-key="Snack_Side_Menu_2"]
 audi-sport.net##div[data-widget-key="forum_home_sidebar_top_ads"]
@@ -96698,6 +96700,7 @@ top##body > center + .A + .post
 *$doc,ipaddress=64.190.63.136
 /go/*^ref=*&subid1=*&subid2=$doc
 ^ofv_id=*&aff_pub_id=*&click_id=*&subid1=*&subid2=$doc
+||featherswallet.org^$all
 ||aw-huorong.com.cn$all
 @@||hb.vntsm.com/v4/live/vms/sites/aternos.org/index.js$script,domain=aternos.org
 aternos.org##.header-center:style(margin-top:-5000px !important;)
