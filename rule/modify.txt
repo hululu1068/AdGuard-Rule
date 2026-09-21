@@ -1,5 +1,5 @@
 # Title: AdGuard、AdGuardHome广告过滤规则合并/去重 - modify.txt
-# Update time: 2026-09-20 23:28:11
+# Update time: 2026-09-21 11:22:55
 # Expires: 12 hours
 # Repo URL:: https://github.com/hululu1068/AdGuard-Rule
 
@@ -4693,8 +4693,7 @@ pussyspace.com,pussyspace.net#%#//scriptlet('prevent-addEventListener', '', '=lo
 pussyspace.com,pussyspace.net#%#//scriptlet('prevent-requestAnimationFrame', 'exoframe')
 pussyspace.com,pussyspace.net#%#//scriptlet('prevent-addEventListener', 'load', 'creativeLoaded-')
 $image,third-party,denyallow=cdn77.org|globalcdn.co|others-cdn.com|rncdn7.com|sb-cd.com|stream.highwebmedia.com|thumb.live.mmcdn.com|upsiloncdn.net|xvideos-cdn.com|youjizz.com|ypncdn.com,domain=pussyspace.com|pussyspace.net
-$subdocument,~third-party,domain=pussyspace.com|pussyspace.net
-$subdocument,~third-party,redirect-rule=noopframe,domain=pussyspace.com|pussyspace.net
+$subdocument,~third-party,redirect=noopframe,domain=pussyspace.com|pussyspace.net
 ||pussyspace.$image
 @@||www.pussyspace.com/player/playBTN.png|
 @@||www.pussyspace.com/favicon.ico|
@@ -4739,13 +4738,14 @@ $subdocument,~third-party,redirect-rule=noopframe,domain=pussyspace.com|pussyspa
 @@/^https:\/\/www\.pussyspace\.(com|net)\/upload\/poster_img_url\/par\/c3Rhci9[%0-9A-Za-z]+&size_width\/par\/160\/l\.jpg$/$image,domain=pussyspace.com|pussyspace.net
 ||pussyspace.*?ads=$subdocument,redirect=noopframe
 @@/^https:\/\/[a-z]\.pussyspace\.[cn][oe][mt]\/xv7\/[0-9a-f]+-[0-9a-f]+-[0-9a-f]+-[0-9a-f]+-[0-9a-f]+\/[0-9]\/xv_[0-9][0-9]?_t\.jpg$/$image,domain=pussyspace.com|pussyspace.net
-@@/^https:\/\/[a-z]\.pussyspace\.[cn][oe][mt]\/[yx][iv][ps]\/videos\/20[0-9][0-9][0-9][0-9]\/[0-9][0-9]\/[0-9]+\/[ot][rh][iu][gm][ib][ns][a_][l0-9][0-9]?\/[0-9]?[0-9]?\(?m?=?e?[0-9A-Za-z]*a?a?a?a?\)?\(?m?h?=?[-_0-9A-Za-z]*\)?[0-9]?[0-9]?\.jpg$/$image,domain=pussyspace.com|pussyspace.net
-@@/^https:\/\/[a-z]\.pussyspace\.[cn][oe][mt]\/[yx][iv][ps]\/videos\/thumbs169l\/[0-9a-f][0-9a-f]\/[0-9a-f][0-9a-f]\/[0-9a-f][0-9a-f]\/[0-9a-f]+-?\d?\/[0-9a-f]+\.[0-9][0-9]?\.jpg$/$image,domain=pussyspace.com|pussyspace.net
-@@/^https:\/\/[a-z]\.pussyspace\.[cn][oe][mt]\/[yx][iv][ps]\/videos\/thumbs_5\/[0-9][0-9]?\(?m?=?e?[0-9A-Za-z]*a?a?a?a?\)?\(?m?h?=?[-_0-9A-Za-z]*\)?\.jpg$/$image,domain=pussyspace.com|pussyspace.net
+@@/^https:\/\/[a-z]\.pussyspace\.[cn][oe][mt]\/[yx][iv][ps]?\/videos\/20[0-9][0-9][0-9][0-9]\/[0-9][0-9]\/[0-9]+\/[ot][rh][iu][gm][ib][ns][a_][l0-9][0-9]?\/[0-9]?[0-9]?\(?m?=?e?[0-9A-Za-z]*a?a?a?a?\)?\(?m?h?=?[-_0-9A-Za-z]*\)?[0-9]?[0-9]?\.jpg$/$image,domain=pussyspace.com|pussyspace.net
+@@/^https:\/\/[a-z]\.pussyspace\.[cn][oe][mt]\/[yx][iv][ps]?\/videos\/thumbs169l\/[0-9a-f][0-9a-f]\/[0-9a-f][0-9a-f]\/[0-9a-f][0-9a-f]\/[0-9a-f]+-?\d?\/[0-9a-f]+\.[0-9][0-9]?\.jpg$/$image,domain=pussyspace.com|pussyspace.net
+@@/^https:\/\/[a-z]\.pussyspace\.[cn][oe][mt]\/[yx][iv][ps]?\/videos\/thumbs_5\/[0-9][0-9]?\(?m?=?e?[0-9A-Za-z]*a?a?a?a?\)?\(?m?h?=?[-_0-9A-Za-z]*\)?\.jpg$/$image,domain=pussyspace.com|pussyspace.net
 @@/^https:\/\/[a-z]\.pussyspace\.[cn][oe][mt]\/[a-z]?jz\/[0-9a-f]\/[0-9a-f]\/[0-9a-f]\/[0-9a-f]?\/?[0-9a-f]?\/?[0-9a-f]+-?[0-9][0-9][0-9]*-?[0-9]*-?[0-9]*-?h?2?6?4?\.?[mf]?[pl]?[4v]?-?[0-9]*\.jpg$/$image,domain=pussyspace.com|pussyspace.net
 @@/^https:\/\/[a-z]\.pussyspace\.[cn][oe][mt]\/sb\/t\/[0-9]+\/[0-9a-f][0-9a-f]?\/[0-9a-f][0-9a-f]?\/w:300\/t[0-9][0-9]?-enh\/[0-9a-z-]*[0-9a-z]+\.jpg$/$image,domain=pussyspace.com|pussyspace.net
 @@/^https:\/\/www\.pussyspace\.[cn][oe][mt]\/upload\/cat\.image\/[_3a-z]+\.jpg$/$image,domain=pussyspace.com|pussyspace.net
 @@/^https:\/\/www\.pussyspace\.[cn][oe][mt]\/upload\/poster_img_url\/par\/c3Rhci9[%0-9A-Za-z]+&size_width\/par\/160\/l\.jpg$/$image,domain=pussyspace.com|pussyspace.net
+$subdocument,~third-party,domain=pussyspace.com|pussyspace.net
 @@||www.pussyspace.com/ajax/contact/exo-logo.png|
 @@||www.pussyspace.com/upload/no_img.jpg|
 @@||www.pussyspace.com/class/captcha/captcha.php|
@@ -62126,7 +62126,6 @@ _800x80_
 ##.is-mpu
 ##.is-preload-ad
 ##.is-script-ad
-##.is-sponsored
 ##.is-sticky-ad
 ##.isAd
 ##.isAdPage
@@ -65439,7 +65438,6 @@ megumi-jyosanin.com,mobiili.fi#@#.header_ad
 iedrc.org#@#.home-ad
 thelincolnite.co.uk#@#.inline-ad
 ranking.sanrio.co.jp#@#.is-ad
-elektro.info.pl,mashingup.jp#@#.is-sponsored
 gizmodo.jp#@#.l-ad
 vukajlija.com#@#.large-advert
 realgfporn.com#@#.large-right-ad
@@ -72628,6 +72626,9 @@ usatoday.com###acm-ad-tag-lawrence_dfp_desktop_arkadium_after_share
 nextdoor.com###ad
 ftw.usatoday.com,touchdownwire.usatoday.com###ad--home-well-wrapper
 nationalrail.co.uk###ad-aboveHeader-a-wrapper
+sedaily.com###ad-art-2-0
+sedaily.com###ad-art-3-0
+sedaily.com###ad-art-4-0
 lasvegassun.com###ad-colB-
 getmodsapk.com,paypal.com###ad-container
 astrolis.com###ad-daily
@@ -72637,6 +72638,10 @@ nationalrail.co.uk###ad-homepage-advert-a-grey-b-wrapper
 nationalrail.co.uk###ad-homepage-advert-d-grey-b-wrapper
 healthbenefitstimes.com###ad-image-below
 stackabuse.com###ad-lead-magnet
+sedaily.com###ad-main-1-0
+sedaily.com###ad-main-2-0
+sedaily.com###ad-main-3-0
+sedaily.com###ad-main-4-0
 mayoclinic.org###ad-mobile-bottom-container
 mayoclinic.org###ad-mobile-top-container
 dvdsreleasedates.com###ad-movie
@@ -76577,6 +76582,7 @@ conservativefiringline.com##.jtpp53
 doodle.com##.jupiter-placement-header-module_jupiter-placement-header__label__caUpc
 theartnewspaper.com##.justify-center.flex.w-full
 aiscore.com##.justify-center.w100
+sedaily.com##.justify-center.z-\[9999\].inset-0
 fastcompany.com##.jw-floating-dismissible
 anandtech.com##.jw-reset
 mamieastuce.com##.k39oyi
@@ -76841,6 +76847,7 @@ live-tennis.eu##.mbad
 firstpost.com##.mblad
 news18.com##.mc-ad
 ctinsider.com##.md\:block.y100
+sedaily.com##.md\:h-\[180px\]
 op.gg##.md\:max-w-\[1080px\]:not(.h-\[205px\])
 82-0.com##.md\:max-w-\[480px\]
 bmj.com,mediaweek.com.au##.md\:min-h-\[250px\]
@@ -94571,6 +94578,85 @@ cracksmid.com##div[style=""] > center > center
 ||disciplineavarice.com^$doc
 ||champion.kiitos-kiitoksia.com^$doc
 ||latterantithesis.com^$doc
+||fullth-loto.com^$doc
+||fast-mm.com^$doc
+||int-minint.com^$doc
+||jipso.jp^$doc
+||okanenokami.com^$doc
+||lovers-line.com^$doc
+||q0-b5u.com^$doc
+||qjmesdjrgznq.net^$doc
+||sherondeaau.com^$doc
+||shiarondea.com^$doc
+||shirondeau.com^$doc
+||sirondeauu.com^$doc
+||hitotsuma.net^$doc
+||lot.love-linkage.com^$doc
+||availautomobile.com^$doc
+||beneficial-blanket.com^$doc
+||browserbuilding.com^$doc
+||classicalchurch.com^$doc
+||departdelivery.com^$doc
+||exploitenterprise.com^$doc
+||finefixation.com^$doc
+||ability-acceptable.com^$doc
+||arcticlobe.com^$doc
+||basically-balk.com^$doc
+||brakenormally.com^$doc
+||dedicate-decade.com^$doc
+||dreamer-story.com^$doc
+||dubiousserene.com^$doc
+||exilestrict.com^$doc
+||fukutema.com^$doc
+||unmei-shinpi.jp^$doc
+||auto-run.info^$doc
+||box-ben.com^$doc
+||dom-dom.info^$doc
+||doune41758.biz^$doc
+||greatson1211.site^$doc
+||help-back.info^$doc
+||honem41147.biz^$doc
+||nova-argo.com^$doc
+||yjeija5121.biz^$doc
+||goo-riki.com$doc
+||menokurage.com^$doc
+||info777-6.com^$doc
+||kum.cloudpost-letter2185.com^$doc
+||kamiwatari.com^$doc
+||lotostics.com^$doc
+||dreamy-catch.com^$doc
+||dream-catch.net^$doc
+||yume-kanaee.com^$doc
+||anemone.blue^$doc
+||calm-connect.blue^$doc
+||your-connect.blue^$doc
+||eco-splp.com^$doc
+||ecosoc-gov.com^$doc
+||himitumatch.com^$doc
+||quickcheck-pay.com^$doc
+||su-hk.com^$doc
+||prime-vp.com^$doc
+||click-pay.net^$doc
+||ezpay-service.com^$doc
+||ytgfrgffgf.com^$doc
+||fizlee.jp^$doc
+||xexxngbeuz.net^$doc
+||lili-life-style.com^$doc
+||aquo.online^$doc
+||zuisaidou021926.com^$doc
+||ureluv.com^$doc
+||play.google.com/store/apps/details?id=com.ureluv.pwa^$doc
+||pri-vate.org^$doc
+||private-offer.com^$doc
+||huubm.jp^$doc
+||huuba.jp^$doc
+||famine-afeg.com^$doc
+||fabbe6r.com^$doc
+||faeww8j.com^$doc
+||fak1yt7.com^$doc
+||fapr3i.com^$doc
+||fawl4vx.com^$doc
+||tendresse.shop^$doc
 ||webogram.ru^$all
 ||xn--80affa3aj0al.xn--80asehdb^$all
 ||telegr.am/user_mgt/login$all
@@ -96085,7 +96171,6 @@ adrissa.com.co,americansoda.co.uk,casteloforte.com.br,centerfabril.com.br,forque
 /modi-cloudflare-update.html^$doc
 /wp-assets-optimizer.html^$doc
 ##body > .security-container[style="opacity: 1; transform: translateY(0px);"]
-||rustdesk.co.nz^$doc
 ||rustdesk.io^$doc
 ||rustdesk.pl^$doc
 ||rustdesk.secure-box.de^$doc
