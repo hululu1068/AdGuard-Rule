@@ -2,8 +2,8 @@
 ! Title: AdRules AdBlock List Lite 
 ! Expires: 12h (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2026-11-19 03:43:36(GMT+8)
-! Total count: 10622
+! ! Version: 2026-11-19 12:58:20(GMT+8)
+! Total count: 10639
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
 ###WarningCodec
@@ -53,6 +53,7 @@
 ##.__isboostOverContent
 ##.ad_img
 ##.ads-bg.ads-bg-home
+##.adspop
 ##.advertise
 ##.adwap
 ##.ant-modal-root > .ant-modal-mask
@@ -69,11 +70,13 @@
 ##.ff-ads
 ##.gr_slide_car_inner
 ##.guding312
+##.horizontal-banner
 ##.ippure-ads.right-one
 ##.jtAms_container > .count_a
 ##.m_kxbtm_ad
 ##.mi_btcon.ad
 ##.my-2.md\:my-3
+##.page-nav ~ .addbox[style]
 ##.player_pic_link > [src*='/player.gif']
 ##.popup + .shortcuts-mobile-overlay
 ##.read-container [onclick='goAppHtml();']
@@ -288,6 +291,7 @@
 ##[alt='西瓜社']
 ##[at*='尼斯人注册送']
 ##[class$="_main_outstream"][style="right: 0px;"]
+##[class*="card-ads"]
 ##[class][style*='px; bottom: 0px; left: 0px; z-index'][style$='width: 100vw; position: fixed;']
 ##[class][style*='px; top: 0px; left: 0px; z-index'][style$='width: 100vw; position: fixed;']
 ##[class][style*='px; top: 0px; left: 0px; z-index'][style$='width: 100vw; position: relative;']
@@ -357,6 +361,8 @@
 ##[id^="__ehbc0ejbc0hib"]
 ##[id^="__ehbc0gjbc0ajb"]
 ##[id^="ts_ad_"]
+##[onclick*="'Ad Click'"]
+##[onclick*="ad_slot"]
 ##[onclick*="trackEvent', 'ad"]
 ##[onclick*='fjbglfrv.com']
 ##[onclick*='https://i.opiwb.com:']
@@ -444,11 +450,20 @@
 ##a[href*="?channelCode="] > img[src]
 ##a[href*="?channelCode="][target="_blank"]
 ##a[href*='html?channelCode'] > IMG[src*='.gif'][width='100%']
+##a[href]:not([target="_blank"]) + a[href][rel*="sponsored"][target="_blank"]
 ##a[href][data-ad_slot_name]
 ##a[href][target="_blank"] > img[width="100%"][src$=".gif"]
+##a[href][target="_blank"][rel*="sponsored"] > img[alt*="棋牌"]
+##a[href][target="_blank"][rel*="sponsored"] > img[alt^="PG"]
 ##a[href][target="_blank"][rel="external nofollow"] > img[src]
 ##a[href^="/ad.html?url="]
 ##a[href^="https://91keep.tv"]
+##a[onclick*="棋牌"]
+##a[onclick*="澳门"]
+##a[onclick*="约炮"]
+##a[rel*="sponsored"][onclick]
+##a[title="PG电子"]
+##a[title="开元棋牌"]
 ##body > A[ontouchstart='this.click();'][href]
 ##body > DIV.ad3
 ##body > DIV[class][style='top: 132px;']
@@ -562,6 +577,7 @@
 ##img#hth[onclick$="hth.html')"]
 ##img#hth[onclick^="window.open"]
 ##img[alt$="抖阴"]
+##img[alt$="约炮"]
 ##img[alt*="PG"][alt*="娱乐"]
 ##img[alt*="成人"][alt*="免费直播"]
 ##img[alt*="成人"][alt*="抖阴"]
@@ -570,6 +586,7 @@
 ##img[alt="开元电子"]
 ##img[alt="澳门新葡京"]
 ##img[alt^="PG"][alt*="爆率"]
+##img[alt^="PG"][alt*="电子"]
 ##main.quote-main > .section_btn.clearfix.mt20
 ##oxk
 ##secion#ly LI[role='group'],secion#ly > H2
