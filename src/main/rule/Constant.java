@@ -13,6 +13,8 @@ public class Constant {
 
     public static final String EXPIRES = "# Expires: 12 hours\r\n";
 
+    public static final String TOTAL = "# Total: {}\r\n";
+
     public static final String REPO_URL =
             "# Repo URL:: https://github.com/hululu1068/AdGuard-Rule\r\n\r\n";
 

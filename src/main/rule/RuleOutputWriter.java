@@ -116,9 +116,11 @@ public final class RuleOutputWriter {
     private static byte[] render(String fileName, List<String> sources, List<String> rules) {
         String title = Constant.TITLE.replace("{}", fileName);
         String update = Constant.UPDATE.replace("{}", LocalDateTime.now().format(UPDATE_TIME));
+        String total = Constant.TOTAL.replace("{}", String.valueOf(rules.size()));
         StringBuilder content = new StringBuilder(title)
                 .append(update)
                 .append(Constant.EXPIRES)
+                .append(total)
                 .append(Constant.REPO_URL)
                 .append(Constant.OUTPUT_HEADER);
         for (String source : sources) {
